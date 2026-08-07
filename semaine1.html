@@ -151,7 +151,36 @@
     .bouton:nth-child(3) {
       background: var(--rose);
     }
+.a-retenir-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  margin-top:20px;
+}
 
+.retenir-bloc{
+  background:#F4F7FA;
+  border-radius:16px;
+  padding:20px;
+}
+
+.retenir-bloc h3{
+  margin:0 0 12px;
+  color:var(--bleu-fonce);
+}
+
+.retenir-bloc ul{
+  margin:0;
+  padding-left:20px;
+}
+
+.vocabulaire{
+  border-left:6px solid var(--bleu-clair);
+}
+
+.grammaire{
+  border-left:6px solid var(--rose);
+}
     footer {
       padding: 28px 20px;
       color: #DCEAF1;
@@ -159,16 +188,17 @@
       background: #102B45;
     }
 
-    @media (max-width: 700px) {
-      .grille,
-      .boutons {
-        grid-template-columns: 1fr;
-      }
+   @media (max-width: 700px) {
+  .grille,
+  .boutons,
+  .a-retenir-grid {
+    grid-template-columns: 1fr;
+  }
 
-      .large {
-        grid-column: auto;
-      }
-    }
+  .large {
+    grid-column: auto;
+  }
+}
   </style>
 </head>
 
@@ -220,13 +250,31 @@
         </p>
       </article>
 
-      <article class="bloc large">
+           <article class="bloc large">
         <h2>À retenir cette semaine</h2>
 
-        <p>
-          Ajoutez ici les objectifs, le vocabulaire, les points de grammaire
-          et les devoirs de la semaine.
-        </p>
+        <div class="a-retenir-grid">
+
+          <div class="retenir-bloc vocabulaire">
+            <h3>Vocabulaire</h3>
+            <ul>
+              <li>une rencontre</li>
+              <li>faire connaissance</li>
+              <li>un nouveau départ</li>
+              <li>avoir une idée</li>
+            </ul>
+          </div>
+
+          <div class="retenir-bloc grammaire">
+            <h3>Grammaire</h3>
+            <ul>
+              <li>Le passé composé</li>
+              <li>Les verbes avec <strong>être</strong></li>
+              <li>Accord du participe passé</li>
+            </ul>
+          </div>
+
+        </div>
       </article>
 
       <article class="proverbe large">
