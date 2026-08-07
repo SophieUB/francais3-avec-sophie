@@ -126,31 +126,20 @@
       font-size: 1.45rem;
       font-style: italic;
     }
+  .bouton{
+  display:block;
+  padding:14px 18px;
+  background:var(--bleu-fonce);
+  color:var(--blanc);
+  text-align:center;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:12px;
+}
 
-    .boutons {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .bouton {
-      display: block;
-      padding: 20px;
-      color: var(--blanc);
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 16px;
-      background: var(--bleu-fonce);
-    }
-
-    .bouton:nth-child(2) {
-      background: #4E9EB5;
-    }
-
-    .bouton:nth-child(3) {
-      background: var(--rose);
-    }
+.bouton:hover{
+  background:#163956;
+}
 .a-retenir-grid{
   display:grid;
   grid-template-columns:repeat(3, 1fr);
@@ -160,38 +149,37 @@
 .retenir-bloc{
   background:#F4F7FA;
   border-radius:16px;
-  padding:20px;
+  padding:24px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  min-height:170px;
 }
 
 .retenir-bloc h3{
-  margin:0 0 12px;
-  color:var(--bleu-fonce);
-}
-
-.retenir-bloc ul{
   margin:0;
-  padding-left:20px;
+  color:var(--bleu-fonce);
+  text-align:center;
 }
-
+    
 .vocabulaire{
-  border-left:6px solid var(--bleu-clair);
+  border-top:6px solid var(--bleu-clair);
 }
 
 .grammaire{
-  border-left:6px solid var(--rose);
+  border-top:6px solid var(--rose);
 }
-    footer {
-      padding: 28px 20px;
-      color: #DCEAF1;
-      text-align: center;
-      background: #102B45;
-    }
+
 .quiz{
-  border-left:6px solid var(--bleu-fonce);
+  border-top:6px solid var(--bleu-fonce);
+}
+.retenir-bloc .bouton{
+  margin-top:auto;
+  width:100%;
 }
    @media (max-width: 700px) {
   .grille,
-  .boutons,
   .a-retenir-grid {
     grid-template-columns: 1fr;
   }
@@ -251,24 +239,24 @@
         </p>
       </article>
 
-          <article class="bloc large">
+         <article class="bloc large">
   <h2>À retenir cette semaine</h2>
 
   <div class="a-retenir-grid">
 
     <div class="retenir-bloc vocabulaire">
       <h3>Vocabulaire</h3>
-      <p>Les mots et expressions à retenir cette semaine.</p>
+      <a class="bouton" href="#">Vocabulaire</a>
     </div>
 
     <div class="retenir-bloc grammaire">
       <h3>Grammaire</h3>
-      <p>Les points de grammaire importants de la semaine.</p>
+      <a class="bouton" href="#">Grammaire</a>
     </div>
 
     <div class="retenir-bloc quiz">
       <h3>Quiz</h3>
-      <p>Testez vos connaissances sur le contenu de la semaine.</p>
+      <a class="bouton" href="#">Quiz</a>
     </div>
 
   </div>
@@ -280,16 +268,6 @@
         <blockquote>
           « Petit à petit, l’oiseau fait son nid. »
         </blockquote>
-      </article>
-
-      <article class="bloc large">
-        <h2>Accès rapide</h2>
-
-        <div class="boutons">
-          <a class="bouton" href="#">Documents</a>
-          <a class="bouton" href="#">Vocabulaire</a>
-          <a class="bouton" href="#">Quiz</a>
-        </div>
       </article>
 
     </section>
