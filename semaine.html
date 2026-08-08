@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Semaine 1 — LAF3201 French 3</title>
 
   <style>
+
     :root {
       --bleu-fonce: #1D476E;
       --bleu-clair: #74BACD;
@@ -29,12 +32,25 @@
       line-height: 1.6;
     }
 
+    /* =========================
+       BANDEAU
+       ========================= */
+
     header {
       padding: 38px 24px 58px;
       color: var(--blanc);
+
       background:
-        radial-gradient(circle at 85% 15%, rgba(238, 49, 103, 0.28), transparent 25%),
-        linear-gradient(135deg, var(--bleu-fonce), #102D49);
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(238, 49, 103, 0.28),
+          transparent 25%
+        ),
+        linear-gradient(
+          135deg,
+          var(--bleu-fonce),
+          #102D49
+        );
     }
 
     .conteneur {
@@ -44,7 +60,7 @@
 
     .retour {
       display: inline-block;
-      margin-bottom: 36px;
+      margin-bottom: 30px;
       color: #DCECF3;
       font-weight: bold;
       text-decoration: none;
@@ -75,203 +91,480 @@
       font-weight: bold;
     }
 
+
+    /* =========================
+       CONTENU PRINCIPAL
+       ========================= */
+
     main {
-      padding: 34px 0 70px;
+      padding: 38px 0 60px;
     }
 
-    .grille {
+
+    /* =========================
+       HORAIRES
+       ========================= */
+
+    .horaires {
+      background: var(--blanc);
+      padding: 28px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+    }
+
+    .horaires h2 {
+      margin: 0 0 22px;
+      color: var(--bleu-fonce);
+      font-size: 1.5rem;
+    }
+
+    .grille-horaires {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 22px;
+      gap: 35px;
     }
 
-    .bloc {
-      padding: 26px;
-      border-radius: 22px;
+    .colonne-horaires h3 {
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .lectures-titre {
+      color: #399EB5;
+    }
+
+    .tutorats-titre {
+      color: var(--rose);
+    }
+
+    .ligne-horaire {
+      display: grid;
+      grid-template-columns: 48px 1fr 1fr 1fr;
+      gap: 10px;
+      align-items: center;
+
+      padding: 11px 0;
+
+      border-bottom: 1px solid #DDE5EB;
+
+      font-size: 0.92rem;
+    }
+
+    .badge {
+      display: inline-block;
+      width: 40px;
+
+      padding: 3px 0;
+
+      text-align: center;
+
+      border-radius: 7px;
+
+      color: white;
+      font-weight: bold;
+    }
+
+    .badge-lecture {
+      background: #399EB5;
+    }
+
+    .badge-tutorat {
+      background: var(--rose);
+    }
+
+
+    /* =========================
+       LECTURE + TUTORAT
+       ========================= */
+
+    .grille-cours {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    .carte {
       background: var(--blanc);
-      box-shadow: 0 12px 30px rgba(29, 71, 110, 0.12);
+      padding: 30px;
+      border-radius: 20px;
     }
 
-    .bloc h2 {
+    .carte-lecture {
+      border-top: 7px solid var(--bleu-clair);
+    }
+
+    .carte-tutorat {
+      border-top: 7px solid var(--rose);
+    }
+
+    .carte h2 {
       margin-top: 0;
       color: var(--bleu-fonce);
     }
 
-    .lecture {
-      border-top: 7px solid var(--bleu-clair);
+    .carte p:last-child {
+      margin-bottom: 0;
     }
 
-    .tutorat {
-      border-top: 7px solid var(--rose);
+
+    /* =========================
+       À RETENIR
+       ========================= */
+
+    .retenir {
+      background: var(--blanc);
+      padding: 30px;
+      border-radius: 20px;
+      margin-bottom: 30px;
     }
 
-    .large {
-      grid-column: 1 / -1;
+    .retenir h2 {
+      margin-top: 0;
+      color: var(--bleu-fonce);
     }
+
+    .retenir h3 {
+      margin-bottom: 5px;
+      color: var(--bleu-fonce);
+    }
+
+    .retenir p {
+      margin-top: 0;
+    }
+
+
+    /* =========================
+       PROVERBE
+       ========================= */
 
     .proverbe {
-      padding: 28px;
-      color: var(--blanc);
-      border-radius: 22px;
-      background: var(--bleu-fonce);
+      background: #FFF2F6;
+      padding: 30px;
+      border-radius: 20px;
+      border-left: 7px solid var(--rose);
     }
 
     .proverbe h2 {
       margin-top: 0;
-      color: var(--bleu-clair);
+      color: var(--bleu-fonce);
     }
 
-    .proverbe blockquote {
-      margin: 12px 0 0;
-      font-size: 1.45rem;
+    .citation {
+      font-size: 1.2rem;
       font-style: italic;
     }
-  .bouton{
-  display:block;
-  padding:14px 18px;
-  background:var(--bleu-fonce);
-  color:var(--blanc);
-  text-align:center;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:12px;
-}
 
-.bouton:hover{
-  background:#163956;
-}
-.a-retenir-grid{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:20px;
-  margin-top:20px;
-}
-.retenir-bloc{
-  background:#F4F7FA;
-  border-radius:16px;
-  padding:24px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  align-items:center;
-  min-height:170px;
-}
 
-.retenir-bloc h3{
-  margin:0;
-  color:var(--bleu-fonce);
-  text-align:center;
-}
-    
-.vocabulaire{
-  border-top:6px solid var(--bleu-clair);
-}
+    /* =========================
+       TÉLÉPHONE
+       ========================= */
 
-.grammaire{
-  border-top:6px solid var(--rose);
-}
+    @media (max-width: 750px) {
 
-.quiz{
-  border-top:6px solid var(--bleu-fonce);
-}
-.retenir-bloc .bouton{
-  margin-top:auto;
-  width:100%;
-}
-   @media (max-width: 700px) {
-  .grille,
-  .a-retenir-grid {
-    grid-template-columns: 1fr;
-  }
+      .grille-horaires,
+      .grille-cours {
+        grid-template-columns: 1fr;
+      }
 
-  .large {
-    grid-column: auto;
-  }
-}
+      .ligne-horaire {
+        grid-template-columns: 42px 1fr 1fr;
+      }
+
+      .ligne-horaire span:last-child {
+        grid-column: 2 / -1;
+        color: var(--gris);
+      }
+
+      header {
+        padding: 30px 20px 45px;
+      }
+
+      .conteneur {
+        width: min(100% - 30px, 1000px);
+      }
+
+    }
+
   </style>
+
 </head>
+
 
 <body>
 
+
+  <!-- =========================
+       BANDEAU
+       ========================= -->
+
   <header>
+
     <div class="conteneur">
 
       <a class="retour" href="index.html">
-        Retour à l’accueil
+        ← Retour à l'accueil
       </a>
 
-      <div class="etiquette">Semaine 1 sur 13</div>
+      <div class="etiquette">
+        Semaine 1 sur 13
+      </div>
 
-      <h1>Cette semaine</h1>
+      <h1>
+        Cette semaine
+      </h1>
 
       <p class="unite">
         Unité 1 « J’ai une idée »
       </p>
 
     </div>
+
   </header>
 
-  <main class="conteneur">
 
-    <section class="grille">
 
-      <article class="bloc lecture">
-        <h2>Lecture 1</h2>
+  <!-- =========================
+       CONTENU
+       ========================= -->
+
+  <main>
+
+    <div class="conteneur">
+
+
+      <!-- HORAIRES -->
+
+      <section class="horaires">
+
+        <h2>Horaires des cours</h2>
+
+        <div class="grille-horaires">
+
+
+          <!-- LECTURES -->
+
+          <div class="colonne-horaires">
+
+            <h3 class="lectures-titre">
+              Lectures
+            </h3>
+
+
+            <div class="ligne-horaire">
+
+              <span class="badge badge-lecture">
+                L1
+              </span>
+
+              <span>Mercredi</span>
+
+              <span>12h–14h</span>
+
+              <span>AS3-0214</span>
+
+            </div>
+
+
+            <div class="ligne-horaire">
+
+              <span class="badge badge-lecture">
+                L2
+              </span>
+
+              <span>Lundi</span>
+
+              <span>18h–20h</span>
+
+              <span>TP-SR9</span>
+
+            </div>
+
+
+            <div class="ligne-horaire">
+
+              <span class="badge badge-lecture">
+                L3
+              </span>
+
+              <span>Mardi</span>
+
+              <span>16h–18h</span>
+
+              <span>AS3-0308</span>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- TUTORATS -->
+
+          <div class="colonne-horaires">
+
+            <h3 class="tutorats-titre">
+              Tutorats
+            </h3>
+
+
+            <div class="ligne-horaire">
+
+              <span class="badge badge-tutorat">
+                T1
+              </span>
+
+              <span>Jeudi</span>
+
+              <span>16h–18h</span>
+
+              <span>UTSRC-SR5</span>
+
+            </div>
+
+
+            <div class="ligne-horaire">
+
+              <span class="badge badge-tutorat">
+                T2
+              </span>
+
+              <span>Vendredi</span>
+
+              <span>12h–14h</span>
+
+              <span>UTSRC-SR1</span>
+
+            </div>
+
+
+            <div class="ligne-horaire">
+
+              <span class="badge badge-tutorat">
+                T3
+              </span>
+
+              <span>Jeudi</span>
+
+              <span>12h–14h</span>
+
+              <span>ERC-ALR</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           LECTURE + TUTORAT
+           ========================= -->
+
+      <section class="grille-cours">
+
+
+        <!-- LECTURE -->
+
+        <div class="carte carte-lecture">
+
+          <h2>
+            Lecture 1
+          </h2>
+
+          <p>
+            « Prochain arrêt »
+          </p>
+
+          <p>
+            « Nouveau départ »
+          </p>
+
+        </div>
+
+
+
+        <!-- TUTORAT -->
+
+        <div class="carte carte-tutorat">
+
+          <h2>
+            Tutorat 2
+          </h2>
+
+          <p>
+            Situation 1
+          </p>
+
+          <p>
+            <strong>Fêter un événement</strong>
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           À RETENIR
+           ========================= -->
+
+      <section class="retenir">
+
+        <h2>
+          À retenir cette semaine
+        </h2>
+
+
+        <h3>
+          Vocabulaire
+        </h3>
 
         <p>
-          « Prochain arrêt »
+          Les voyages, les projets, les émotions.
         </p>
+
+
+        <h3>
+          Grammaire
+        </h3>
 
         <p>
-          « Nouveau départ »
-        </p>
-      </article>
-
-      <article class="bloc tutorat">
-        <h2>Tutorat 2</h2>
-
-        <p>
-          Situation 1
+          Le futur proche, vouloir + infinitif, les pronoms relatifs.
         </p>
 
-        <p>
-          <strong>Fêter un événement</strong>
-        </p>
-      </article>
+      </section>
 
-         <article class="bloc large">
-  <h2>À retenir cette semaine</h2>
 
-  <div class="a-retenir-grid">
 
-    <div class="retenir-bloc vocabulaire">
-      <h3>Vocabulaire</h3>
-      <a class="bouton" href="vocabulaire.html">Vocabulaire</a>
-    </div>
+      <!-- =========================
+           PROVERBE
+           ========================= -->
 
-    <div class="retenir-bloc grammaire">
-  <h3>Grammaire</h3>
-  <a class="bouton" href="grammaire.html">Grammaire</a>
-</div>
+      <section class="proverbe">
 
-  </div>
-</article>
+        <h2>
+          Proverbe de la semaine
+        </h2>
 
-      <article class="proverbe large">
-        <h2>Proverbe de la semaine</h2>
-
-        <blockquote>
+        <p class="citation">
           « Petit à petit, l’oiseau fait son nid. »
-        </blockquote>
-      </article>
+        </p>
 
-    </section>
+      </section>
+
+
+    </div>
 
   </main>
 
-  <footer>
-    LAF3201 French 3 [2610] · Semaine 1
-  </footer>
 
 </body>
+
 </html>
