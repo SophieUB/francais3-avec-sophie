@@ -6,7 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vocabulaire — French 3</title>
+.unite > summary {
+  background: var(--bleu-fonce);
+  color: white;
+  font-size: 1.3rem;
+}
 
+.contenu-unite {
+  padding: 18px;
+}
+
+.ligne.deux-colonnes {
+  grid-template-columns: 2fr 1.5fr;
+}
+
+.ligne.adjectifs {
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+}
+
+.a-venir {
+  padding: 0 22px 22px;
+  color: var(--gris);
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .ligne.deux-colonnes,
+  .ligne.adjectifs {
+    grid-template-columns: 1fr;
+  }
+}
   <style>
     :root {
       --bleu-fonce: #1D476E;
@@ -156,108 +185,4 @@
 
   <main>
     <div class="conteneur">
-            <section class="unite-vocabulaire">
-
-        <h2>Unité 1 — Prochain arrêt : nouveau départ</h2>
-
-        <details open>
-          <summary>Introduction — À la gare et dans le train</summary>
-
-          <h3>Noms</h3>
-
-          <div class="tableau-vocabulaire">
-
-            <div class="ligne titre">
-              <span>Français</span>
-              <span>Pluriel</span>
-              <span>English</span>
-            </div>
-
-            <div class="ligne">
-              <span>un voyageur / une voyageuse</span>
-              <span>des voyageurs / des voyageuses</span>
-              <span>traveller</span>
-            </div>
-
-            <div class="ligne">
-              <span>un quai</span>
-              <span>des quais</span>
-              <span>platform</span>
-            </div>
-
-            <div class="ligne">
-              <span>une voie</span>
-              <span>des voies</span>
-              <span>track</span>
-            </div>
-
-            <div class="ligne">
-              <span>un billet</span>
-              <span>des billets</span>
-              <span>ticket</span>
-            </div>
-
-            <div class="ligne">
-              <span>une correspondance</span>
-              <span>des correspondances</span>
-              <span>connection</span>
-            </div>
-
-            <div class="ligne">
-              <span>un retard</span>
-              <span>des retards</span>
-              <span>delay</span>
-            </div>
-
-          </div>
-        </details>
-
-
-        <details>
-          <summary>Situation 1 — Fêter un événement</summary>
-
-          <h3>Noms</h3>
-
-          <div class="tableau-vocabulaire">
-
-            <div class="ligne titre">
-              <span>Français</span>
-              <span>Pluriel</span>
-              <span>English</span>
-            </div>
-
-            <div class="ligne">
-              <span>un anniversaire</span>
-              <span>des anniversaires</span>
-              <span>birthday</span>
-            </div>
-
-            <div class="ligne">
-              <span>une fête</span>
-              <span>des fêtes</span>
-              <span>party / celebration</span>
-            </div>
-
-            <div class="ligne">
-              <span>un événement</span>
-              <span>des événements</span>
-              <span>event</span>
-            </div>
-
-            <div class="ligne">
-              <span>un cadeau</span>
-              <span>des cadeaux</span>
-              <span>gift</span>
-            </div>
-
-            <div class="ligne">
-              <span>un festival</span>
-              <span>des festivals</span>
-              <span>festival</span>
-            </div>
-
-          </div>
-
-        </details>
-
-      </section>
+           
