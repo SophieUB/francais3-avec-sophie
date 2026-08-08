@@ -44,16 +44,21 @@
     }
 
     .retour {
-      display: inline-block;
-      margin-bottom: 30px;
-      color: #DCECF3;
-      font-weight: bold;
-      text-decoration: none;
-    }
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 24px;
+  background: var(--bleu-clair);
+  color: var(--bleu-fonce);
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 14px;
+}
 
-    .retour:hover {
-      text-decoration: underline;
-    }
+.retour:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
 
     header h1 {
       margin: 0 0 8px;
@@ -170,12 +175,11 @@
 
 <body>
   <header>
-    <div class="conteneur">
-      <a class="retour" href="index.html">← Retour à l'accueil</a>
-      <h1>Vocabulaire</h1>
-      <p>Mon carnet de vocabulaire — French 3</p>
-    </div>
-  </header>
+  <div class="conteneur">
+    <h1>Vocabulaire</h1>
+    <p>Mon carnet de vocabulaire — French 3</p>
+  </div>
+</header>
 
   <main>
     <div class="conteneur">
@@ -296,7 +300,8 @@
 
   </details>
 
-</section>           
+</section>       
+      <a class="retour" href="index.html">← Retour à l’accueil</a>
           </div>
   </main>
 
