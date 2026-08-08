@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,189 +8,353 @@
   <title>Le coin français</title>
 
   <style>
-    body{
-      font-family:Arial,Helvetica,sans-serif;
-      background:#F4F7FA;
-      color:#173047;
-      margin:0;
-      line-height:1.6;
+    :root {
+      --bleu-fonce: #1D476E;
+      --bleu-clair: #74BACD;
+      --rose: #EE3167;
+      --fond: #F4F7FA;
+      --blanc: #FFFFFF;
+      --texte: #173047;
+      --gris: #667785;
     }
 
-    header{
-      padding:50px 30px 70px;
-      color:white;
-      background:#1D476E;
+    * {
+      box-sizing: border-box;
     }
 
-    main{
-      max-width:1000px;
-      margin:auto;
-      padding:40px 20px;
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--fond);
+      color: var(--texte);
+      line-height: 1.6;
     }
 
-    .bloc{
-      background:white;
-      padding:30px;
-      border-radius:20px;
-      margin-bottom:30px;
+    .conteneur {
+      width: min(1000px, calc(100% - 40px));
+      margin: auto;
     }
 
-    footer{
-      text-align:center;
-      padding:30px;
+    header {
+      padding: 38px 24px 50px;
+      color: var(--blanc);
+      background:
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(238, 49, 103, 0.28),
+          transparent 25%
+        ),
+        linear-gradient(135deg, var(--bleu-fonce), #102D49);
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.05;
+    }
+
+    header p {
+      margin: 0;
+      color: #DCECF3;
+      font-size: 1.1rem;
+    }
+
+    main {
+      padding: 45px 0 70px;
+    }
+
+    .bloc {
+      background: var(--blanc);
+      padding: 30px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+    }
+
+    .bloc h2 {
+      margin-top: 0;
+      color: var(--bleu-fonce);
+    }
+
+    .bloc h3 {
+      margin-top: 30px;
+      color: var(--rose);
+    }
+
+    a {
+      color: var(--bleu-fonce);
+    }
+
+    .liste-chansons {
+      padding-left: 22px;
+    }
+
+    .liste-chansons li {
+      margin-bottom: 8px;
+    }
+
+    .retour {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 14px 24px;
+      background: var(--bleu-clair);
+      color: var(--bleu-fonce);
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 14px;
+    }
+
+    .retour:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 40px;
+      color: var(--texte);
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Le coin français</h1>
-  <p>Humour, culture et vidéos pour découvrir le français autrement.</p>
-</header>
+  <header>
+    <div class="conteneur">
+      <h1>Le coin français</h1>
+      <p>Humour, culture, chansons et vidéos pour découvrir le français autrement.</p>
+    </div>
+  </header>
 
-<main>
+  <main>
+    <div class="conteneur">
 
-  <div class="bloc">
-    <h2>Chanter et rire en français</h2>
+      <!-- CHANSONS -->
 
-    <p>
-      Chanter et découvrir l'humour sont de très bonnes manières de mieux comprendre la langue.
-    </p>
-  </div>
+      <div class="bloc">
 
-</main>
-  <div class="bloc">
-  <h2>Humour en français</h2>
+        <h2>Apprendre avec des chansons</h2>
 
-  <p>
-    Découvrir l'humour est une excellente façon de mieux comprendre la langue,
-    les jeux de mots et la culture française. Certaines vidéos utilisent un
-    registre familier ou des expressions idiomatiques.
-  </p>
+        <p>
+          Entraîne-toi à comprendre le français grâce à des chansons.
+          Complète les paroles tout en écoutant la musique.
+        </p>
 
-  <ul>
-    <li>
-      <a href="https://youtu.be/opOFm3KV1eI?is=YW0m01_oLUB5RE35"
-         target="_blank"
-         rel="noopener noreferrer">
-        The French Language Explained by an American – Sébastien Marx
-      </a>
-    </li>
+        <p>
+          <a
+            href="https://fr.lyricstraining.com/fr/#google_vignette"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LyricsTraining
+          </a>
+        </p>
 
-    <li>
-      <a href="https://youtu.be/LTYFSYUjKNw?is=yg_677pwAe8lfxPC"
-         target="_blank"
-         rel="noopener noreferrer">
-        Paul Mirabel
-      </a>
-    </li>
+        <h3>Petite sélection de chansons</h3>
 
-    <li>
-      <a href="https://youtu.be/Pae2AMnmUVA?is=vYfQREprwZJCuKOo"
-         target="_blank"
-         rel="noopener noreferrer">
-        Paul Taylor (contains some strong language)
-      </a>
-    </li>
+        <p>
+          Une sélection de chansons à découvrir au fil du semestre.
+        </p>
 
-    <li>
-      <a href="https://youtube.com/playlist?list=PLIoImkPlL6eg_m9lLiCpWpp9hmZ3S5aCO&si=dOrp_lYdIMaDxgp_"
-         target="_blank"
-         rel="noopener noreferrer">
-        Sélection de vidéos humoristiques
-      </a>
-    </li>
-  </ul>
-</div>
+        <ul class="liste-chansons">
 
-<div class="bloc">
-  <h2>Chaînes YouTube à découvrir</h2>
+          <!--
+          Exemple pour ajouter une chanson plus tard :
 
-  <p>
-    Des créateurs qui parlent de la langue, de la culture et de la vie quotidienne en français.
-  </p>
+          <li>
+            <a
+              href="LIEN-DE-LA-CHANSON"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Artiste — Titre de la chanson
+            </a>
+          </li>
+          -->
 
-  <ul>
-    <li>
-      <a href="https://youtube.com/@atfrenchies?si=sWHg3YUJLhnq30hC"
-         target="_blank"
-         rel="noopener noreferrer">
-        AT Frenchies
-      </a>
-    </li>
+        </ul>
 
-    <li>
-      <a href="https://youtube.com/@honestlyange?si=oQYH2i6bo9t09O9F"
-         target="_blank"
-         rel="noopener noreferrer">
-        Honestly Ange
-      </a>
-    </li>
-  </ul>
-</div>
+      </div>
 
-<div class="bloc">
-  <h2>Regards sur la culture française (en anglais)</h2>
 
-  <p>
-    Ces vidéos proposent, avec humour, un regard anglophone sur la langue,
-    les habitudes et la culture françaises.
-  </p>
+      <!-- INTRODUCTION -->
 
-  <ul>
-    <li>
-      <a href="https://youtu.be/_QKbf9peB30?si=95DQEpCj9RrExua-"
-         target="_blank"
-         rel="noopener noreferrer">
-        When the French Accent Isn't Sexy
-      </a>
-    </li>
+      <div class="bloc">
 
-    <li>
-      <a href="https://youtu.be/DxxAwDHgQhE?is=jJeJdWV0V2i8exkU"
-         target="_blank"
-         rel="noopener noreferrer">
-        When a French Man Calls a Call Center (The iRabbit)
-      </a>
-    </li>
+        <h2>Chanter et rire en français</h2>
 
-    <li>
-      <a href="https://youtu.be/WabD6tGz-Dc?is=ajgVGKeh39htt_X3"
-         target="_blank"
-         rel="noopener noreferrer">
-        The French Don't Care About Work (Trevor Noah)
-      </a>
-    </li>
+        <p>
+          Chanter et découvrir l'humour sont de très bonnes manières
+          de mieux comprendre la langue et la culture francophones.
+        </p>
 
-    <li>
-      <a href="https://youtu.be/0BzGlfm1wFo?is=108KZINepm5vE63N"
-         target="_blank"
-         rel="noopener noreferrer">
-        Get Out-Frenched at a French Restaurant
-      </a>
-    </li>
-  </ul>
-</div>
-<div class="bloc">
-  <h2>Apprendre avec des chansons</h2>
+      </div>
 
-  <p>
-    Entraîne-toi à comprendre le français grâce à des chansons.
-    Complète les paroles tout en écoutant la musique.
-  </p>
 
-  <p>
-    <a href="https://fr.lyricstraining.com/fr/#google_vignette"
-       target="_blank"
-       rel="noopener noreferrer">
-       LyricsTraining
-    </a>
-  </p>
-</div>
-<footer>
-  LAF3201 French 3 [2610] · AY 2026/2027 · Semester 1
-</footer>
+      <!-- HUMOUR -->
+
+      <div class="bloc">
+
+        <h2>Humour en français</h2>
+
+        <p>
+          Découvrir l'humour est une excellente façon de mieux comprendre
+          la langue, les jeux de mots et la culture française.
+          Certaines vidéos utilisent un registre familier ou des expressions idiomatiques.
+        </p>
+
+        <ul>
+
+          <li>
+            <a
+              href="https://youtu.be/opOFm3KV1eI?is=YW0m01_oLUB5RE35"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The French Language Explained by an American — Sébastien Marx
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://youtu.be/LTYFSYUjKNw?is=yg_677pwAe8lfxPC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Paul Mirabel
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://youtu.be/Pae2AMnmUVA?is=vYfQREprwZJCuKOo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Paul Taylor — contains some strong language
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://youtube.com/playlist?list=PLIoImkPlL6eg_m9lLiCpWpp9hmZ3S5aCO&si=dOrp_lYdIMaDxgp_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sélection de vidéos humoristiques
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- YOUTUBE -->
+
+      <div class="bloc">
+
+        <h2>Chaînes YouTube à découvrir</h2>
+
+        <p>
+          Des créateurs qui parlent de la langue,
+          de la culture et de la vie quotidienne en français.
+        </p>
+
+        <ul>
+
+          <li>
+            <a
+              href="https://youtube.com/@atfrenchies?si=sWHg3YUJLhnq30hC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AT Frenchies
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://youtube.com/@honestlyange?si=oQYH2i6bo9t09O9F"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Honestly Ange
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- CULTURE EN ANGLAIS -->
+
+      <div class="bloc">
+
+        <h2>Regards sur la culture française (en anglais)</h2>
+
+        <p>
+          Ces vidéos proposent, avec humour, un regard anglophone
+          sur la langue, les habitudes et la culture françaises.
+        </p>
+
+        <ul>
+
+          <li>
+            <a
+              href="https://youtu.be/_QKbf9peB30?si=95DQEpCj9RrExua-"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              When the French Accent Isn't Sexy
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://youtu.be/DxxAwDHgQhE?is=jJeJdWV0V2i8exkU"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              When a French Man Calls a Call Center (The iRabbit)
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://youtu.be/WabD6tGz-Dc?is=ajgVGKeh39htt_X3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The French Don't Care About Work (Trevor Noah)
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://youtu.be/0BzGlfm1wFo?is=108KZINepm5vE63N"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Out-Frenched at a French Restaurant
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <a class="retour" href="index.html">← Retour à l’accueil</a>
+
+    </div>
+  </main>
+
+  <footer>
+    LAF3201 French 3 [2610] · AY 2026/2027 · Semester 1
+  </footer>
 
 </body>
+
 </html>
