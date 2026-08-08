@@ -1,1 +1,177 @@
-<h1>Vocabulaire</h1>
+.unite-vocabulaire {
+  margin: 40px 0;
+}
+
+.unite-vocabulaire h2 {
+  color: var(--bleu-fonce);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+details {
+  background: white;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #DCE5EC;
+}
+
+summary {
+  cursor: pointer;
+  padding: 18px 22px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--bleu-fonce);
+  background: #EDF5F8;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #DCE5EC;
+}
+
+details h3 {
+  padding: 0 22px;
+  margin-top: 24px;
+  color: var(--rose);
+}
+
+.tableau-vocabulaire {
+  padding: 0 22px 24px;
+}
+
+.ligne {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.5fr;
+  gap: 20px;
+  padding: 11px 10px;
+  border-bottom: 1px solid #E7EDF1;
+}
+
+.ligne.titre {
+  font-weight: bold;
+  color: var(--bleu-fonce);
+  background: #F4F7FA;
+}
+
+@media (max-width: 700px) {
+  .ligne {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .ligne.titre {
+    display: none;
+  }
+
+  .ligne span:last-child {
+    color: var(--gris);
+    font-style: italic;
+  }
+}
+
+<section class="unite-vocabulaire">
+
+  <h2>Unité 1 — Prochain arrêt : nouveau départ</h2>
+
+  <details open>
+    <summary>Introduction — À la gare et dans le train</summary>
+
+    <h3>Noms</h3>
+
+    <div class="tableau-vocabulaire">
+      <div class="ligne titre">
+        <span>Français</span>
+        <span>Pluriel</span>
+        <span>English</span>
+      </div>
+
+      <div class="ligne">
+        <span>un voyageur / une voyageuse</span>
+        <span>des voyageurs / des voyageuses</span>
+        <span>traveller</span>
+      </div>
+
+      <div class="ligne">
+        <span>un quai</span>
+        <span>des quais</span>
+        <span>platform</span>
+      </div>
+
+      <div class="ligne">
+        <span>une voie</span>
+        <span>des voies</span>
+        <span>track</span>
+      </div>
+
+      <div class="ligne">
+        <span>un billet</span>
+        <span>des billets</span>
+        <span>ticket</span>
+      </div>
+
+      <div class="ligne">
+        <span>une correspondance</span>
+        <span>des correspondances</span>
+        <span>connection</span>
+      </div>
+
+      <div class="ligne">
+        <span>un retard</span>
+        <span>des retards</span>
+        <span>delay</span>
+      </div>
+    </div>
+
+  </details>
+
+
+  <details>
+    <summary>Situation 1 — Fêter un événement</summary>
+
+    <h3>Noms</h3>
+
+    <div class="tableau-vocabulaire">
+
+      <div class="ligne titre">
+        <span>Français</span>
+        <span>Pluriel</span>
+        <span>English</span>
+      </div>
+
+      <div class="ligne">
+        <span>un anniversaire</span>
+        <span>des anniversaires</span>
+        <span>birthday</span>
+      </div>
+
+      <div class="ligne">
+        <span>une fête</span>
+        <span>des fêtes</span>
+        <span>party / celebration</span>
+      </div>
+
+      <div class="ligne">
+        <span>un événement</span>
+        <span>des événements</span>
+        <span>event</span>
+      </div>
+
+      <div class="ligne">
+        <span>un cadeau</span>
+        <span>des cadeaux</span>
+        <span>gift</span>
+      </div>
+
+      <div class="ligne">
+        <span>un festival</span>
+        <span>des festivals</span>
+        <span>festival</span>
+      </div>
+
+    </div>
+
+  </details>
+
+</section>
+
