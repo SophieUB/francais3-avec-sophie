@@ -8,170 +8,196 @@
   <title>Grammaire</title>
 
   <style>
-   <style>
-  :root {
-    --bleu-fonce: #1D476E;
-    --bleu-clair: #74BACD;
-    --rose: #EE3167;
-    --fond: #F4F7FA;
-    --blanc: #FFFFFF;
-    --texte: #173047;
-    --gris: #667785;
-  }
+    :root {
+      --bleu-fonce: #1D476E;
+      --bleu-clair: #74BACD;
+      --rose: #EE3167;
+      --fond: #F4F7FA;
+      --blanc: #FFFFFF;
+      --texte: #173047;
+      --gris: #667785;
+    }
 
-  * {
-    box-sizing: border-box;
-  }
+    * {
+      box-sizing: border-box;
+    }
 
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--fond);
-    color: var(--texte);
-    line-height: 1.6;
-  }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--fond);
+      color: var(--texte);
+      line-height: 1.6;
+    }
 
-  .conteneur {
-    width: min(1000px, calc(100% - 40px));
-    margin: auto;
-  }
+    .conteneur {
+      width: min(1000px, calc(100% - 40px));
+      margin: auto;
+    }
 
-  header {
-    padding: 38px 24px 50px;
-    color: var(--blanc);
-    background:
-      radial-gradient(circle at 85% 15%, rgba(238, 49, 103, 0.28), transparent 25%),
-      linear-gradient(135deg, var(--bleu-fonce), #102D49);
-  }
+    header {
+      padding: 38px 24px 50px;
+      color: var(--blanc);
+      background:
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(238, 49, 103, 0.28),
+          transparent 25%
+        ),
+        linear-gradient(135deg, var(--bleu-fonce), #102D49);
+    }
 
-  header h1 {
-    margin: 0 0 8px;
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    line-height: 1.05;
-  }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.05;
+      text-align: left;
+    }
 
-  header p {
-    margin: 0;
-    color: #DCECF3;
-    font-size: 1.1rem;
-  }
+    header p {
+      margin: 0;
+      color: #DCECF3;
+      font-size: 1.1rem;
+      text-align: left;
+    }
 
-  main {
-    padding: 45px 0 70px;
-  }
+    main {
+      padding: 45px 0 70px;
+    }
 
-  .semaine {
-    background: var(--blanc);
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 16px;
-  }
+    .semaine {
+      background: var(--blanc);
+      margin-bottom: 20px;
+      padding: 25px;
+      border-radius: 16px;
+    }
 
-  details {
-    margin-top: 15px;
-  }
+    .semaine h2 {
+      margin-top: 0;
+      color: var(--bleu-fonce);
+    }
 
-  summary {
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1.1rem;
-  }
+    details {
+      margin-top: 15px;
+    }
 
-  a {
-    color: var(--bleu-fonce);
-  }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: var(--bleu-fonce);
+    }
 
-  .retour {
-    display: inline-block;
-    margin-top: 32px;
-    padding: 14px 24px;
-    background: var(--bleu-clair);
-    color: var(--bleu-fonce);
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 14px;
-  }
+    a {
+      color: var(--bleu-fonce);
+    }
 
-  .retour:hover {
-    opacity: 0.9;
-    text-decoration: none;
-  }
-</style>
+    .retour {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 14px 24px;
+      background: var(--bleu-clair);
+      color: var(--bleu-fonce);
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 14px;
+    }
+
+    .retour:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Grammaire</h1>
-    <p>Les notions étudiées au fil du semestre</p>
+    <div class="conteneur">
+      <h1>Grammaire</h1>
+      <p>Les notions étudiées au fil du semestre</p>
+    </div>
   </header>
 
   <main>
+    <div class="conteneur">
 
-    <section class="semaine">
+      <section class="semaine">
 
-      <h2>Semaine 1</h2>
+        <h2>Semaine 1</h2>
 
-      <p><strong>Prochain arrêt – Nouveau départ</strong></p>
+        <p><strong>Prochain arrêt – Nouveau départ</strong></p>
 
-      <p><strong>Unité 1 : J'ai une idée !</strong></p>
-      
-      <p><strong>Situation 1 : Fêter un événement</strong></p>
-      
-      <details open>
+        <p><strong>Unité 1 : J'ai une idée !</strong></p>
 
-        <summary>Les pronoms directs</summary>
+        <p><strong>Situation 1 : Fêter un événement</strong></p>
 
-        <p>
-          Pronoms : me, te, le, la, l', nous, vous, les
-        </p>
+        <details open>
 
-        <p>
-          <a href="https://youtu.be/2aFGlzmmVu4?si=YlkP4GBUPaAhdONt"
-             target="_blank"
-             rel="noopener noreferrer">
-            Voir la vidéo
-          </a>
-        </p>
+          <summary>Les pronoms directs</summary>
 
-        <p>
-          <a href="https://www.lawlessfrench.com/grammar/direct-objects/"
-             target="_blank"
-             rel="noopener noreferrer">
-            Revoir la grammaire
-          </a>
-        </p>
+          <p>
+            Pronoms : me, te, le, la, l', nous, vous, les
+          </p>
 
-        <p>
-          <a href="https://wordwall.net/resource/105907755/pronom-compl%C3%A9ment-dobjet-direct"
-             target="_blank"
-             rel="noopener noreferrer">
-            Exercice 1 – Les pronoms directs
-          </a>
-        </p>
+          <p>
+            <a
+              href="https://youtu.be/2aFGlzmmVu4?si=YlkP4GBUPaAhdONt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir la vidéo
+            </a>
+          </p>
 
-        <p>
-          <a href="https://wordwall.net/resource/38554070/le-pronom-compl%C3%A9ment-direct"
-             target="_blank"
-             rel="noopener noreferrer">
-            Exercice 2 – Les pronoms directs
-          </a>
-        </p>
+          <p>
+            <a
+              href="https://www.lawlessfrench.com/grammar/direct-objects/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Revoir la grammaire
+            </a>
+          </p>
 
-        <p>
-          <a href="https://wordwall.net/resource/35061520/les-pronoms-compl%C3%A9ments-directs-le-la-l-les"
-             target="_blank"
-             rel="noopener noreferrer">
-            Exercice 3 – Les pronoms directs
-          </a>
-        </p>
+          <p>
+            <a
+              href="https://wordwall.net/resource/105907755/pronom-compl%C3%A9ment-dobjet-direct"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Exercice 1 – Les pronoms directs
+            </a>
+          </p>
 
-      </details>
+          <p>
+            <a
+              href="https://wordwall.net/resource/38554070/le-pronom-compl%C3%A9ment-direct"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Exercice 2 – Les pronoms directs
+            </a>
+          </p>
 
-    </section>
+          <p>
+            <a
+              href="https://wordwall.net/resource/35061520/les-pronoms-compl%C3%A9ments-directs-le-la-l-les"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Exercice 3 – Les pronoms directs
+            </a>
+          </p>
 
+        </details>
+
+      </section>
+
+      <a class="retour" href="index.html">← Retour à l’accueil</a>
+
+    </div>
   </main>
 
 </body>
