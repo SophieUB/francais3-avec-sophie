@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Ressources</title>
 
   <style>
@@ -32,8 +33,16 @@
       padding: 42px 24px 60px;
       color: white;
       background:
-        radial-gradient(circle at 85% 15%, rgba(238,49,103,.28), transparent 25%),
-        linear-gradient(135deg, var(--bleu-fonce), #102D49);
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(238, 49, 103, .28),
+          transparent 25%
+        ),
+        linear-gradient(
+          135deg,
+          var(--bleu-fonce),
+          #102D49
+        );
     }
 
     .conteneur {
@@ -57,11 +66,11 @@
     }
 
     .bloc {
-      background: white;
+      background: var(--blanc);
       border-radius: 20px;
       padding: 30px;
       margin-bottom: 25px;
-      box-shadow: 0 12px 30px rgba(29,71,110,.12);
+      box-shadow: 0 12px 30px rgba(29, 71, 110, .12);
     }
 
     .bloc h2 {
@@ -88,21 +97,23 @@
     a:hover {
       text-decoration: underline;
     }
-.retour {
-  display: inline-block;
-  margin-top: 18px;
-  margin-bottom: 10px;
-  padding: 10px 18px;
-  color: white;
-  text-decoration: none;
-  border: 1px solid rgba(255,255,255,.4);
-  border-radius: 10px;
-}
 
-.retour:hover {
-  background: rgba(255,255,255,.15);
-  text-decoration: none;
-}
+    .retour {
+      display: inline-block;
+      margin-top: 18px;
+      margin-bottom: 10px;
+      padding: 10px 18px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, .4);
+      border-radius: 10px;
+    }
+
+    .retour:hover {
+      background: rgba(255, 255, 255, .15);
+      text-decoration: none;
+    }
+
     footer {
       background: #102B45;
       color: #DCEAF1;
@@ -114,139 +125,221 @@
 
 <body>
 
-<header>
-  <div class="conteneur">
-    <h1>Ressources</h1>
+  <header>
+    <div class="conteneur">
 
-    <p class="introduction">
-  Retrouvez ici les dictionnaires, des outils de prononciation
-  et d'autres ressources utiles pour le cours.
-</p>
+      <h1>Ressources</h1>
 
-<p>
-  <a class="retour" href="index.html">
-    Retour à l'accueil
-  </a>
-</p>
-  </div>
-</header>
+      <p class="introduction">
+        Retrouvez ici les ressources du manuel, les dictionnaires,
+        les outils de prononciation et d'autres ressources utiles
+        pour le cours.
+      </p>
 
-<main class="conteneur"> 
-   <div class="bloc">
-  <h2>Dictionnaires</h2>
+      <p>
+        <a class="retour" href="index.html">
+          Retour à l'accueil
+        </a>
+      </p>
 
-  <ul>
-    <li>
-      <a href="https://www.wordreference.com/enfr/"
-         target="_blank"
-         rel="noopener noreferrer">
-        WordReference – Dictionnaire français ↔ anglais
-      </a>
-    </li>
+    </div>
+  </header>
 
-    <li>
-      <a href="https://www.larousse.fr/dictionnaires/francais-monolingue"
-         target="_blank"
-         rel="noopener noreferrer">
-        Larousse – Dictionnaire de français
-      </a>
-    </li>
-  </ul>
-</div>
 
-<div class="bloc">
-  <h2>Grammaire et conjugaison</h2>
+  <main class="conteneur">
 
-  <ul>
-    <li>
-      <a href="https://www.estudiodefrances.com/"
-         target="_blank"
-         rel="noopener noreferrer">
-        Moddou FLE – Cours et exercices de grammaire
-      </a>
-    </li>
-  </ul>
-</div>
+    <!-- RESSOURCES DU MANUEL -->
 
-<div class="bloc">
-  <h2>Prononciation</h2>
+    <div class="bloc">
+      <h2>Ressources du manuel</h2>
 
-  <ul>
-    <li>
-      <a href="https://www.lepointdufle.net/apprendre_a_lire/index.htm"
-         target="_blank"
-         rel="noopener noreferrer">
-        Le Point du FLE – Exercices de prononciation (Regarder en bas de la page)
-      </a>
-    </li>
+      <ul>
 
-    <li>
-      <a href="https://www.articuler.com/exercices/prononciation-2.html"
-         target="_blank"
-         rel="noopener noreferrer">
-        Articuler.com – Exercices de prononciation
-      </a>
-    </li>
-  </ul>
-</div>
+        <li>
+          <a
+            href="https://didierfle.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Application Didier FLE – Accédez aux ressources numériques du manuel
+          </a>
+        </li>
 
-<div class="bloc">
-  <h2>Compréhension orale</h2>
+        <li>
+          <a
+            href="https://didierfle-latelier.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Site compagnon L'Atelier A2 – Ressources et activités complémentaires
+          </a>
+        </li>
 
-  <ul>
-    <li>
-      <a href="https://francaisfacile.rfi.fr/"
-         target="_blank"
-         rel="noopener noreferrer">
-        RFI Savoirs – Actualités et activités
-      </a>
-    </li>
+      </ul>
+    </div>
 
-    <li>
-      <a href="https://apprendre.tv5monde.com/fr/collection-all"
-         target="_blank"
-         rel="noopener noreferrer">
-        TV5MONDE – Vidéos et activités
-      </a>
-    </li>
 
-    <li>
-      <a href="https://youtube.com/@podcast_francais_facile?si=YJGNJg2erK7IEtdS"
-         target="_blank"
-         rel="noopener noreferrer">
-        Podcast Français Facile (YouTube)
-      </a>
-    </li>
-  </ul>
-</div>
+    <!-- DICTIONNAIRES -->
 
-<div class="bloc">
-  <h2>Jeux et activités</h2>
+    <div class="bloc">
+      <h2>Dictionnaires</h2>
 
-  <ul>
-    <li>
-      <a href="https://www.ecolesuisse-fle.fr/jeux-et-activites-pour-etudier-le-francais"
-         target="_blank"
-         rel="noopener noreferrer">
-        École Suisse FLE – Jeux et activités
-      </a>
-    </li>
+      <ul>
 
-    <li>
-      <a href="https://fr.lyricstraining.com/fr"
-         target="_blank"
-         rel="noopener noreferrer">
-        LyricsTraining – Écoutez des chansons et complétez les paroles
-      </a>
-    </li>
-  </ul>
-</div>
+        <li>
+          <a
+            href="https://www.wordreference.com/enfr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WordReference – Dictionnaire français ↔ anglais
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.larousse.fr/dictionnaires/francais-monolingue"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Larousse – Dictionnaire de français
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <!-- GRAMMAIRE ET CONJUGAISON -->
+
+    <div class="bloc">
+      <h2>Grammaire et conjugaison</h2>
+
+      <ul>
+
+        <li>
+          <a
+            href="https://www.estudiodefrances.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Moddou FLE – Cours et exercices de grammaire
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <!-- PRONONCIATION -->
+
+    <div class="bloc">
+      <h2>Prononciation</h2>
+
+      <ul>
+
+        <li>
+          <a
+            href="https://www.lepointdufle.net/apprendre_a_lire/index.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Le Point du FLE – Exercices de prononciation
+            (regarder en bas de la page)
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.articuler.com/exercices/prononciation-2.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Articuler.com – Exercices de prononciation
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <!-- COMPRÉHENSION ORALE -->
+
+    <div class="bloc">
+      <h2>Compréhension orale</h2>
+
+      <ul>
+
+        <li>
+          <a
+            href="https://francaisfacile.rfi.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RFI Savoirs – Actualités et activités
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://apprendre.tv5monde.com/fr/collection-all"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TV5MONDE – Vidéos et activités
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://youtube.com/@podcast_francais_facile?si=YJGNJg2erK7IEtdS"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Podcast Français Facile (YouTube)
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <!-- JEUX ET ACTIVITÉS -->
+
+    <div class="bloc">
+      <h2>Jeux et activités</h2>
+
+      <ul>
+
+        <li>
+          <a
+            href="https://www.ecolesuisse-fle.fr/jeux-et-activites-pour-etudier-le-francais"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            École Suisse FLE – Jeux et activités
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://fr.lyricstraining.com/fr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LyricsTraining – Écoutez des chansons et complétez les paroles
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
   </main>
 
-<footer>
-  LAF3201 French 3 [2610] · AY 2026/2027 · Semestre 1
-</footer>
+
+  <footer>
+    LAF3201 French 3 [2610] · AY 2026/2027 · Semestre 1
+  </footer>
 
 </body>
 </html>
-
