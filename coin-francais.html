@@ -35,6 +35,10 @@
       margin: auto;
     }
 
+    /* =========================
+       EN-TÊTE
+       ========================= */
+
     header {
       padding: 38px 24px 50px;
       color: var(--blanc);
@@ -59,6 +63,10 @@
       font-size: 1.1rem;
     }
 
+    /* =========================
+       CONTENU PRINCIPAL
+       ========================= */
+
     main {
       padding: 45px 0 70px;
     }
@@ -80,6 +88,10 @@
       color: var(--rose);
     }
 
+    /* =========================
+       LIENS
+       ========================= */
+
     a {
       color: var(--bleu-fonce);
     }
@@ -91,6 +103,10 @@
     .liste-chansons li {
       margin-bottom: 8px;
     }
+
+    /* =========================
+       BOUTON RETOUR
+       ========================= */
 
     .retour {
       display: inline-block;
@@ -109,6 +125,10 @@
       text-decoration: none;
     }
 
+    /* =========================
+       PIED DE PAGE
+       ========================= */
+
     footer {
       text-align: center;
       padding: 30px 20px 40px;
@@ -117,19 +137,41 @@
   </style>
 </head>
 
+
 <body>
 
+  <!-- =========================
+       EN-TÊTE
+       ========================= -->
+
   <header>
+
     <div class="conteneur">
+
       <h1>Le coin français</h1>
-      <p>Humour, culture, chansons et vidéos pour découvrir le français autrement.</p>
+
+      <p>
+        Humour, culture, chansons et vidéos pour découvrir
+        le français autrement.
+      </p>
+
     </div>
+
   </header>
 
+
+  <!-- =========================
+       CONTENU
+       ========================= -->
+
   <main>
+
     <div class="conteneur">
 
-      <!-- CHANSONS -->
+
+      <!-- =========================
+           CHANSONS
+           ========================= -->
 
       <div class="bloc">
 
@@ -150,47 +192,67 @@
           </a>
         </p>
 
+
         <h3>Petite sélection de chansons</h3>
 
         <p>
           Une sélection de chansons à découvrir au fil du semestre.
         </p>
 
+
         <ul class="liste-chansons">
 
-  <li>
-    <a
-      href="https://youtu.be/43OoBpO-jFY?is=d6FIRXozY7SX5ztA"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Mika — Jane Birkin
-    </a>
-  </li>
+          <li>
+            <a
+              href="https://youtu.be/43OoBpO-jFY?is=d6FIRXozY7SX5ztA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mika — Jane Birkin
+            </a>
+          </li>
 
-  <!--
-  Exemple pour ajouter une chanson plus tard :
 
-  <li>
-    <a
-      href="LIEN-DE-LA-CHANSON"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Artiste — Titre de la chanson
-    </a>
-  </li>
-  -->
+          <li>
+            <a
+              href="https://youtu.be/NU9qYbLtPog?is=NEF0ZUyoHgsyHsER"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Christophe — Aline
+            </a>
+          </li>
 
-</ul>
+        </ul>
+
+
+        <!--
+        POUR AJOUTER UNE NOUVELLE CHANSON :
+
+        Copie ce bloc et place-le dans la liste ci-dessus.
+
+        <li>
+          <a
+            href="LIEN-DE-LA-CHANSON"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Artiste — Titre de la chanson
+          </a>
+        </li>
+
+        -->
+
       </div>
 
 
-      <!-- INTRODUCTION -->
+      <!-- =========================
+           INTRODUCTION
+           ========================= -->
 
       <div class="bloc">
 
-        <h2>Chanter et rire en français</h2> 
+        <h2>Chanter et rire en français</h2>
 
         <p>
           Chanter et découvrir l'humour sont de très bonnes manières
@@ -200,7 +262,9 @@
       </div>
 
 
-      <!-- HUMOUR -->
+      <!-- =========================
+           HUMOUR
+           ========================= -->
 
       <div class="bloc">
 
@@ -209,8 +273,10 @@
         <p>
           Découvrir l'humour est une excellente façon de mieux comprendre
           la langue, les jeux de mots et la culture française.
-          Certaines vidéos utilisent un registre familier ou des expressions idiomatiques.
+          Certaines vidéos utilisent un registre familier
+          ou des expressions idiomatiques.
         </p>
+
 
         <ul>
 
@@ -224,6 +290,7 @@
             </a>
           </li>
 
+
           <li>
             <a
               href="https://youtu.be/LTYFSYUjKNw?is=yg_677pwAe8lfxPC"
@@ -234,6 +301,7 @@
             </a>
           </li>
 
+
           <li>
             <a
               href="https://youtu.be/Pae2AMnmUVA?is=vYfQREprwZJCuKOo"
@@ -243,6 +311,7 @@
               Paul Taylor — contains some strong language
             </a>
           </li>
+
 
           <li>
             <a
@@ -259,7 +328,9 @@
       </div>
 
 
-      <!-- YOUTUBE -->
+      <!-- =========================
+           CHAÎNES YOUTUBE
+           ========================= -->
 
       <div class="bloc">
 
@@ -269,6 +340,7 @@
           Des créateurs qui parlent de la langue,
           de la culture et de la vie quotidienne en français.
         </p>
+
 
         <ul>
 
@@ -281,6 +353,7 @@
               AT Frenchies
             </a>
           </li>
+
 
           <li>
             <a
@@ -297,7 +370,9 @@
       </div>
 
 
-      <!-- CULTURE EN ANGLAIS -->
+      <!-- =========================
+           CULTURE EN ANGLAIS
+           ========================= -->
 
       <div class="bloc">
 
@@ -307,6 +382,7 @@
           Ces vidéos proposent, avec humour, un regard anglophone
           sur la langue, les habitudes et la culture françaises.
         </p>
+
 
         <ul>
 
@@ -320,6 +396,7 @@
             </a>
           </li>
 
+
           <li>
             <a
               href="https://youtu.be/DxxAwDHgQhE?is=jJeJdWV0V2i8exkU"
@@ -330,6 +407,7 @@
             </a>
           </li>
 
+
           <li>
             <a
               href="https://youtu.be/WabD6tGz-Dc?is=ajgVGKeh39htt_X3"
@@ -339,6 +417,7 @@
               The French Don't Care About Work (Trevor Noah)
             </a>
           </li>
+
 
           <li>
             <a
@@ -355,14 +434,28 @@
       </div>
 
 
-      <a class="retour" href="index.html">← Retour à l’accueil</a>
+      <!-- =========================
+           RETOUR ACCUEIL
+           ========================= -->
+
+      <a class="retour" href="index.html">
+        ← Retour à l’accueil
+      </a>
+
 
     </div>
+
   </main>
+
+
+  <!-- =========================
+       PIED DE PAGE
+       ========================= -->
 
   <footer>
     LAF3201 French 3 [2610] · AY 2026/2027 · Semester 1
   </footer>
+
 
 </body>
 
