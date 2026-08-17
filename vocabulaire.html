@@ -16,6 +16,7 @@
       --blanc: #FFFFFF;
       --texte: #173047;
       --gris: #667785;
+      --bordure: #DCE5EC;
     }
 
     * {
@@ -35,30 +36,26 @@
       margin: auto;
     }
 
+    /* =========================
+       EN-TÊTE
+       ========================= */
+
     header {
       padding: 38px 24px 50px;
       color: var(--blanc);
+
       background:
-        radial-gradient(circle at 85% 15%, rgba(238, 49, 103, 0.28), transparent 25%),
-        linear-gradient(135deg, var(--bleu-fonce), #102D49);
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(238, 49, 103, 0.28),
+          transparent 25%
+        ),
+        linear-gradient(
+          135deg,
+          var(--bleu-fonce),
+          #102D49
+        );
     }
-
-    .retour {
-  display: inline-block;
-  margin-top: 32px;
-  padding: 14px 24px;
-  background: var(--bleu-clair);
-  color: var(--bleu-fonce);
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 14px;
-}
-
-.retour:hover {
-  opacity: 0.9;
-  text-decoration: none;
-}
 
     header h1 {
       margin: 0 0 8px;
@@ -72,6 +69,10 @@
       font-size: 1.1rem;
     }
 
+    /* =========================
+       CONTENU PRINCIPAL
+       ========================= */
+
     main {
       padding: 45px 0 70px;
     }
@@ -80,25 +81,83 @@
       margin: 0 0 40px;
     }
 
+    /* =========================
+       OUTILS
+       ========================= */
+
+    .outils {
+      background: var(--blanc);
+      border: 1px solid var(--bordure);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 25px;
+
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .recherche {
+      flex: 1;
+      min-width: 220px;
+      padding: 13px 16px;
+      border: 1px solid #C9D5DE;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: var(--texte);
+      background: white;
+    }
+
+    .recherche:focus {
+      outline: 3px solid rgba(116, 186, 205, 0.25);
+      border-color: var(--bleu-clair);
+    }
+
+    .bouton {
+      border: none;
+      cursor: pointer;
+
+      padding: 13px 18px;
+
+      background: var(--bleu-fonce);
+      color: white;
+
+      font-size: 0.95rem;
+      font-weight: bold;
+
+      border-radius: 10px;
+    }
+
+    .bouton:hover {
+      opacity: 0.9;
+    }
+
+    /* =========================
+       DETAILS
+       ========================= */
+
     details {
       background: var(--blanc);
       border-radius: 14px;
       margin-bottom: 16px;
       overflow: hidden;
-      border: 1px solid #DCE5EC;
+      border: 1px solid var(--bordure);
     }
 
     summary {
       cursor: pointer;
       padding: 18px 22px;
+
       font-size: 1.15rem;
       font-weight: bold;
+
       color: var(--bleu-fonce);
       background: #EDF5F8;
     }
 
     details[open] > summary {
-      border-bottom: 1px solid #DCE5EC;
+      border-bottom: 1px solid var(--bordure);
     }
 
     .unite > summary {
@@ -113,9 +172,13 @@
 
     details h3 {
       padding: 0 22px;
-      margin: 24px 0 10px;
+      margin: 28px 0 10px;
       color: var(--rose);
     }
+
+    /* =========================
+       TABLEAUX
+       ========================= */
 
     .tableau-vocabulaire {
       padding: 0 22px 24px;
@@ -123,10 +186,21 @@
 
     .ligne {
       display: grid;
-      grid-template-columns: 2fr 2fr 1.5fr;
+
+      grid-template-columns:
+        minmax(180px, 2fr)
+        minmax(180px, 2fr)
+        minmax(150px, 1.5fr);
+
       gap: 20px;
+
       padding: 11px 10px;
+
       border-bottom: 1px solid #E7EDF1;
+    }
+
+    .ligne:hover:not(.titre) {
+      background: #FAFCFD;
     }
 
     .ligne.titre {
@@ -143,13 +217,106 @@
       grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
     }
 
+    .anglais {
+      color: var(--gris);
+    }
+
+    body.masquer-anglais .anglais {
+      display: none;
+    }
+
+    body.masquer-anglais .ligne.deux-colonnes {
+      grid-template-columns: 1fr;
+    }
+
+    /* =========================
+       NOTES PÉDAGOGIQUES
+       ========================= */
+
+    .note-vocabulaire {
+      margin: 15px 22px 25px;
+      padding: 18px 20px;
+
+      background: #F7FBFC;
+
+      border-left: 5px solid var(--bleu-clair);
+      border-radius: 8px;
+    }
+
+    .note-vocabulaire p {
+      margin: 8px 0;
+    }
+
+    .note-vocabulaire strong {
+      color: var(--bleu-fonce);
+    }
+
+    .exemple {
+      margin-top: 12px;
+      padding: 12px 15px;
+
+      background: white;
+      border-radius: 8px;
+
+      font-style: italic;
+    }
+
+    /* =========================
+       MESSAGE RECHERCHE
+       ========================= */
+
+    #aucun-resultat {
+      display: none;
+
+      background: white;
+      border: 1px solid var(--bordure);
+      border-radius: 14px;
+
+      padding: 25px;
+      margin-bottom: 20px;
+
+      text-align: center;
+      color: var(--gris);
+    }
+
+    /* =========================
+       RETOUR
+       ========================= */
+
+    .retour {
+      display: inline-block;
+
+      margin-top: 32px;
+      padding: 14px 24px;
+
+      background: var(--bleu-clair);
+      color: var(--bleu-fonce);
+
+      font-weight: bold;
+      font-size: 1rem;
+
+      text-decoration: none;
+
+      border-radius: 14px;
+    }
+
+    .retour:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+
     .a-venir {
       padding: 0 22px 22px;
       color: var(--gris);
       font-style: italic;
     }
 
+    /* =========================
+       MOBILE
+       ========================= */
+
     @media (max-width: 700px) {
+
       .ligne,
       .ligne.deux-colonnes,
       .ligne.adjectifs {
@@ -161,489 +328,1270 @@
         display: none;
       }
 
-      .ligne span:last-child {
-        color: var(--gris);
-        font-style: italic;
-      }
-
       .contenu-unite {
         padding: 10px;
+      }
+
+      .outils {
+        align-items: stretch;
+      }
+
+      .bouton {
+        width: 100%;
+      }
+
+      .note-vocabulaire {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .tableau-vocabulaire {
+        padding-left: 10px;
+        padding-right: 10px;
       }
     }
   </style>
 </head>
 
+
 <body>
+
+  <!-- =========================
+       EN-TÊTE
+       ========================= -->
+
   <header>
-  <div class="conteneur">
-    <h1>Vocabulaire</h1>
-   <p>Cette liste de vocabulaire n'est pas exhaustive. À vous de la compléter !</p>
-  </div>
-</header>
+
+    <div class="conteneur">
+
+      <h1>Vocabulaire</h1>
+
+      <p>
+        Cette liste de vocabulaire n'est pas exhaustive.
+        À vous de la compléter !
+      </p>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       CONTENU
+       ========================= -->
 
   <main>
+
     <div class="conteneur">
-<section class="unite-vocabulaire">
 
-  <details open class="unite">
-    <summary>UNITÉ 1 — Prochain arrêt : nouveau départ</summary>
 
-    <div class="contenu-unite">
+      <!-- OUTILS -->
 
-     <details>
-  <summary>Introduction — À la gare et dans le train</summary>
+      <div class="outils">
 
-  <!-- NOMS : LIEUX -->
+        <input
+          type="search"
+          id="recherche"
+          class="recherche"
+          placeholder="🔎 Rechercher un mot en français ou en anglais..."
+          aria-label="Rechercher dans le vocabulaire"
+        >
 
-  <h3>Noms — Lieux</h3>
+        <button
+          id="bouton-anglais"
+          class="bouton"
+          type="button"
+        >
+          Masquer l'anglais
+        </button>
 
-  <div class="tableau-vocabulaire">
+      </div>
 
-    <div class="ligne titre">
-      <span>Français</span>
-      <span>Pluriel</span>
-      <span>English</span>
-    </div>
 
-    <div class="ligne">
-      <span>un guichet</span>
-      <span>des guichets</span>
-      <span>ticket counter</span>
-    </div>
+      <div id="aucun-resultat">
+        Aucun mot trouvé.
+      </div>
 
-    <div class="ligne">
-      <span>un magasin de presse</span>
-      <span>des magasins de presse</span>
-      <span>newsstand</span>
-    </div>
 
-    <div class="ligne">
-      <span>un hall (de gare)</span>
-      <span>des halls (de gare)</span>
-      <span>station concourse / hall</span>
-    </div>
+      <!--
+      ==========================================================
+      LE VOCABULAIRE SERA CRÉÉ AUTOMATIQUEMENT ICI
+      ==========================================================
+      -->
 
-    <div class="ligne">
-      <span>un quai</span>
-      <span>des quais</span>
-      <span>platform</span>
-    </div>
+      <section
+        id="vocabulaire"
+        class="unite-vocabulaire"
+      ></section>
 
-    <div class="ligne">
-      <span>une voie</span>
-      <span>des voies</span>
-      <span>track</span>
-    </div>
 
-  </div>
+      <a
+        class="retour"
+        href="index.html"
+      >
+        ← Retour à l’accueil
+      </a>
 
-
-  <!-- NOMS : PERSONNES -->
-
-  <h3>Noms — Personnes</h3>
-
-  <div class="tableau-vocabulaire">
-
-    <div class="ligne titre">
-      <span>Français</span>
-      <span>Pluriel</span>
-      <span>English</span>
-    </div>
-
-    <div class="ligne">
-      <span>un voyageur / une voyageuse</span>
-      <span>des voyageurs / des voyageuses</span>
-      <span>traveller</span>
-    </div>
-
-    <div class="ligne">
-      <span>un passager / une passagère</span>
-      <span>des passagers / des passagères</span>
-      <span>passenger</span>
-    </div>
-
-    <div class="ligne">
-      <span>un contrôleur / une contrôleuse</span>
-      <span>des contrôleurs / des contrôleuses</span>
-      <span>ticket inspector</span>
-    </div>
-
-    <div class="ligne">
-      <span>un agent / une agente</span>
-      <span>des agents / des agentes</span>
-      <span>staff member / agent</span>
-    </div>
-
-    <div class="ligne">
-      <span>un conducteur / une conductrice (de train)</span>
-      <span>des conducteurs / des conductrices</span>
-      <span>train driver</span>
-    </div>
-
-  </div>
-
-
-  <!-- NOMS : OBJETS ET ÉQUIPEMENTS -->
-
-  <h3>Noms — Objets et équipements</h3>
-
-  <div class="tableau-vocabulaire">
-
-    <div class="ligne titre">
-      <span>Français</span>
-      <span>Pluriel</span>
-      <span>English</span>
-    </div>
-
-    <div class="ligne">
-      <span>un panneau d'affichage</span>
-      <span>des panneaux d'affichage</span>
-      <span>display board</span>
-    </div>
-
-    <div class="ligne">
-      <span>un distributeur</span>
-      <span>des distributeurs</span>
-      <span>vending machine / ticket machine</span>
-    </div>
-
-    <div class="ligne">
-      <span>une borne automatique</span>
-      <span>des bornes automatiques</span>
-      <span>self-service machine</span>
-    </div>
-
-    <div class="ligne">
-      <span>une consigne</span>
-      <span>des consignes</span>
-      <span>left-luggage facility / locker</span>
-    </div>
-
-    <div class="ligne">
-      <span>un escalator</span>
-      <span>des escalators</span>
-      <span>escalator</span>
-    </div>
-
-    <div class="ligne">
-      <span>un billet</span>
-      <span>des billets</span>
-      <span>ticket</span>
-    </div>
-
-  </div>
-
-
-  <!-- INFORMATIONS -->
-
-  <h3>Noms — Informations de voyage</h3>
-
-  <div class="tableau-vocabulaire">
-
-    <div class="ligne titre">
-      <span>Français</span>
-      <span>Pluriel</span>
-      <span>English</span>
-    </div>
-
-    <div class="ligne">
-      <span>un renseignement</span>
-      <span>des renseignements</span>
-      <span>information / enquiry</span>
-    </div>
-
-    <div class="ligne">
-      <span>le panneau des départs</span>
-      <span>les panneaux des départs</span>
-      <span>departure board</span>
-    </div>
-
-    <div class="ligne">
-      <span>l'horaire</span>
-      <span>les horaires</span>
-      <span>timetable / schedule</span>
-    </div>
-
-    <div class="ligne">
-      <span>le numéro du train</span>
-      <span>les numéros des trains</span>
-      <span>train number</span>
-    </div>
-
-    <div class="ligne">
-      <span>la destination</span>
-      <span>les destinations</span>
-      <span>destination</span>
-    </div>
-
-    <div class="ligne">
-      <span>la provenance</span>
-      <span>les provenances</span>
-      <span>origin</span>
-    </div>
-
-    <div class="ligne">
-      <span>une correspondance</span>
-      <span>des correspondances</span>
-      <span>connection</span>
-    </div>
-
-    <div class="ligne">
-      <span>un retard</span>
-      <span>des retards</span>
-      <span>delay</span>
-    </div>
-
-  </div>
-
-
-  <!-- VERBES -->
-
-  <h3>Verbes et actions</h3>
-
-  <div class="tableau-vocabulaire">
-
-    <div class="ligne titre deux-colonnes">
-      <span>Français</span>
-      <span>English</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>demander des renseignements</span>
-      <span>to ask for information</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>composter son billet</span>
-      <span>to validate one's ticket</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>monter dans le train</span>
-      <span>to get on the train</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>descendre du train</span>
-      <span>to get off the train</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>attendre une correspondance</span>
-      <span>to wait for a connection</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>acheter un billet</span>
-      <span>to buy a ticket</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>voyager</span>
-      <span>to travel</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>arriver</span>
-      <span>to arrive</span>
-    </div>
-
-    <div class="ligne deux-colonnes">
-      <span>partir</span>
-      <span>to leave / depart</span>
-    </div>
-
-  </div>
-
-
-  <!-- ADJECTIFS / EXPRESSIONS -->
-
-  <!-- ADJECTIFS -->
-
-<h3>Adjectifs</h3>
-
-<div class="tableau-vocabulaire">
-
-  <div class="ligne adjectifs titre">
-    <span>Masculin</span>
-    <span>Féminin</span>
-    <span>Pluriel</span>
-    <span>English</span>
-  </div>
-
-  <div class="ligne adjectifs">
-    <span>pressé</span>
-    <span>pressée</span>
-    <span>pressés / pressées</span>
-    <span>in a hurry</span>
-  </div>
-
-  <div class="ligne adjectifs">
-    <span>content</span>
-    <span>contente</span>
-    <span>contents / contentes</span>
-    <span>happy / pleased</span>
-  </div>
-
-  <div class="ligne adjectifs">
-    <span>mécontent</span>
-    <span>mécontente</span>
-    <span>mécontents / mécontentes</span>
-    <span>unhappy / dissatisfied</span>
-  </div>
-
-  <div class="ligne adjectifs">
-    <span>patient</span>
-    <span>patiente</span>
-    <span>patients / patientes</span>
-    <span>patient</span>
-  </div>
-
-  <div class="ligne adjectifs">
-    <span>impatient</span>
-    <span>impatiente</span>
-    <span>impatients / impatientes</span>
-    <span>impatient</span>
-  </div>
-
-</div>
-
-
-<!-- EXPRESSIONS UTILES -->
-
-<h3>Expressions utiles</h3>
-
-<div class="tableau-vocabulaire">
-
-  <div class="ligne titre deux-colonnes">
-    <span>Français</span>
-    <span>English</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>être pressé(e)</span>
-    <span>to be in a hurry</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>être en avance</span>
-    <span>to be early</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>être en retard</span>
-    <span>to be late</span>
-  </div>
-  
-  </div>
-
-  <!-- MOTS INTERROGATIFS -->
-
-  <h3>Mots interrogatifs</h3>
-
-<div class="tableau-vocabulaire">
-
-  <div class="ligne titre deux-colonnes">
-    <span>Français</span>
-    <span>English</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>où ?</span>
-    <span>where?</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>qui ?</span>
-    <span>who?</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>quoi ? / qu'est-ce que ? / que ? / quel / quelle / quels / quelles ?</span>
-    <span>what?</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>comment ?</span>
-    <span>how?</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>quand ?</span>
-    <span>when?</span>
-  </div>
-
-  <div class="ligne deux-colonnes">
-    <span>pourquoi ?</span>
-    <span>why?</span>
-  </div>
-
-</div>
-
-</details>
-      <details>
-        <summary>Situation 1 — Fêter un événement</summary>
-
-        <h3>Noms</h3>
-
-        <div class="tableau-vocabulaire">
-          <div class="ligne titre">
-            <span>Français</span>
-            <span>Pluriel</span>
-            <span>English</span>
-          </div>
-
-          <div class="ligne">
-            <span>un anniversaire</span>
-            <span>des anniversaires</span>
-            <span>birthday</span>
-          </div>
-
-          <div class="ligne">
-            <span>une fête</span>
-            <span>des fêtes</span>
-            <span>party / celebration</span>
-          </div>
-
-          <div class="ligne">
-            <span>un événement</span>
-            <span>des événements</span>
-            <span>event</span>
-          </div>
-
-          <div class="ligne">
-            <span>un cadeau</span>
-            <span>des cadeaux</span>
-            <span>gift</span>
-          </div>
-
-          <div class="ligne">
-            <span>un festival</span>
-            <span>des festivals</span>
-            <span>festival</span>
-          </div>
-        </div>
-
-      </details>
-
-      <details>
-        <summary>Situation 2 — Planifier un repas</summary>
-        <p class="a-venir">Vocabulaire à venir.</p>
-      </details>
-
-      <details>
-        <summary>Situation 3 — Organiser une soirée</summary>
-        <p class="a-venir">Vocabulaire à venir.</p>
-      </details>
 
     </div>
 
-  </details>
-
-</section>       
-      <a class="retour" href="index.html">← Retour à l’accueil</a>
-          </div>
   </main>
+
+
+
+  <script>
+
+    /*
+    ============================================================
+    ============================================================
+                   VOCABULAIRE DU COURS
+
+       C'EST PRINCIPALEMENT ICI QUE VOUS AJOUTEREZ
+                  LES NOUVEAUX MOTS.
+
+    ============================================================
+    ============================================================
+    */
+
+
+    const vocabulaire = [
+
+      /*
+      ==========================================================
+      UNITÉ 1
+      ==========================================================
+      */
+
+      {
+        unite: "UNITÉ 1 — Prochain arrêt : nouveau départ",
+
+        situations: [
+
+
+          /*
+          ======================================================
+          INTRODUCTION — GARE ET TRAIN
+          ======================================================
+          */
+
+          {
+            titre: "Introduction — À la gare et dans le train",
+
+            sections: [
+
+
+              {
+                titre: "Noms — Lieux",
+                type: "noms",
+
+                mots: [
+                  ["un guichet", "des guichets", "ticket counter"],
+                  ["un magasin de presse", "des magasins de presse", "newsstand"],
+                  ["un hall (de gare)", "des halls (de gare)", "station concourse / hall"],
+                  ["un quai", "des quais", "platform"],
+                  ["une voie", "des voies", "track"]
+                ]
+              },
+
+
+              {
+                titre: "Noms — Personnes",
+                type: "noms",
+
+                mots: [
+                  [
+                    "un voyageur / une voyageuse",
+                    "des voyageurs / des voyageuses",
+                    "traveller"
+                  ],
+
+                  [
+                    "un passager / une passagère",
+                    "des passagers / des passagères",
+                    "passenger"
+                  ],
+
+                  [
+                    "un contrôleur / une contrôleuse",
+                    "des contrôleurs / des contrôleuses",
+                    "ticket inspector"
+                  ],
+
+                  [
+                    "un agent / une agente",
+                    "des agents / des agentes",
+                    "staff member / agent"
+                  ],
+
+                  [
+                    "un conducteur / une conductrice (de train)",
+                    "des conducteurs / des conductrices",
+                    "train driver"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Noms — Objets et équipements",
+                type: "noms",
+
+                mots: [
+                  [
+                    "un panneau d'affichage",
+                    "des panneaux d'affichage",
+                    "display board"
+                  ],
+
+                  [
+                    "un distributeur",
+                    "des distributeurs",
+                    "vending machine / ticket machine"
+                  ],
+
+                  [
+                    "une borne automatique",
+                    "des bornes automatiques",
+                    "self-service machine"
+                  ],
+
+                  [
+                    "une consigne",
+                    "des consignes",
+                    "left-luggage facility / locker"
+                  ],
+
+                  [
+                    "un escalator",
+                    "des escalators",
+                    "escalator"
+                  ],
+
+                  [
+                    "un billet",
+                    "des billets",
+                    "ticket"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Noms — Informations de voyage",
+                type: "noms",
+
+                mots: [
+                  [
+                    "un renseignement",
+                    "des renseignements",
+                    "information / enquiry"
+                  ],
+
+                  [
+                    "le panneau des départs",
+                    "les panneaux des départs",
+                    "departure board"
+                  ],
+
+                  [
+                    "l'horaire",
+                    "les horaires",
+                    "timetable / schedule"
+                  ],
+
+                  [
+                    "le numéro du train",
+                    "les numéros des trains",
+                    "train number"
+                  ],
+
+                  [
+                    "la destination",
+                    "les destinations",
+                    "destination"
+                  ],
+
+                  [
+                    "la provenance",
+                    "les provenances",
+                    "origin"
+                  ],
+
+                  [
+                    "une correspondance",
+                    "des correspondances",
+                    "connection"
+                  ],
+
+                  [
+                    "un retard",
+                    "des retards",
+                    "delay"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Verbes et actions",
+                type: "expressions",
+
+                mots: [
+                  [
+                    "demander des renseignements",
+                    "to ask for information"
+                  ],
+
+                  [
+                    "composter son billet",
+                    "to validate one's ticket"
+                  ],
+
+                  [
+                    "monter dans le train",
+                    "to get on the train"
+                  ],
+
+                  [
+                    "descendre du train",
+                    "to get off the train"
+                  ],
+
+                  [
+                    "attendre une correspondance",
+                    "to wait for a connection"
+                  ],
+
+                  [
+                    "acheter un billet",
+                    "to buy a ticket"
+                  ],
+
+                  [
+                    "voyager",
+                    "to travel"
+                  ],
+
+                  [
+                    "arriver",
+                    "to arrive"
+                  ],
+
+                  [
+                    "partir",
+                    "to leave / depart"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Adjectifs",
+                type: "adjectifs",
+
+                mots: [
+                  [
+                    "pressé",
+                    "pressée",
+                    "pressés / pressées",
+                    "in a hurry"
+                  ],
+
+                  [
+                    "content",
+                    "contente",
+                    "contents / contentes",
+                    "happy / pleased"
+                  ],
+
+                  [
+                    "mécontent",
+                    "mécontente",
+                    "mécontents / mécontentes",
+                    "unhappy / dissatisfied"
+                  ],
+
+                  [
+                    "patient",
+                    "patiente",
+                    "patients / patientes",
+                    "patient"
+                  ],
+
+                  [
+                    "impatient",
+                    "impatiente",
+                    "impatients / impatientes",
+                    "impatient"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Expressions utiles",
+                type: "expressions",
+
+                mots: [
+                  [
+                    "être pressé(e)",
+                    "to be in a hurry"
+                  ],
+
+                  [
+                    "être en avance",
+                    "to be early"
+                  ],
+
+                  [
+                    "être en retard",
+                    "to be late"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Mots interrogatifs",
+                type: "expressions",
+
+                mots: [
+                  ["où ?", "where?"],
+                  ["qui ?", "who?"],
+
+                  [
+                    "quoi ? / qu'est-ce que ? / que ? / quel / quelle / quels / quelles ?",
+                    "what?"
+                  ],
+
+                  ["comment ?", "how?"],
+                  ["quand ?", "when?"],
+                  ["pourquoi ?", "why?"]
+                ]
+              }
+
+            ]
+          },
+
+
+
+          /*
+          ======================================================
+          SITUATION 1 — FÊTER UN ÉVÉNEMENT
+          ======================================================
+          */
+
+          {
+            titre: "Situation 1 — Fêter un événement",
+
+            sections: [
+
+
+              {
+                titre: "Noms — Événements et célébrations",
+                type: "noms",
+
+                mots: [
+                  [
+                    "un anniversaire",
+                    "des anniversaires",
+                    "birthday / anniversary"
+                  ],
+
+                  [
+                    "une fête",
+                    "des fêtes",
+                    "party / celebration"
+                  ],
+
+                  [
+                    "un événement",
+                    "des événements",
+                    "event"
+                  ],
+
+                  [
+                    "un festival",
+                    "des festivals",
+                    "festival"
+                  ],
+
+                  [
+                    "un spectacle",
+                    "des spectacles",
+                    "show / performance"
+                  ],
+
+                  [
+                    "une rencontre",
+                    "des rencontres",
+                    "meeting / encounter"
+                  ],
+
+                  [
+                    "un débat",
+                    "des débats",
+                    "debate"
+                  ],
+
+                  [
+                    "un atelier",
+                    "des ateliers",
+                    "workshop"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Noms — Cadeaux",
+                type: "noms",
+
+                mots: [
+                  [
+                    "un cadeau",
+                    "des cadeaux",
+                    "gift / present"
+                  ],
+
+                  [
+                    "un bijou",
+                    "des bijoux",
+                    "piece of jewellery"
+                  ],
+
+                  [
+                    "un parfum",
+                    "des parfums",
+                    "perfume"
+                  ],
+
+                  [
+                    "un sac à main",
+                    "des sacs à main",
+                    "handbag"
+                  ],
+
+                  [
+                    "un foulard",
+                    "des foulards",
+                    "scarf"
+                  ],
+
+                  [
+                    "un bon restaurant",
+                    "de bons restaurants",
+                    "a good restaurant"
+                  ],
+
+                  [
+                    "un bouquet de fleurs",
+                    "des bouquets de fleurs",
+                    "bouquet of flowers"
+                  ],
+
+                  [
+                    "un spa",
+                    "des spas",
+                    "spa"
+                  ],
+
+                  [
+                    "un vêtement",
+                    "des vêtements",
+                    "item of clothing / garment"
+                  ],
+
+                  [
+                    "un livre",
+                    "des livres",
+                    "book"
+                  ],
+
+                  [
+                    "du chocolat",
+                    "—",
+                    "chocolate"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Noms — L'anniversaire",
+                type: "noms",
+
+                mots: [
+                  [
+                    "un gâteau",
+                    "des gâteaux",
+                    "cake"
+                  ],
+
+                  [
+                    "une bougie",
+                    "des bougies",
+                    "candle"
+                  ],
+
+                  [
+                    "un bonbon",
+                    "des bonbons",
+                    "sweet / candy"
+                  ]
+                ]
+              },
+
+
+              {
+                titre: "Verbes et actions",
+                type: "expressions",
+
+                mots: [
+                  [
+                    "fêter",
+                    "to celebrate"
+                  ],
+
+                  [
+                    "organiser un événement",
+                    "to organise an event"
+                  ],
+
+                  [
+                    "rappeler quelqu'un",
+                    "to call someone back"
+                  ],
+
+                  [
+                    "réserver quelque chose",
+                    "to book / reserve something"
+                  ],
+
+                  [
+                    "acheter quelque chose",
+                    "to buy something"
+                  ],
+
+                  [
+                    "embrasser quelqu'un",
+                    "to kiss someone"
+                  ],
+
+                  [
+                    "conseiller quelqu'un",
+                    "to advise someone"
+                  ],
+
+                  [
+                    "appeler quelqu'un",
+                    "to call someone"
+                  ],
+
+                  [
+                    "offrir un cadeau à quelqu'un",
+                    "to give someone a gift"
+                  ],
+
+                  [
+                    "faire un gâteau",
+                    "to make a cake"
+                  ],
+
+                  [
+                    "souffler des bougies",
+                    "to blow out candles"
+                  ],
+
+                  [
+                    "manger des bonbons",
+                    "to eat sweets / candy"
+                  ],
+
+                  [
+                    "aller au restaurant",
+                    "to go to a restaurant"
+                  ]
+                ]
+              },
+
+
+              /*
+              ================================================
+              FAMILLE DE MOTS
+              ================================================
+              */
+
+              {
+                titre: "Famille de mots — fête, fêter, festival",
+                type: "note",
+
+                html: `
+                  <p>
+                    <strong>« Une fête », « fêter » et « un festival »</strong>
+                    sont de la même famille parce qu'ils partagent
+                    une idée commune :
+                    <strong>la célébration</strong>. 🎉
+                  </p>
+
+                  <p>
+                    <strong>une fête</strong>
+                    = a party / celebration
+                  </p>
+
+                  <p>
+                    <strong>fêter</strong>
+                    = to celebrate
+                  </p>
+
+                  <p>
+                    <strong>un festival</strong>
+                    = a festival, an event where people
+                    celebrate or enjoy something
+                  </p>
+
+                  <div class="exemple">
+                    <strong>Exemple :</strong><br>
+                    On fête la musique pendant la Fête de la musique,
+                    qui est un grand festival.
+                  </div>
+
+                  <p>
+                    Ces mots ont également une origine commune.
+                    Ils appartiennent à une famille de mots issue
+                    du latin autour de <em>festus</em>,
+                    qui signifie « de fête, festif ».
+                  </p>
+                `
+              },
+
+
+              /*
+              ================================================
+              AN / ANNÉE ETC.
+              ================================================
+              */
+
+              {
+                titre: "Un an ou une année ? Un jour ou une journée ? Un soir ou une soirée ?",
+                type: "note",
+
+                html: `
+                  <p>
+                    Une règle pratique :
+                  </p>
+
+                  <p>
+                    <strong>an / jour / soir</strong>
+                    → servent souvent à
+                    <strong>compter ou situer un moment dans le temps.</strong>
+                  </p>
+
+                  <p>
+                    <strong>année / journée / soirée</strong>
+                    → insistent souvent davantage sur
+                    <strong>la période, sa durée ou ce qui s'y passe.</strong>
+                  </p>
+
+                  <hr>
+
+                  <p>
+                    <strong>un an</strong><br>
+                    durée comptée / âge
+                  </p>
+
+                  <div class="exemple">
+                    J'ai 20 ans.<br>
+                    Il y a deux ans.<br>
+                    Je vais vivre ici pendant un an.
+                  </div>
+
+                  <p>
+                    <strong>une année</strong><br>
+                    la période considérée dans son ensemble
+                  </p>
+
+                  <div class="exemple">
+                    J'ai passé une excellente année.<br>
+                    Cette année a été difficile.
+                  </div>
+
+                  <hr>
+
+                  <p>
+                    <strong>un jour</strong><br>
+                    jour compté ou moment précis
+                  </p>
+
+                  <div class="exemple">
+                    Je reste trois jours à Paris.<br>
+                    Un jour, j'irai au Japon.
+                  </div>
+
+                  <p>
+                    <strong>une journée</strong><br>
+                    la durée ou le déroulement du jour
+                  </p>
+
+                  <div class="exemple">
+                    J'ai passé une longue journée au travail.<br>
+                    Bonne journée !
+                  </div>
+
+                  <hr>
+
+                  <p>
+                    <strong>un soir</strong><br>
+                    moment précis
+                  </p>
+
+                  <div class="exemple">
+                    Un soir, nous sommes allés au restaurant.
+                  </div>
+
+                  <p>
+                    <strong>une soirée</strong><br>
+                    durée du soir ou événement social
+                  </p>
+
+                  <div class="exemple">
+                    Nous avons passé une excellente soirée.<br>
+                    J'organise une soirée samedi.
+                  </div>
+                `
+              },
+
+
+              {
+                titre: "Expressions utiles",
+                type: "expressions",
+
+                mots: [
+                  [
+                    "faire la fête",
+                    "to party / celebrate"
+                  ],
+
+                  [
+                    "fêter son anniversaire",
+                    "to celebrate one's birthday"
+                  ],
+
+                  [
+                    "offrir un cadeau",
+                    "to give a gift"
+                  ],
+
+                  [
+                    "passer une bonne journée",
+                    "to have a good day"
+                  ],
+
+                  [
+                    "passer une bonne soirée",
+                    "to have a good evening"
+                  ],
+
+                  [
+                    "Bon anniversaire !",
+                    "Happy birthday!"
+                  ]
+                ]
+              }
+
+            ]
+          },
+
+
+
+          /*
+          ======================================================
+          SITUATION 2
+          ======================================================
+          */
+
+          {
+            titre: "Situation 2 — Planifier un repas",
+            sections: []
+          },
+
+
+
+          /*
+          ======================================================
+          SITUATION 3
+          ======================================================
+          */
+
+          {
+            titre: "Situation 3 — Organiser une soirée",
+            sections: []
+          }
+
+        ]
+      }
+
+    ];
+
+
+
+    /*
+    ============================================================
+    ============================================================
+
+              FIN DU VOCABULAIRE DU COURS
+
+       Vous n'avez normalement pas besoin de modifier
+                   ce qui suit.
+
+    ============================================================
+    ============================================================
+    */
+
+
+    const zoneVocabulaire =
+      document.getElementById("vocabulaire");
+
+
+    /*
+    ============================================================
+    CRÉATION D'UNE SECTION
+    ============================================================
+    */
+
+    function creerSection(section) {
+
+      let html = `<h3>${section.titre}</h3>`;
+
+
+      /*
+      ----------------------------------------------------------
+      NOTE PÉDAGOGIQUE
+      ----------------------------------------------------------
+      */
+
+      if (section.type === "note") {
+
+        html += `
+          <div class="note-vocabulaire">
+            ${section.html}
+          </div>
+        `;
+
+        return html;
+      }
+
+
+      /*
+      ----------------------------------------------------------
+      NOMS
+      ----------------------------------------------------------
+      */
+
+      if (section.type === "noms") {
+
+        html += `
+          <div class="tableau-vocabulaire">
+
+            <div class="ligne titre">
+              <span>Français</span>
+              <span>Pluriel</span>
+              <span class="anglais">English</span>
+            </div>
+        `;
+
+        section.mots.forEach(mot => {
+
+          html += `
+            <div class="ligne mot">
+              <span>${mot[0]}</span>
+              <span>${mot[1]}</span>
+              <span class="anglais">${mot[2]}</span>
+            </div>
+          `;
+
+        });
+
+        html += `</div>`;
+      }
+
+
+      /*
+      ----------------------------------------------------------
+      EXPRESSIONS / VERBES
+      ----------------------------------------------------------
+      */
+
+      if (section.type === "expressions") {
+
+        html += `
+          <div class="tableau-vocabulaire">
+
+            <div class="ligne titre deux-colonnes">
+              <span>Français</span>
+              <span class="anglais">English</span>
+            </div>
+        `;
+
+        section.mots.forEach(mot => {
+
+          html += `
+            <div class="ligne deux-colonnes mot">
+              <span>${mot[0]}</span>
+              <span class="anglais">${mot[1]}</span>
+            </div>
+          `;
+
+        });
+
+        html += `</div>`;
+      }
+
+
+      /*
+      ----------------------------------------------------------
+      ADJECTIFS
+      ----------------------------------------------------------
+      */
+
+      if (section.type === "adjectifs") {
+
+        html += `
+          <div class="tableau-vocabulaire">
+
+            <div class="ligne adjectifs titre">
+              <span>Masculin</span>
+              <span>Féminin</span>
+              <span>Pluriel</span>
+              <span class="anglais">English</span>
+            </div>
+        `;
+
+        section.mots.forEach(mot => {
+
+          html += `
+            <div class="ligne adjectifs mot">
+              <span>${mot[0]}</span>
+              <span>${mot[1]}</span>
+              <span>${mot[2]}</span>
+              <span class="anglais">${mot[3]}</span>
+            </div>
+          `;
+
+        });
+
+        html += `</div>`;
+      }
+
+
+      return html;
+    }
+
+
+
+    /*
+    ============================================================
+    CRÉATION DE LA PAGE
+    ============================================================
+    */
+
+    function afficherVocabulaire() {
+
+      let html = "";
+
+
+      vocabulaire.forEach(unite => {
+
+        html += `
+          <details open class="unite">
+
+            <summary>
+              ${unite.unite}
+            </summary>
+
+            <div class="contenu-unite">
+        `;
+
+
+        unite.situations.forEach(situation => {
+
+          html += `
+            <details class="situation">
+
+              <summary>
+                ${situation.titre}
+              </summary>
+          `;
+
+
+          if (
+            !situation.sections ||
+            situation.sections.length === 0
+          ) {
+
+            html += `
+              <p class="a-venir">
+                Vocabulaire à venir.
+              </p>
+            `;
+
+          } else {
+
+            situation.sections.forEach(section => {
+
+              html += creerSection(section);
+
+            });
+
+          }
+
+
+          html += `
+            </details>
+          `;
+
+        });
+
+
+        html += `
+            </div>
+          </details>
+        `;
+
+      });
+
+
+      zoneVocabulaire.innerHTML = html;
+    }
+
+
+
+    afficherVocabulaire();
+
+
+
+    /*
+    ============================================================
+    MASQUER / AFFICHER L'ANGLAIS
+    ============================================================
+    */
+
+    const boutonAnglais =
+      document.getElementById("bouton-anglais");
+
+
+    boutonAnglais.addEventListener("click", function () {
+
+      document.body.classList.toggle("masquer-anglais");
+
+
+      if (
+        document.body.classList.contains("masquer-anglais")
+      ) {
+
+        boutonAnglais.textContent =
+          "Afficher l'anglais";
+
+      } else {
+
+        boutonAnglais.textContent =
+          "Masquer l'anglais";
+
+      }
+
+    });
+
+
+
+    /*
+    ============================================================
+    RECHERCHE
+    ============================================================
+    */
+
+    const champRecherche =
+      document.getElementById("recherche");
+
+    const aucunResultat =
+      document.getElementById("aucun-resultat");
+
+
+    champRecherche.addEventListener("input", function () {
+
+      const recherche =
+        champRecherche.value
+          .toLowerCase()
+          .trim();
+
+
+      const lignes =
+        document.querySelectorAll(".mot");
+
+
+      let nombreResultats = 0;
+
+
+      lignes.forEach(ligne => {
+
+        const texte =
+          ligne.textContent.toLowerCase();
+
+
+        if (
+          recherche === "" ||
+          texte.includes(recherche)
+        ) {
+
+          ligne.style.display = "";
+          nombreResultats++;
+
+        } else {
+
+          ligne.style.display = "none";
+
+        }
+
+      });
+
+
+      /*
+      Ouvrir les situations automatiquement
+      pendant une recherche.
+      */
+
+      if (recherche !== "") {
+
+        document
+          .querySelectorAll(".situation")
+          .forEach(details => {
+
+            details.open = true;
+
+          });
+
+      }
+
+
+      /*
+      Message si aucun résultat.
+      */
+
+      if (
+        recherche !== "" &&
+        nombreResultats === 0
+      ) {
+
+        aucunResultat.style.display = "block";
+
+      } else {
+
+        aucunResultat.style.display = "none";
+
+      }
+
+    });
+
+  </script>
 
 </body>
 </html>
