@@ -858,13 +858,13 @@ LES ALIMENTS
 
      [
   "le saumon",
-  "—",
+  "les saumons",
   "salmon"
 ],
 
 [
   "le bœuf",
-  "—",
+  "les boeufs",
   "beef"
 ],
 
@@ -888,13 +888,13 @@ LES ALIMENTS
 
         [
   "le chocolat",
-  "—",
+  "les chocolats",
   "chocolate"
 ],
 
 [
-  "la crème glacée",
-  "—",
+  "la crème glacée, la glace",
+  "les crèmes glacées, les glaces",
   "ice cream"
 ]
       ]
