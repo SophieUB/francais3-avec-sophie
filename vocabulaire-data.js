@@ -773,9 +773,13 @@
         [
           "un menu",
           "des menus",
+          "set menu/set meal"
+        ],
+[
+          "une carte",
+          "des cartes",
           "menu"
         ],
-
         [
           "une entrée",
           "des entrées",
