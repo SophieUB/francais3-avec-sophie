@@ -748,17 +748,407 @@
 
 
 
-          /*
-          ======================================================
-          SITUATION 2
-          ======================================================
-          */
+     {
+  titre: "Situation 2 — Planifier un repas",
 
-          {
-            titre: "Situation 2 — Planifier un repas",
-            sections: []
-          },
+  sections: [
 
+    /*
+    ======================================================
+    LES REPAS ET LE MENU
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Les repas et le menu",
+      type: "noms",
+
+      mots: [
+        [
+          "un repas",
+          "des repas",
+          "meal"
+        ],
+
+        [
+          "un menu",
+          "des menus",
+          "menu"
+        ],
+
+        [
+          "une entrée",
+          "des entrées",
+          "starter / appetizer"
+        ],
+
+        [
+          "un plat",
+          "des plats",
+          "dish / course"
+        ],
+
+        [
+          "un plat principal",
+          "des plats principaux",
+          "main course"
+        ],
+
+        [
+          "un dessert",
+          "des desserts",
+          "dessert"
+        ],
+
+        [
+          "un ingrédient",
+          "des ingrédients",
+          "ingredient"
+        ]
+      ]
+    },
+
+
+    /*
+======================================================
+LES ALIMENTS
+======================================================
+*/
+
+{
+  titre: "Noms — Les aliments",
+      type: "noms",
+
+    mots: [
+  [
+    "un aliment",
+    "des aliments",
+    "food item"
+  ],
+
+  [
+    "un légume",
+    "des légumes",
+    "vegetable"
+  ],
+
+        [
+          "un fruit",
+          "des fruits",
+          "fruit"
+        ],
+
+        [
+          "un poisson",
+          "des poissons",
+          "fish"
+        ],
+
+        [
+          "une viande",
+          "des viandes",
+          "meat"
+        ],
+
+        [
+          "un produit laitier",
+          "des produits laitiers",
+          "dairy product"
+        ],
+
+     [
+  "le saumon",
+  "—",
+  "salmon"
+],
+
+[
+  "le bœuf",
+  "—",
+  "beef"
+],
+
+        [
+          "une mangue",
+          "des mangues",
+          "mango"
+        ],
+
+        [
+          "un avocat",
+          "des avocats",
+          "avocado"
+        ],
+
+        [
+          "une pomme de terre",
+          "des pommes de terre",
+          "potato"
+        ],
+
+        [
+  "le chocolat",
+  "—",
+  "chocolate"
+],
+
+[
+  "la crème glacée",
+  "—",
+  "ice cream"
+]
+      ]
+    },
+   {
+  titre: "Nourriture, aliment ou ingrédient ?",
+  type: "note",
+
+  html: `
+    <p>
+      Ces trois mots sont proches, mais ils ne s'utilisent pas
+      exactement de la même manière.
+    </p>
+
+    <p>
+      🍽️ <strong>La nourriture</strong><br>
+      = terme général pour ce que l'on mange.
+    </p>
+
+    <div class="exemple">
+      Il y a beaucoup de nourriture sur la table.<br>
+      La nourriture française est variée.
+    </div>
+
+    <p>
+      🥕 <strong>Un aliment</strong><br>
+      = une chose que l'on peut manger ou boire.
+    </p>
+
+    <div class="exemple">
+      Le saumon est un aliment.<br>
+      Les légumes sont des aliments.
+    </div>
+
+    <p>
+      🥣 <strong>Un ingrédient</strong><br>
+      = un aliment utilisé pour préparer une recette ou un plat.
+    </p>
+
+    <div class="exemple">
+      Le chocolat est un ingrédient du gâteau.<br>
+      Pour cette recette, il faut trois ingrédients.
+    </div>
+
+    <p>
+      <strong>À retenir :</strong><br>
+      Un œuf est un <strong>aliment</strong>.<br>
+      Dans un gâteau, l'œuf est un <strong>ingrédient</strong>.
+    </p>
+  `
+},
+{
+  titre: "Le / la ou du / de la ?",
+  type: "note",
+
+  html: `
+    <p>
+      Quand on apprend un aliment, on utilise généralement
+      <strong>le, la ou l'</strong> pour apprendre le nom
+      et son genre.
+    </p>
+
+    <div class="exemple">
+      <strong>Exemples :</strong><br>
+      le saumon<br>
+      le chocolat<br>
+      la viande<br>
+      l'eau
+    </div>
+
+    <p>
+      <strong>Le / la / l'</strong><br>
+      → on parle de l'aliment en général.
+    </p>
+
+    <div class="exemple">
+      J'aime <strong>le saumon</strong>.<br>
+      J'adore <strong>le chocolat</strong>.<br>
+      Je n'aime pas <strong>la viande</strong>.
+    </div>
+
+    <p>
+      <strong>Du / de la / de l' / des</strong><br>
+      → on parle d'une quantité non précisée.
+    </p>
+
+    <div class="exemple">
+      Je mange <strong>du saumon</strong>.<br>
+      Elle mange <strong>de la viande</strong>.<br>
+      Je bois <strong>de l'eau</strong>.<br>
+      Nous mangeons <strong>des légumes</strong>.
+    </div>
+
+    <p>
+      <strong>À retenir :</strong><br>
+      J'aime <strong>le chocolat</strong>.<br>
+      Je mange <strong>du chocolat</strong>.
+    </p>
+  `
+},
+
+    /*
+    ======================================================
+    VERBES ET ACTIONS
+    ======================================================
+    */
+
+    {
+      titre: "Verbes et actions",
+      type: "expressions",
+
+      mots: [
+        [
+          "planifier un repas",
+          "to plan a meal"
+        ],
+
+        [
+          "organiser un repas",
+          "to organise a meal"
+        ],
+
+        [
+          "créer une invitation",
+          "to create an invitation"
+        ],
+
+        [
+          "choisir un menu",
+          "to choose a menu"
+        ],
+
+        [
+          "préparer un repas",
+          "to prepare a meal"
+        ],
+
+        [
+          "préparer quelque chose",
+          "to prepare something"
+        ],
+
+        [
+          "manger",
+          "to eat"
+        ],
+
+        [
+          "boire",
+          "to drink"
+        ],
+
+        [
+          "apporter quelque chose",
+          "to bring something"
+        ],
+
+        [
+          "servir un repas",
+          "to serve a meal"
+        ],
+
+        [
+          "nettoyer la cuisine",
+          "to clean the kitchen"
+        ],
+
+        [
+          "réserver",
+          "to book / reserve"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LES QUANTITÉS
+    ======================================================
+    */
+
+    {
+      titre: "Expressions — Les quantités",
+      type: "expressions",
+
+      mots: [
+        [
+          "trop de",
+          "too much / too many"
+        ],
+
+        [
+          "beaucoup de",
+          "a lot of / many"
+        ],
+
+        [
+          "un peu de",
+          "a little / a few"
+        ],
+
+        [
+          "pas assez de",
+          "not enough"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS UTILES
+    ======================================================
+    */
+
+    {
+      titre: "Expressions utiles — Organiser un repas",
+      type: "expressions",
+
+      mots: [
+        [
+          "Qu'est-ce que vous apportez ?",
+          "What are you bringing?"
+        ],
+
+        [
+          "Vous apportez quoi ?",
+          "What are you bringing?"
+        ],
+
+        [
+          "Je voudrais du fromage.",
+          "I would like some cheese."
+        ],
+
+        [
+          "Il y en a trop.",
+          "There is too much / There are too many."
+        ],
+
+        [
+          "Il n'y en a pas assez.",
+          "There isn't enough / There aren't enough."
+        ],
+
+        [
+          "Chacun en choisit un.",
+          "Everyone chooses one."
+        ]
+      ]
+    }
+
+  ]
+},
 
 
           /*
