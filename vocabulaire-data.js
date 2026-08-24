@@ -910,7 +910,7 @@ LES ALIMENTS
     </p>
 
     <p>
-      🍽️ <strong>La nourriture</strong><br>
+       <strong>La nourriture</strong><br>
       = terme général pour ce que l'on mange.
     </p>
 
@@ -920,7 +920,7 @@ LES ALIMENTS
     </div>
 
     <p>
-      🥕 <strong>Un aliment</strong><br>
+       <strong>Un aliment</strong><br>
       = une chose que l'on peut manger ou boire.
     </p>
 
@@ -930,7 +930,7 @@ LES ALIMENTS
     </div>
 
     <p>
-      🥣 <strong>Un ingrédient</strong><br>
+       <strong>Un ingrédient</strong><br>
       = un aliment utilisé pour préparer une recette ou un plat.
     </p>
 
@@ -1151,19 +1151,311 @@ LES ALIMENTS
 },
 
 
-          /*
-          ======================================================
-          SITUATION 3
-          ======================================================
-          */
+         /*
+======================================================
+SITUATION 3 — ORGANISER UNE SOIRÉE
+======================================================
+*/
 
-          {
-            titre: "Situation 3 — Organiser une soirée",
-            sections: []
-          }
+{
+  titre: "Situation 3 — Organiser une soirée",
 
+  sections: [
+
+    /*
+    ======================================================
+    ORGANISATION DE LA SOIRÉE
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Organisation et événement",
+      type: "noms",
+
+      mots: [
+        [
+          "une soirée",
+          "des soirées",
+          "party / evening event"
+        ],
+
+        [
+          "un événement",
+          "des événements",
+          "event"
+        ],
+
+        [
+          "un budget",
+          "des budgets",
+          "budget"
+        ],
+
+        [
+          "un objectif",
+          "des objectifs",
+          "goal / objective"
+        ],
+
+        [
+          "un thème",
+          "des thèmes",
+          "theme"
+        ],
+
+        [
+          "un lieu",
+          "des lieux",
+          "venue / place"
+        ],
+
+        [
+          "une invitation",
+          "des invitations",
+          "invitation"
+        ],
+
+        [
+          "un invité / une invitée",
+          "des invités / des invitées",
+          "guest"
+        ],
+
+        [
+          "une animation",
+          "des animations",
+          "entertainment / activity"
+        ],
+
+        [
+          "un traiteur / une traiteuse",
+          "des traiteurs / des traiteuses",
+          "caterer"
         ]
-      }
+      ]
+    },
 
-    ];
 
+    /*
+    ======================================================
+    TYPES DE SOIRÉES
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Types de soirées",
+      type: "noms",
+
+      mots: [
+        [
+          "une soirée d'entreprise",
+          "des soirées d'entreprise",
+          "company party"
+        ],
+
+        [
+          "une soirée à thème",
+          "des soirées à thème",
+          "themed party"
+        ],
+
+        [
+          "une soirée casino",
+          "des soirées casino",
+          "casino night"
+        ],
+
+        [
+          "une soirée bowling",
+          "des soirées bowling",
+          "bowling night"
+        ],
+
+        [
+          "une soirée jeux de société",
+          "des soirées jeux de société",
+          "board-game night"
+        ],
+
+        [
+          "une soirée cabaret-spectacle",
+          "des soirées cabaret-spectacle",
+          "cabaret / show night"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ORGANISER UNE SOIRÉE
+    ======================================================
+    */
+
+    {
+      titre: "Verbes et actions — Organiser une soirée",
+      type: "expressions",
+
+      mots: [
+        [
+          "organiser une soirée",
+          "to organise a party / event"
+        ],
+
+        [
+          "définir un budget",
+          "to set a budget"
+        ],
+
+        [
+          "fixer une date",
+          "to set a date"
+        ],
+
+        [
+          "expliquer l'objectif de la soirée",
+          "to explain the purpose of the event"
+        ],
+
+        [
+          "choisir un thème",
+          "to choose a theme"
+        ],
+
+        [
+          "chercher un lieu",
+          "to look for a venue"
+        ],
+
+        [
+          "créer une invitation",
+          "to create an invitation"
+        ],
+
+        [
+          "envoyer une invitation",
+          "to send an invitation"
+        ],
+
+        [
+          "inviter quelqu'un",
+          "to invite someone"
+        ],
+
+        [
+          "relancer quelqu'un",
+          "to follow up with someone"
+        ],
+
+        [
+          "remercier quelqu'un",
+          "to thank someone"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    PARTICIPER À UNE SOIRÉE
+    ======================================================
+    */
+
+    {
+      titre: "Verbes et actions — Participer à une soirée",
+      type: "expressions",
+
+      mots: [
+        [
+          "répondre à une invitation",
+          "to respond to an invitation"
+        ],
+
+        [
+          "accepter une invitation",
+          "to accept an invitation"
+        ],
+
+        [
+          "refuser une invitation",
+          "to decline an invitation"
+        ],
+
+        [
+          "faire connaissance",
+          "to get to know people"
+        ],
+
+        [
+          "passer un bon moment",
+          "to have a good time"
+        ],
+
+        [
+          "s'amuser",
+          "to have fun"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ADJECTIFS
+    ======================================================
+    */
+
+    {
+      titre: "Adjectifs — Décrire une soirée ou un lieu",
+      type: "adjectifs",
+
+      mots: [
+        [
+          "convivial",
+          "conviviale",
+          "conviviaux / conviviales",
+          "friendly / welcoming"
+        ],
+
+        [
+          "chaleureux",
+          "chaleureuse",
+          "chaleureux / chaleureuses",
+          "warm / welcoming"
+        ],
+
+        [
+          "central",
+          "centrale",
+          "centraux / centrales",
+          "central"
+        ],
+
+        [
+          "réputé",
+          "réputée",
+          "réputés / réputées",
+          "well-known / reputable"
+        ],
+
+        [
+          "original",
+          "originale",
+          "originaux / originales",
+          "original"
+        ],
+
+        [
+          "festif",
+          "festive",
+          "festifs / festives",
+          "festive"
+        ]
+      ]
+    }
+
+        ] // fin situations
+
+      } // fin UNITÉ 1
+
+    ]; // fin vocabulaire
