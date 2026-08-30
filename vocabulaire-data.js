@@ -1450,20 +1450,39 @@ SITUATION 3 — ORGANISER UNE SOIRÉE
         ],
 
         [
-          "festif",
+               "festif",
           "festive",
           "festifs / festives",
           "festive"
         ]
       ]
+    },
+
+    /*
+    ======================================================
+    ADVERBES ET EXPRESSIONS DE FRÉQUENCE
+    ======================================================
+    */
+
+    {
+      titre: "Adverbes et expressions de fréquence",
+      type: "expressions",
+
+      mots: [
+        ["toujours", "always"],
+        ["souvent", "often"],
+        ["régulièrement", "regularly"],
+        ["généralement", "generally / usually"],
+        ["parfois", "sometimes"],
+        ["de temps en temps", "from time to time"],
+        ["rarement", "rarely"],
+        ["presque jamais", "hardly ever"],
+        ["jamais", "never"],
+        ["tous les jours", "every day"],
+        ["toutes les semaines", "every week"],
+        ["une fois par semaine", "once a week"],
+        ["deux fois par semaine", "twice a week"]
+      ]
     }
 
   ] // fin sections de Situation 3
-
-} // fin Situation 3
-
-] // fin situations
-
-} // fin UNITÉ 1
-
-]; // fin vocabulaire
