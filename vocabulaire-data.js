@@ -1486,3 +1486,11 @@ SITUATION 3 — ORGANISER UNE SOIRÉE
     }
 
   ] // fin sections de Situation 3
+
+} // fin Situation 3
+
+] // fin situations
+
+} // fin UNITÉ 1
+
+]; // fin vocabulaire
