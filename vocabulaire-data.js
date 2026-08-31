@@ -1485,9 +1485,50 @@ SITUATION 3 — ORGANISER UNE SOIRÉE
       ]
     }
 
-  ] // fin sections de Situation 3
+    ] // fin sections de Situation 3
 
-} // fin Situation 3
+}, // fin Situation 3
+
+
+/*
+======================================================
+LAB LANGUE ET CULTURE
+======================================================
+*/
+
+{
+  titre: "Lab langue et culture",
+
+  sections: [
+
+    /*
+    Le vocabulaire du Lab sera ajouté ici.
+    */
+
+  ]
+
+}, // fin Lab langue et culture
+
+
+/*
+======================================================
+ATELIERS — S'EXCUSER / REMERCIER PAR MAIL
+======================================================
+*/
+
+{
+  titre: "Ateliers — S'excuser / Remercier par mail",
+
+  sections: [
+
+    /*
+    Le vocabulaire des ateliers sera ajouté ici.
+    */
+
+  ]
+
+} // fin Ateliers
+
 
 ] // fin situations
 
