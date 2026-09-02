@@ -1502,8 +1502,422 @@ LAB LANGUE ET CULTURE
   sections: [
 
     /*
-    Le vocabulaire du Lab sera ajouté ici.
+    ======================================================
+    ALIMENTS — 1 MINUTE POUR LIRE
+    ======================================================
     */
+
+    {
+      titre: "Noms — Les aliments",
+      type: "noms",
+
+      mots: [
+        [
+          "une dinde",
+          "des dindes",
+          "turkey"
+        ],
+
+        [
+          "le champagne",
+          "—",
+          "champagne"
+        ],
+
+        [
+          "une épice",
+          "des épices",
+          "spice"
+        ],
+
+        [
+          "un oignon",
+          "des oignons",
+          "onion"
+        ],
+
+        [
+          "une salade",
+          "des salades",
+          "salad / lettuce"
+        ],
+
+        [
+          "une tomate cerise",
+          "des tomates cerises",
+          "cherry tomato"
+        ],
+
+        [
+          "une aubergine",
+          "des aubergines",
+          "aubergine / eggplant"
+        ],
+
+        [
+          "une courgette",
+          "des courgettes",
+          "courgette / zucchini"
+        ],
+
+        [
+          "un poireau",
+          "des poireaux",
+          "leek"
+        ],
+
+        [
+          "un brocoli",
+          "des brocolis",
+          "broccoli"
+        ],
+
+        [
+          "une pomme",
+          "des pommes",
+          "apple"
+        ],
+
+        [
+          "une poire",
+          "des poires",
+          "pear"
+        ],
+
+        [
+          "une figue",
+          "des figues",
+          "fig"
+        ],
+
+        [
+          "du raisin",
+          "—",
+          "grapes"
+        ],
+
+        [
+          "un citron",
+          "des citrons",
+          "lemon"
+        ],
+
+        [
+          "un paquet de biscuits",
+          "des paquets de biscuits",
+          "a packet of biscuits / cookies"
+        ],
+
+        [
+          "une entrecôte",
+          "des entrecôtes",
+          "rib steak"
+        ],
+
+        [
+          "une côtelette d'agneau",
+          "des côtelettes d'agneau",
+          "lamb chop"
+        ],
+
+        [
+          "un filet de canard",
+          "des filets de canard",
+          "duck fillet"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    VOCABULAIRE ET EXPRESSIONS
+    ======================================================
+    */
+
+    {
+      titre: "Vocabulaire et expressions",
+      type: "expressions",
+
+      mots: [
+        [
+          "les fêtes de fin d'année",
+          "end-of-year holidays / holiday season"
+        ],
+
+        [
+          "la veille",
+          "the day before / the previous day"
+        ],
+
+        [
+          "se rendre quelque part (= aller quelque part)",
+          "to go somewhere"
+        ],
+
+        [
+          "manger bio",
+          "to eat organic food"
+        ],
+
+        [
+          "manger épicé",
+          "to eat spicy / seasoned food"
+        ],
+
+        [
+          "manger pimenté",
+          "to eat spicy / chilli-hot food"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    SI / S'IL / SI ELLE / SI L'ON
+    ======================================================
+    */
+
+    {
+      titre: "Si, s'il, si elle, si l'on",
+      type: "note",
+
+      html: `
+        <p>
+          Devant <strong>il</strong>, <strong>si</strong> devient
+          <strong>s'</strong>.
+          <br>
+          <em>
+            Before <strong>il</strong>, <strong>si</strong> becomes
+            <strong>s'</strong>.
+          </em>
+        </p>
+
+        <div class="exemple">
+          si + il → <strong>s'il</strong><br><br>
+
+          Je demande <strong>s'il</strong> est disponible.<br>
+          <em>I ask if he is available.</em>
+        </div>
+
+        <p>
+          Mais on garde <strong>si</strong> devant
+          <strong>elle</strong>.
+          <br>
+          <em>
+            But <strong>si</strong> remains unchanged before
+            <strong>elle</strong>.
+          </em>
+        </p>
+
+        <div class="exemple">
+          <strong>si elle</strong> vient<br>
+          <em>if she comes</em><br><br>
+
+          Je ne sais pas <strong>si elle</strong> est disponible.<br>
+          <em>I don't know if she is available.</em>
+        </div>
+
+        <p>
+          Devant <strong>on</strong>, on peut dire
+          <strong>si on</strong> ou <strong>si l'on</strong>.
+          <strong>Si l'on</strong> appartient généralement à un registre
+          plus soigné.
+          <br>
+          <em>
+            Before <strong>on</strong>, we can use either
+            <strong>si on</strong> or <strong>si l'on</strong>.
+            <strong>Si l'on</strong> is generally used in a more formal
+            or polished register.
+          </em>
+        </p>
+
+        <div class="exemple">
+          Je ne sais pas <strong>si on</strong> peut réserver.<br>
+          <em>I don't know if we can make a reservation.</em><br><br>
+
+          Je ne sais pas <strong>si l'on</strong> peut réserver.<br>
+          <em>I don't know if we can make a reservation.</em>
+        </div>
+
+        <p>
+          <strong>À retenir / Remember:</strong><br><br>
+
+          si + il → <strong>s'il</strong>
+          = <em>if he / if it</em><br>
+
+          si + elle → <strong>si elle</strong>
+          = <em>if she / if it</em><br>
+
+          si + on → <strong>si on / si l'on</strong>
+          = <em>if we / if one</em>
+        </p>
+      `
+    },
+
+
+    /*
+    ======================================================
+    LES CONSTRUCTIONS AVEC FAIRE
+    ======================================================
+    */
+
+    {
+      titre: "Les constructions avec « faire »",
+      type: "note",
+
+      html: `
+        <p>
+          Le verbe <strong>faire</strong> peut être utilisé avec
+          différentes constructions.
+          <br>
+          <em>
+            The verb <strong>faire</strong> can be used with
+            different constructions.
+          </em>
+        </p>
+
+        <p>
+          Il est important d'apprendre
+          <strong>l'expression complète</strong>, avec son article
+          quand il y en a un.
+          <br>
+          <em>
+            It is important to learn the
+            <strong>complete expression</strong>, including the article
+            when there is one.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>1. faire + le / la / l' / les + nom</strong>
+        </p>
+
+        <div class="exemple">
+          faire <strong>la cuisine</strong>
+          = <em>to cook</em><br>
+
+          faire <strong>le ménage</strong>
+          = <em>to do the housework</em><br>
+
+          faire <strong>les courses</strong>
+          = <em>to do the shopping / grocery shopping</em>
+        </div>
+
+        <hr>
+
+        <p>
+          <strong>2. faire + du / de la / de l' / des + nom</strong>
+        </p>
+
+        <div class="exemple">
+          faire <strong>du sport</strong>
+          = <em>to exercise / do sport</em><br>
+
+          faire <strong>de la natation</strong>
+          = <em>to go swimming</em><br>
+
+          faire <strong>des études</strong>
+          = <em>to study / pursue studies</em>
+        </div>
+
+        <hr>
+
+        <p>
+          <strong>3. faire + nom sans article dans certaines expressions</strong>
+          <br>
+          <em>
+            faire + noun without an article in certain expressions
+          </em>
+        </p>
+
+        <div class="exemple">
+          faire <strong>connaissance</strong>
+          = <em>to meet / get to know someone</em><br>
+
+          faire <strong>attention</strong>
+          = <em>to pay attention / be careful</em><br>
+
+          faire <strong>peur</strong>
+          = <em>to scare / frighten</em>
+        </div>
+
+        <p>
+          <strong>À retenir :</strong>
+          il n'existe pas un seul article à utiliser après
+          <strong>faire</strong>. La construction dépend de l'expression.
+          Apprenez donc chaque expression comme un ensemble.
+          <br>
+          <em>
+            <strong>Remember:</strong>
+            there is no single article that is always used after
+            <strong>faire</strong>. The construction depends on the
+            expression, so learn each expression as a whole.
+          </em>
+        </p>
+
+        <p>
+          Consultez les <strong>PPTX du cours</strong>
+          pour plus d'exemples avec <strong>faire</strong>.
+          <br>
+          <em>
+            Check the <strong>course PPTX slides</strong>
+            for more examples with <strong>faire</strong>.
+          </em>
+        </p>
+      `
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSION FRANCOPHONE
+    ======================================================
+    */
+
+    {
+      titre: "Expression francophone",
+      type: "expressions",
+
+      mots: [
+        [
+          "guindailler = faire la fête",
+          "to party / go out partying (Belgian French)"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    PROJET
+    ======================================================
+    */
+
+    {
+      titre: "Projet — Imaginer un festival culinaire",
+      type: "expressions",
+
+      mots: [
+        [
+          "un festival culinaire",
+          "food festival"
+        ],
+
+        [
+          "fixer une date",
+          "to set a date"
+        ],
+
+        [
+          "fixer un lieu",
+          "to choose / set a location"
+        ]
+      ]
+    }
 
   ]
 
