@@ -1935,8 +1935,566 @@ ATELIERS — S'EXCUSER / REMERCIER PAR MAIL
   sections: [
 
     /*
-    Le vocabulaire des ateliers sera ajouté ici.
+    ======================================================
+    S'EXCUSER
+    ======================================================
     */
+
+    {
+      titre: "S'excuser",
+      type: "expressions",
+
+      mots: [
+        [
+          "Je suis vraiment désolé(e), mais ce n'est pas possible.",
+          "I'm really sorry, but it's not possible."
+        ],
+
+        [
+          "Désolé(e), je ne peux pas, j'ai...",
+          "Sorry, I can't, I have..."
+        ],
+
+        [
+          "C'est très gentil à vous, mais samedi, je...",
+          "That's very kind of you, but on Saturday, I..."
+        ],
+
+        [
+          "C'est dommage ! Je ne suis pas là ce jour-là.",
+          "That's a shame! I won't be there that day."
+        ],
+
+        [
+          "Je regrette. Je ne suis pas libre.",
+          "I'm sorry. I'm not available."
+        ],
+
+        [
+          "Je ne pourrai malheureusement pas venir.",
+          "Unfortunately, I won't be able to come."
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    REMERCIER
+    ======================================================
+    */
+
+    {
+      titre: "Remercier",
+      type: "expressions",
+
+      mots: [
+        [
+          "Merci.",
+          "Thank you."
+        ],
+
+        [
+          "Merci pour tout.",
+          "Thank you for everything."
+        ],
+
+        [
+          "Merci beaucoup pour le livre.",
+          "Thank you very much for the book."
+        ],
+
+        [
+          "Merci de répondre à ce message rapidement.",
+          "Thank you for replying to this message quickly."
+        ],
+
+        [
+          "C'est vraiment gentil à vous.",
+          "That's really kind of you."
+        ],
+
+        [
+          "Merci à vous.",
+          "Thank you."
+        ],
+
+        [
+          "Je vous remercie d'être venu(e).",
+          "Thank you for coming."
+        ],
+
+        [
+          "Je vous remercie de votre présence.",
+          "Thank you for attending / Thank you for your presence."
+        ],
+
+        [
+          "Je vous remercie de votre aide.",
+          "Thank you for your help."
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LES ÉLÉMENTS D'UN MAIL
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Les éléments d'un mail",
+      type: "noms",
+
+      mots: [
+        [
+          "un destinataire",
+          "des destinataires",
+          "recipient"
+        ],
+
+        [
+          "un expéditeur / une expéditrice",
+          "des expéditeurs / des expéditrices",
+          "sender"
+        ],
+
+        [
+          "un objet",
+          "des objets",
+          "subject / subject line"
+        ],
+
+        [
+          "une formule de début",
+          "des formules de début",
+          "opening greeting"
+        ],
+
+        [
+          "une formule de fin",
+          "des formules de fin",
+          "closing phrase"
+        ],
+
+        [
+          "une signature électronique",
+          "des signatures électroniques",
+          "email signature"
+        ],
+
+        [
+          "un brouillon",
+          "des brouillons",
+          "draft"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    COMMENCER UN MESSAGE
+    ======================================================
+    */
+
+    {
+      titre: "Commencer un message — Les degrés de formalité",
+      type: "note",
+
+      html: `
+        <p>
+          La formule utilisée au début d'un message dépend de
+          <strong>la relation avec le destinataire</strong> et du
+          <strong>degré de formalité</strong>.
+          <br>
+          <em>
+            The greeting used at the beginning of a message depends on
+            <strong>your relationship with the recipient</strong> and the
+            <strong>degree of formality</strong>.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>1. Coucou — Très familier</strong><br>
+          <em>Coucou — Very informal</em>
+        </p>
+
+        <div class="exemple">
+          <strong>Coucou !</strong><br>
+          <em>Hi! / Hey!</em><br><br>
+
+          <strong>Coucou Marie !</strong><br>
+          <em>Hi Marie! / Hey Marie!</em>
+        </div>
+
+        <p>
+          <strong>Coucou</strong> s'utilise surtout avec des personnes
+          dont on est très proche : famille, amis proches, partenaire, etc.
+          Ce n'est normalement pas une formule professionnelle.
+          <br>
+          <em>
+            <strong>Coucou</strong> is mainly used with people you are
+            very close to: family, close friends, a partner, etc.
+            It is normally not used in professional communication.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>2. Salut — Familier</strong><br>
+          <em>Salut — Informal</em>
+        </p>
+
+        <div class="exemple">
+          <strong>Salut Paul !</strong><br>
+          <em>Hi Paul!</em><br><br>
+
+          <strong>Salut tout le monde !</strong><br>
+          <em>Hi everyone!</em>
+        </div>
+
+        <p>
+          <strong>Salut</strong> convient aux amis, aux camarades
+          et aux personnes avec lesquelles on a une relation informelle.
+          <br>
+          <em>
+            <strong>Salut</strong> is appropriate for friends,
+            classmates and people with whom you have an informal
+            relationship.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>3. Bonjour — Neutre et poli</strong><br>
+          <em>Bonjour — Neutral and polite</em>
+        </p>
+
+        <div class="exemple">
+          <strong>Bonjour Marie,</strong><br>
+          <em>Hello Marie,</em><br><br>
+
+          <strong>Bonjour Madame,</strong><br>
+          <em>Hello / Good morning, Madam,</em><br><br>
+
+          <strong>Bonjour Monsieur,</strong><br>
+          <em>Hello / Good morning, Sir,</em>
+        </div>
+
+        <p>
+          <strong>Bonjour</strong> est une formule très utile.
+          Elle convient à de nombreuses situations et peut être utilisée
+          dans beaucoup de messages professionnels ou universitaires.
+          <br>
+          <em>
+            <strong>Bonjour</strong> is a very useful greeting.
+            It is appropriate in many situations and can be used
+            in many professional or university messages.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>4. Cher / Chère / Chers / Chères</strong>
+        </p>
+
+        <p>
+          <strong>Cher</strong> s'accorde en genre et en nombre
+          avec la personne ou les personnes auxquelles on écrit.
+          <br>
+          <em>
+            <strong>Cher</strong> agrees in gender and number
+            with the person or people you are writing to.
+          </em>
+        </p>
+
+        <div class="exemple">
+          un homme → <strong>Cher Paul,</strong><br>
+          <em>Dear Paul,</em><br><br>
+
+          une femme → <strong>Chère Marie,</strong><br>
+          <em>Dear Marie,</em><br><br>
+
+          plusieurs hommes →
+          <strong>Chers collègues,</strong><br>
+          <em>Dear colleagues,</em><br><br>
+
+          plusieurs femmes →
+          <strong>Chères étudiantes,</strong><br>
+          <em>Dear students,</em>
+        </div>
+
+        <p>
+          <strong>Et pour un groupe mixte ?</strong>
+          <br>
+          <em><strong>What about a mixed-gender group?</strong></em>
+        </p>
+
+        <p>
+          Dans la grammaire française traditionnelle,
+          si le groupe comprend des personnes de genre masculin
+          et féminin, on utilise le
+          <strong>masculin pluriel : chers</strong>.
+          <br>
+          <em>
+            In traditional French grammar, if the group includes
+            both masculine and feminine members, the
+            <strong>masculine plural form chers</strong> is used.
+          </em>
+        </p>
+
+        <div class="exemple">
+          Paul + Marie →
+          <strong>Chers amis,</strong><br>
+          <em>Dear friends,</em><br><br>
+
+          étudiants + étudiantes →
+          <strong>Chers étudiants,</strong><br>
+          <em>Dear students,</em>
+        </div>
+
+        <p>
+          <strong>À retenir / Remember:</strong><br><br>
+
+          Coucou → <em>très familier / very informal</em><br>
+          Salut → <em>familier / informal</em><br>
+          Bonjour → <em>neutre et poli / neutral and polite</em><br>
+          Cher / Chère / Chers / Chères →
+          <em>Dear..., with gender and number agreement</em>
+        </p>
+      `
+    },
+
+
+    /*
+    ======================================================
+    TERMINER UN MESSAGE
+    ======================================================
+    */
+
+    {
+      titre: "Terminer un message — Les degrés de formalité",
+      type: "note",
+
+      html: `
+        <p>
+          Comme pour le début du message, la formule de clôture
+          dépend de <strong>la relation avec le destinataire</strong>
+          et du <strong>degré de formalité</strong>.
+          <br>
+          <em>
+            As with the opening greeting, the closing phrase depends on
+            <strong>your relationship with the recipient</strong>
+            and the <strong>degree of formality</strong>.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>1. Très familier et affectueux</strong><br>
+          <em>Very informal and affectionate</em>
+        </p>
+
+        <div class="exemple">
+          <strong>Bisous,</strong><br>
+          <em>Kisses / Love,</em><br><br>
+
+          <strong>Bises,</strong><br>
+          <em>Kisses / Love,</em><br><br>
+
+          <strong>Je t'embrasse,</strong><br>
+          <em>Love / Sending you a hug,</em>
+        </div>
+
+        <p>
+          <strong>Bisous</strong> est très affectueux et s'utilise
+          avec des personnes dont on est proche.
+          <strong>Bises</strong> est également familier, mais peut être
+          un peu moins intime selon la relation.
+          <strong>Je t'embrasse</strong> est une formule personnelle
+          et affectueuse.
+          <br>
+          <em>
+            <strong>Bisous</strong> is very affectionate and is used
+            with people you are close to.
+            <strong>Bises</strong> is also informal but can be slightly
+            less intimate depending on the relationship.
+            <strong>Je t'embrasse</strong> is a personal and affectionate
+            closing.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>2. Familier</strong><br>
+          <em>Informal</em>
+        </p>
+
+        <div class="exemple">
+          <strong>À bientôt,</strong><br>
+          <em>See you soon,</em><br><br>
+
+          <strong>À très bientôt,</strong><br>
+          <em>See you very soon,</em><br><br>
+
+          <strong>Bonne journée !</strong><br>
+          <em>Have a nice day!</em><br><br>
+
+          <strong>Bonne soirée !</strong><br>
+          <em>Have a nice evening!</em>
+        </div>
+
+        <hr>
+
+        <p>
+          <strong>3. Bien à toi / Bien à vous</strong>
+        </p>
+
+        <div class="exemple">
+          <strong>Bien à toi,</strong><br>
+          <em>Best wishes / All the best,</em><br><br>
+
+          <strong>Bien à vous,</strong><br>
+          <em>Best regards / Kind regards,</em>
+        </div>
+
+        <p>
+          On utilise <strong>Bien à toi</strong> avec une personne
+          que l'on tutoie.
+          <br>
+          <em>
+            Use <strong>Bien à toi</strong> with someone you address
+            with <strong>tu</strong>.
+          </em>
+        </p>
+
+        <p>
+          On utilise <strong>Bien à vous</strong> avec une personne
+          que l'on vouvoie ou lorsque l'on s'adresse à plusieurs personnes.
+          Cette formule est polie et peut être utilisée dans de nombreux
+          contextes professionnels.
+          <br>
+          <em>
+            Use <strong>Bien à vous</strong> with someone you address
+            with <strong>vous</strong>, or when writing to several people.
+            This is a polite closing that can be used in many professional
+            contexts.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>4. Formel et professionnel</strong><br>
+          <em>Formal and professional</em>
+        </p>
+
+        <div class="exemple">
+          <strong>Cordialement,</strong><br>
+          <em>Kind regards / Best regards,</em><br><br>
+
+          <strong>Bien cordialement,</strong><br>
+          <em>Kind regards / Warm regards,</em>
+        </div>
+
+        <p>
+          <strong>Cordialement</strong> est une formule standard
+          très fréquente dans les mails professionnels.
+          <br>
+          <em>
+            <strong>Cordialement</strong> is a very common standard
+            closing in professional emails.
+          </em>
+        </p>
+
+        <p>
+          <strong>Bien cordialement</strong> est également professionnel,
+          mais apporte généralement une tonalité un peu plus chaleureuse.
+          <br>
+          <em>
+            <strong>Bien cordialement</strong> is also professional,
+            but generally has a slightly warmer tone.
+          </em>
+        </p>
+
+        <hr>
+
+        <p>
+          <strong>À retenir / Remember:</strong><br><br>
+
+          Bisous → <em>très familier et affectueux / very informal and affectionate</em><br>
+
+          Bises → <em>familier et affectueux / informal and affectionate</em><br>
+
+          Je t'embrasse → <em>familier et affectueux / informal and affectionate</em><br>
+
+          À bientôt → <em>familier / informal</em><br>
+
+          Bien à toi → <em>avec « tu » / with someone you address as « tu »</em><br>
+
+          Bien à vous → <em>poli, avec « vous » / polite, with « vous »</em><br>
+
+          Cordialement → <em>formel et professionnel / formal and professional</em><br>
+
+          Bien cordialement → <em>professionnel et un peu plus chaleureux / professional and slightly warmer</em>
+        </p>
+      `
+    },
+
+
+    /*
+    ======================================================
+    EXEMPLE DE MAIL
+    ======================================================
+    */
+
+    {
+      titre: "Exemple — Remercier par mail",
+      type: "note",
+
+      html: `
+        <div class="exemple">
+          <strong>Objet : Merci pour votre invitation</strong><br><br>
+
+          <strong>Chère Madame Martin,</strong><br><br>
+
+          Je vous remercie pour votre invitation.
+          J'ai passé une excellente soirée.
+          L'ambiance était conviviale et chaleureuse.<br><br>
+
+          Au plaisir de vous revoir prochainement.<br><br>
+
+          <strong>Bien cordialement,</strong><br>
+          Sophie
+        </div>
+
+        <p>
+          <em>
+            <strong>Subject: Thank you for your invitation</strong><br><br>
+
+            <strong>Dear Ms Martin,</strong><br><br>
+
+            Thank you for your invitation.
+            I had an excellent evening.
+            The atmosphere was friendly and welcoming.<br><br>
+
+            I look forward to seeing you again soon.<br><br>
+
+            <strong>Kind regards,</strong><br>
+            Sophie
+          </em>
+        </p>
+      `
+    }
 
   ]
 
