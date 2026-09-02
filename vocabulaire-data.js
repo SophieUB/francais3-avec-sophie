@@ -1591,7 +1591,7 @@ LAB LANGUE ET CULTURE
         ],
 
         [
-          "du raisin",
+          "le raisin",
           "—",
           "grapes"
         ],
@@ -1662,7 +1662,7 @@ LAB LANGUE ET CULTURE
 
         [
           "manger épicé",
-          "to eat spicy / seasoned food"
+          "to eat spicy food"
         ],
 
         [
@@ -1913,8 +1913,8 @@ LAB LANGUE ET CULTURE
         ],
 
         [
-          "fixer un lieu",
-          "to choose / set a location"
+          "choisir un lieu",
+          "to choose a location / venue"
         ]
       ]
     }
@@ -1922,7 +1922,6 @@ LAB LANGUE ET CULTURE
   ]
 
 }, // fin Lab langue et culture
-
 
 /*
 ======================================================
