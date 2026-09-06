@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quiz — Le coin français</title>
+
+  <style>
+
+    :root {
+      --bleu-fonce: #1D476E;
+      --bleu-clair: #74BACD;
+      --rose: #EE3167;
+      --fond: #F4F7FA;
+      --blanc: #FFFFFF;
+      --texte: #173047;
+      --gris: #667785;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--fond);
+      color: var(--texte);
+    }
+
+    .conteneur {
+      width: min(950px, calc(100% - 32px));
+      margin: auto;
+    }
+
+
+    /* =========================
+       EN-TÊTE
+       ========================= */
+
+    header {
+      background: var(--bleu-fonce);
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.9;
+    }
+
+
+    /* =========================
+       CONTENU
+       ========================= */
+
+    main {
+      padding: 35px 0 60px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .intro h2 {
+      color: var(--bleu-fonce);
+      margin-bottom: 8px;
+    }
+
+    .intro p {
+      color: var(--gris);
+    }
+
+
+    /* =========================
+       UNITÉS
+       ========================= */
+
+    .grille-unites {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .unite {
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+
+      text-decoration: none;
+      color: var(--texte);
+
+      border: 2px solid transparent;
+
+      box-shadow:
+        0 4px 16px rgba(29, 71, 110, 0.08);
+
+      transition: 0.2s;
+    }
+
+    .unite:hover {
+      transform: translateY(-3px);
+      border-color: var(--bleu-clair);
+    }
+
+    .numero {
+      display: inline-block;
+
+      background: #EAF3F6;
+      color: var(--bleu-fonce);
+
+      padding: 6px 11px;
+      border-radius: 20px;
+
+      font-size: 12px;
+      font-weight: bold;
+
+      margin-bottom: 15px;
+    }
+
+    .unite h3 {
+      margin: 0 0 8px;
+      color: var(--bleu-fonce);
+      font-size: 22px;
+    }
+
+    .unite p {
+      color: var(--gris);
+      margin: 0 0 20px;
+      line-height: 1.5;
+    }
+
+    .commencer {
+      color: var(--rose);
+      font-weight: bold;
+    }
+
+
+    /* UNITÉS PAS ENCORE DISPONIBLES */
+
+    .bientot {
+      opacity: 0.55;
+      cursor: default;
+    }
+
+    .bientot:hover {
+      transform: none;
+      border-color: transparent;
+    }
+
+
+    /* =========================
+       RETOUR
+       ========================= */
+
+    .retour {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .retour a {
+      color: var(--bleu-fonce);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 650px) {
+
+      .grille-unites {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+<header>
+
+  <div class="conteneur">
+
+    <h1>Quiz</h1>
+
+    <p>
+      Le coin français
+    </p>
+
+  </div>
+
+</header>
+
+
+<main class="conteneur">
+
+
+  <div class="intro">
+
+    <h2>Choisissez une unité</h2>
+
+    <p>
+      Testez votre grammaire et votre vocabulaire.
+    </p>
+
+  </div>
+
+
+  <div class="grille-unites">
+
+
+    <!-- =========================
+         UNITÉ 1
+         ========================= -->
+
+    <a
+      href="quiz-unite1.html"
+      class="unite">
+
+      <span class="numero">
+        UNITÉ 1
+      </span>
+
+      <h3>
+        Prochain arrêt : nouveau départ
+      </h3>
+
+      <p>
+        Grammaire et vocabulaire
+        des semaines 1 à 3.
+      </p>
+
+      <span class="commencer">
+        Commencer le quiz →
+      </span>
+
+    </a>
+
+
+
+    <!-- =========================
+         UNITÉ 2
+         ========================= -->
+
+    <div class="unite bientot">
+
+      <span class="numero">
+        UNITÉ 2
+      </span>
+
+      <h3>
+        Unité 2
+      </h3>
+
+      <p>
+        Le quiz sera disponible prochainement.
+      </p>
+
+      <span class="commencer">
+        À venir
+      </span>
+
+    </div>
+
+
+
+    <!-- =========================
+         UNITÉ 3
+         ========================= -->
+
+    <div class="unite bientot">
+
+      <span class="numero">
+        UNITÉ 3
+      </span>
+
+      <h3>
+        Unité 3
+      </h3>
+
+      <p>
+        Le quiz sera disponible prochainement.
+      </p>
+
+      <span class="commencer">
+        À venir
+      </span>
+
+    </div>
+
+
+
+    <!-- =========================
+         UNITÉ 4
+         ========================= -->
+
+    <div class="unite bientot">
+
+      <span class="numero">
+        UNITÉ 4
+      </span>
+
+      <h3>
+        Unité 4
+      </h3>
+
+      <p>
+        Le quiz sera disponible prochainement.
+      </p>
+
+      <span class="commencer">
+        À venir
+      </span>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="retour">
+
+    <a href="index.html">
+      ← Retour à l'accueil
+    </a>
+
+  </div>
+
+
+</main>
+
+</body>
+</html>
