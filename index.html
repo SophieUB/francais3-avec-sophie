@@ -1,18 +1,459 @@
-<div class="annonce">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h2>Annonces importantes</h2>
+  <title>Mon espace de français</title>
 
-  <h3>Projet « Vlog »</h3>
+  <style>
+    :root {
+      --bleu-fonce: #1D476E;
+      --bleu-clair: #74BACD;
+      --rose: #EE3167;
+      --fond: #F4F7FA;
+      --blanc: #FFFFFF;
+      --texte: #173047;
+      --gris: #667785;
+    }
 
-  <p>
-    <strong>Constituez votre groupe.</strong>
-  </p>
+    * {
+      box-sizing: border-box;
+    }
 
-  <p>
-    <a href="https://docs.google.com/document/d/1W-Xck-J3At8laKweSyb2c9h-IgEExyGKiN8P2UGHIQg/edit?usp=drivesdk"
-       target="_blank">
-      Inscrivez votre groupe ici
-    </a>
-  </p>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--texte);
+      background: var(--fond);
+      line-height: 1.6;
+    }
 
-</div>
+    header {
+      padding: 42px 24px 70px;
+      color: var(--blanc);
+      background:
+        radial-gradient(circle at 85% 15%, rgba(238, 49, 103, 0.28), transparent 25%),
+        linear-gradient(135deg, var(--bleu-fonce), #102D49);
+    }
+
+    .conteneur {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      color: #DCECF3;
+    }
+
+    .code-cours {
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #C5EDF4;
+    }
+
+    .entete {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.7rem, 6vw, 5rem);
+      line-height: 1;
+    }
+
+    h1 span {
+      color: var(--bleu-clair);
+    }
+
+    .introduction {
+      max-width: 720px;
+      margin: 0;
+      color: #E5F1F6;
+      font-size: 1.08rem;
+    }
+
+    .semaine {
+      padding: 26px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .semaine small {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #C5EDF4;
+    }
+
+    .semaine h2 {
+      margin: 8px 0 6px;
+      font-size: 1.8rem;
+    }
+
+    .semaine strong {
+      color: #FFD5E0;
+      font-size: 1.14rem;
+    }
+
+    main {
+      padding: 34px 0 70px;
+    }
+
+    .bloc-blanc {
+      padding: 28px;
+      margin-bottom: 24px;
+      border-radius: 22px;
+      background: var(--blanc);
+      box-shadow: 0 12px 30px rgba(29, 71, 110, 0.12);
+    }
+
+    .bienvenue {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 20px;
+    }
+
+    .annonce {
+      padding-left: 24px;
+      border-left: 6px solid var(--rose);
+    }
+
+    .titre-section {
+      margin: 42px 0 20px;
+      color: var(--bleu-fonce);
+      font-size: 1.9rem;
+    }
+
+    .grille {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .carte {
+      min-height: 190px;
+      padding: 24px;
+      border-radius: 22px;
+      color: var(--blanc);
+      text-decoration: none;
+      box-shadow: 0 12px 26px rgba(29, 71, 110, 0.14);
+      transition: transform 0.2s ease;
+    }
+
+    .carte:hover {
+      transform: translateY(-4px);
+    }
+
+    .carte h3 {
+      margin: 0 0 10px;
+      font-size: 1.45rem;
+    }
+
+    .carte p {
+      margin: 0;
+    }
+
+    .carte span {
+      display: block;
+      margin-top: 28px;
+      font-size: 0.82rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .bleu {
+      background: var(--bleu-fonce);
+    }
+
+    .bleu-clair {
+      background: #4E9EB5;
+    }
+
+    .rose {
+      background: var(--rose);
+    }
+
+    .gris {
+      background: #466373;
+    }
+
+    .clair {
+      color: var(--texte);
+      background: var(--bleu-clair);
+    }
+
+    .sophie {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      margin-top: 24px;
+      padding: 32px;
+      color: var(--blanc);
+      border-radius: 26px;
+      background: linear-gradient(135deg, var(--rose), #C72357);
+      box-shadow: 0 12px 30px rgba(238, 49, 103, 0.22);
+    }
+
+    .sophie h2 {
+      margin: 0 0 8px;
+    }
+
+    .sophie p {
+      margin: 0;
+    }
+
+    .bouton-sophie {
+      padding: 15px 20px;
+      color: #A71C49;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 13px;
+      background: var(--blanc);
+    }
+
+    .infos {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+    }
+
+    .tableau {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      min-width: 650px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #E2E9ED;
+    }
+
+    th {
+      color: var(--blanc);
+      background: var(--bleu-fonce);
+    }
+
+    .expression {
+      margin: 8px 0;
+      color: var(--rose);
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+
+    .hero-boutons {
+      display: flex;
+      gap: 18px;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+
+    .bouton-principal,
+    .bouton-secondaire {
+      display: inline-block;
+      padding: 18px 32px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .bouton-principal {
+      background: linear-gradient(#dff4ff,#bfe8ff);
+      color: #173047;
+    }
+
+    .bouton-secondaire {
+      background: white;
+      color: #173047;
+    }
+
+    .bouton-principal:hover,
+    .bouton-secondaire:hover {
+      transform: translateY(-3px);
+    }
+
+    footer {
+      padding: 30px 20px;
+      color: #DCEAF1;
+      text-align: center;
+      background: #102B45;
+    }
+
+    @media (max-width: 850px) {
+      .entete,
+      .bienvenue,
+      .sophie,
+      .infos {
+        grid-template-columns: 1fr;
+      }
+
+      .grille {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .grille {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body> 
+
+  <!-- =====================================================
+       À MODIFIER CHAQUE SEMAINE
+       =====================================================
+
+  Semaine : 5
+
+  Cette semaine :
+  - Lecture 5
+  - Unité 2 : Vous avez deux minutes ?
+  - Situation 1 : Parler d'une rencontre
+  - Pages 34-35
+
+  - Tutorat 3
+  - Unité 2 : Vous avez deux minutes ?
+  - Situation 2 : Raconter une anecdote
+  - Pages 36-37
+
+  Proverbe :
+  L'erreur est humaine.
+
+  Mot ou expression :
+  J'ai le seum !
+
+  ===================================================== -->
+
+  <header>
+    <div class="conteneur">
+
+      <div class="meta">
+        <div class="code-cours">LAF3201 French 3 [2610]</div>
+        <div>AY 2026/2027 · Semestre 1</div>
+      </div>
+
+      <div class="entete">
+        <div>
+
+          <h1>Mon espace de <span>français</span></h1>
+
+          <p class="introduction">
+            Votre espace pour apprendre, pratiquer, communiquer
+            et progresser en français.
+          </p>
+
+          <div class="hero-boutons">
+
+            <a class="bouton-principal" href="semaine.html">
+              Cette semaine
+            </a>
+
+            <a class="bouton-secondaire"
+               href="https://canvas.nus.edu.sg/courses/94838"
+               target="_blank">
+              Canvas
+            </a>
+
+          </div>
+
+        </div>
+          
+        <div class="semaine">
+
+          <small>Bienvenue</small>
+
+          <h2>Nous sommes en semaine 5</h2>
+
+          <strong>Cette semaine</strong>
+
+          <p>
+            <strong>Lecture 5</strong><br>
+            Unité 2 : « Vous avez deux minutes ? »<br>
+            Situation 1 : « Parler d’une rencontre »<br>
+            <em>Pages 34–35</em>
+          </p>
+
+          <p>
+            <strong>Tutorat 3</strong><br>
+            Unité 2 : « Vous avez deux minutes ? »<br>
+            Situation 2 : « Raconter une anecdote »<br>
+            <em>Pages 36–37</em>
+          </p>
+
+          <p>
+            <strong>
+              Nous sommes en semaine 5. Votre présence aux lectures et aux tutorats est obligatoire.
+            </strong>
+          </p>
+
+          <hr>
+
+          <p><em>L’erreur est humaine.</em></p>
+
+        </div>
+
+      </div>
+    
+    </div>
+  </header>
+
+  <main class="conteneur">
+
+    <section class="bloc-blanc bienvenue">
+
+      <!-- Colonne de gauche -->
+      <div>
+
+        <h2>Bienvenue dans LAF3201 French 3 !</h2>
+
+        <p>
+          Pensez à rejoindre notre groupe Telegram :
+        </p>
+
+        <p>
+          <a class="lien-telegram"
+             href="https://t.me/+4mZw1qw5F0RhOTk1"
+             target="_blank">
+            Rejoindre le groupe Telegram
+          </a>
+        </p>
+
+        <hr>
+
+        <h3>Respect des droits d'auteur</h3>
+
+        <p style="color:#C72357; font-weight:bold;">
+          Les manuels sont protégés par les droits d'auteur.
+        </p>
+
+        <p>
+          La reproduction, la photocopie, la numérisation et la diffusion non autorisée de tout ou partie de ces ouvrages sont interdits.
+        </p>
+
+        <p style="font-size:0.95em; color:#667785;">
+          These textbooks are protected by copyright law.
+          Copying, photocopying, scanning or distributing all or part of these books without authorization is illegal.
+        </p
