@@ -1,6 +1,5 @@
 /* =========================================================
    QUIZ — UNITÉ 1
-   Prochain arrêt : nouveau départ
    Niveau A2
 
    Ce fichier contient UNIQUEMENT les questions.
