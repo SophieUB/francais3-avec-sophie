@@ -1,595 +1,934 @@
-/* =========================================================
-   QUIZ — UNITÉ 1
-   DONNÉES DES QUESTIONS
-   Niveau A2
+<!DOCTYPE html>
+<html lang="fr">
 
-   Pour ajouter une question plus tard :
-   copie simplement un bloc { ... }
-   dans la bonne partie.
-   ========================================================= */
+<head>
 
+  <meta charset="UTF-8">
 
-const quizUnite1 = {
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Quiz — Unité 1 | Le coin français</title>
 
-  /* =======================================================
-     GRAMMAIRE
-     ======================================================= */
 
-  grammaire: [
+  <style>
 
-    {
-      question:
-        "Vous êtes à la gare. Votre train part dans cinq minutes. Vous ___ un billet au guichet.",
+    /* =========================================================
+       COULEURS DU SITE
+       ========================================================= */
 
-      choix: [
-        "achetez",
-        "achetons",
-        "achète",
-        "acheter"
-      ],
-
-      bonne: "achetez",
-
-      explication:
-        "Le sujet est « vous ». Au présent : vous achetez."
-    },
-
-
-    {
-      question:
-        "Luc a téléphoné à l'agence il y a quelques secondes. Il dit : « Je ___ d'appeler l'agence. »",
-
-      choix: [
-        "viens",
-        "vais",
-        "suis",
-        "fais"
-      ],
-
-      bonne: "viens",
-
-      explication:
-        "Le passé récent se construit avec « venir de + infinitif » : je viens d'appeler."
-    },
-
-
-    {
-      question:
-        "— Tu peux parler ? — Non, je ___ le dîner. Je te rappelle dans dix minutes.",
-
-      choix: [
-        "viens de préparer",
-        "suis en train de préparer",
-        "vais préparer",
-        "préparerai"
-      ],
-
-      bonne:
-        "suis en train de préparer",
-
-      explication:
-        "L'action est en cours maintenant : « être en train de + infinitif »."
-    },
-
-
-    {
-      question:
-        "Ce soir, nous avons réservé une table. Nous ___ au restaurant à 20 h.",
-
-      choix: [
-        "allons manger",
-        "venons de manger",
-        "sommes manger",
-        "avons manger"
-      ],
-
-      bonne:
-        "allons manger",
-
-      explication:
-        "Le futur proche se construit avec « aller + infinitif » : nous allons manger."
-    },
-
-
-    {
-      question:
-        "J'achète le cadeau cet après-midi. Remplacez « le cadeau » : « Je ___ achète cet après-midi. »",
-
-      choix: [
-        "l'",
-        "lui",
-        "en",
-        "leur"
-      ],
-
-      bonne: "l'",
-
-      explication:
-        "« Le cadeau » est un COD masculin singulier. Devant « achète », le pronom « le » devient « l' » : je l'achète."
-    },
-
-
-    {
-      question:
-        "Sophie prépare les invitations. → Sophie ___ prépare.",
-
-      choix: [
-        "leur",
-        "les",
-        "en",
-        "lui"
-      ],
-
-      bonne: "les",
-
-      explication:
-        "« Les invitations » est un complément d'objet direct pluriel : Sophie les prépare."
-    },
-
-
-    {
-      question:
-        "— Vous voulez du saumon ? — Oui, j'___ veux un peu.",
-
-      choix: [
-        "en",
-        "le",
-        "lui",
-        "les"
-      ],
-
-      bonne: "en",
-
-      explication:
-        "« En » remplace « du saumon ». La quantité « un peu » reste dans la phrase."
-    },
-
-
-    {
-      question:
-        "Nous avons acheté six bouteilles d'eau. → Nous ___ avons acheté six.",
-
-      choix: [
-        "les",
-        "en",
-        "leur",
-        "l'"
-      ],
-
-      bonne: "en",
-
-      explication:
-        "Avec une quantité précise, on utilise « en » et on garde le nombre : nous en avons acheté six."
-    },
-
-
-    {
-      question:
-        "Il y a douze invités, mais seulement quatre desserts. Quelle phrase convient ?",
-
-      choix: [
-        "Il y en a trop.",
-        "Il n'y en a pas assez.",
-        "Il y en a beaucoup.",
-        "Il y en a assez."
-      ],
-
-      bonne:
-        "Il n'y en a pas assez.",
-
-      explication:
-        "Quatre desserts pour douze invités : la quantité est insuffisante. Il n'y en a pas assez."
-    },
-
-
-    {
-      question:
-        "Complétez : « J'adore ___ chocolat, mais aujourd'hui je ne mange pas ___ chocolat. »",
-
-      choix: [
-        "le / de",
-        "du / du",
-        "le / le",
-        "de / du"
-      ],
-
-      bonne:
-        "le / de",
-
-      explication:
-        "On dit « j'adore le chocolat » pour parler de l'aliment en général. Après la négation : « je ne mange pas de chocolat »."
-    },
-
-
-    {
-      question:
-        "Quelle phrase est correcte pour parler d'une quantité non précisée ?",
-
-      choix: [
-        "Je mange du saumon.",
-        "Je mange de le saumon.",
-        "Je mange le du saumon.",
-        "Je mange des saumon."
-      ],
-
-      bonne:
-        "Je mange du saumon.",
-
-      explication:
-        "Pour une quantité non précisée d'un nom masculin singulier, on utilise « du »."
-    },
-
-
-    {
-      question:
-        "Samedi prochain, nous ___ une soirée pour l'anniversaire de Paul.",
-
-      choix: [
-        "organisons",
-        "organiserons",
-        "organiserions",
-        "organisé"
-      ],
-
-      bonne:
-        "organiserons",
-
-      explication:
-        "Au futur simple, « organiser » avec « nous » donne « nous organiserons »."
-    },
-
-
-    {
-      question:
-        "Demain, j'___ les invitations aux participants.",
-
-      choix: [
-        "envoie",
-        "envoyais",
-        "enverrai",
-        "envoyerai"
-      ],
-
-      bonne:
-        "enverrai",
-
-      explication:
-        "Au futur simple, « envoyer » avec « je » donne « j'enverrai »."
-    },
-
-
-    {
-      question:
-        "Complétez : « Je ne sais pas ___ Paul pourra venir à la soirée. »",
-
-      choix: [
-        "si il",
-        "s'il",
-        "s'elle",
-        "si l'il"
-      ],
-
-      bonne:
-        "s'il",
-
-      explication:
-        "« Si » s'élide devant « il » : si + il → s'il."
-    },
-
-
-    {
-      question:
-        "Quelle phrase est correcte ?",
-
-      choix: [
-        "Je ne sais pas s'elle est disponible.",
-        "Je ne sais pas si elle est disponible.",
-        "Je ne sais pas si-elle est disponible.",
-        "Je ne sais pas s'il elle est disponible."
-      ],
-
-      bonne:
-        "Je ne sais pas si elle est disponible.",
-
-      explication:
-        "Devant « elle », on garde « si » : si elle."
+    :root {
+      --bleu-fonce: #1D476E;
+      --bleu-clair: #74BACD;
+      --rose: #EE3167;
+      --fond: #F4F7FA;
+      --blanc: #FFFFFF;
+      --texte: #173047;
+      --gris: #667785;
+      --vert: #36945F;
     }
 
-  ],
 
-
-
-  /* =======================================================
-     VOCABULAIRE
-     ======================================================= */
-
-  vocabulaire: [
-
-    {
-      question:
-        "À la gare, vous voulez savoir à quelle heure part votre train. Vous cherchez...",
-
-      choix: [
-        "l'horaire",
-        "la consigne",
-        "la provenance",
-        "le quai"
-      ],
-
-      bonne:
-        "l'horaire",
-
-      explication:
-        "L'horaire indique notamment l'heure prévue du départ ou de l'arrivée."
-    },
-
-
-    {
-      question:
-        "Votre train arrive à Lyon et vous devez prendre un autre train pour Marseille. Vous avez...",
-
-      choix: [
-        "une correspondance",
-        "une provenance",
-        "une consigne",
-        "un retard"
-      ],
-
-      bonne:
-        "une correspondance",
-
-      explication:
-        "Une correspondance est un changement de train ou de transport pendant un voyage."
-    },
-
-
-    {
-      question:
-        "Le train devait partir à 10 h 15. Il part finalement à 11 h. Il a...",
-
-      choix: [
-        "une destination",
-        "un retard",
-        "une voie",
-        "un renseignement"
-      ],
-
-      bonne:
-        "un retard",
-
-      explication:
-        "Quand un train part ou arrive plus tard que prévu, il a du retard."
-    },
-
-
-    {
-      question:
-        "Vous voulez acheter un billet auprès d'un employé de la gare. Vous allez...",
-
-      choix: [
-        "au guichet",
-        "à la consigne",
-        "sur la voie",
-        "au panneau des départs"
-      ],
-
-      bonne:
-        "au guichet",
-
-      explication:
-        "Le guichet est l'endroit où l'on peut acheter un billet ou demander des renseignements."
-    },
-
-
-    {
-      question:
-        "Votre train part dans deux minutes. Vous courez vers le quai parce que vous êtes...",
-
-      choix: [
-        "patient",
-        "pressé",
-        "convivial",
-        "réputé"
-      ],
-
-      bonne:
-        "pressé",
-
-      explication:
-        "Être pressé signifie avoir peu de temps et devoir agir rapidement."
-    },
-
-
-    {
-      question:
-        "À son anniversaire, Léa ferme les yeux et ___ les bougies de son gâteau.",
-
-      choix: [
-        "souffle",
-        "relance",
-        "composte",
-        "réserve"
-      ],
-
-      bonne:
-        "souffle",
-
-      explication:
-        "Pour un anniversaire, on souffle les bougies du gâteau."
-    },
-
-
-    {
-      question:
-        "Vous offrez un parfum à votre amie pour son anniversaire. Le parfum est...",
-
-      choix: [
-        "un cadeau",
-        "un renseignement",
-        "un ingrédient",
-        "un événement"
-      ],
-
-      bonne:
-        "un cadeau",
-
-      explication:
-        "Un cadeau est quelque chose que l'on offre à une personne."
-    },
-
-
-    {
-      question:
-        "Au restaurant, vous commandez d'abord une soupe, puis du saumon. La soupe est...",
-
-      choix: [
-        "une entrée",
-        "un plat principal",
-        "un dessert",
-        "un ingrédient"
-      ],
-
-      bonne:
-        "une entrée",
-
-      explication:
-        "Une entrée est servie avant le plat principal."
-    },
-
-
-    {
-      question:
-        "Pour faire un gâteau, vous utilisez des œufs, du chocolat et du beurre. Ce sont...",
-
-      choix: [
-        "des ingrédients",
-        "des événements",
-        "des animations",
-        "des invitations"
-      ],
-
-      bonne:
-        "des ingrédients",
-
-      explication:
-        "Un ingrédient est un aliment utilisé dans la préparation d'une recette."
-    },
-
-
-    {
-      question:
-        "Votre entreprise organise une soirée. Vous devez décider combien d'argent vous pouvez dépenser. Vous devez...",
-
-      choix: [
-        "définir un budget",
-        "fixer une destination",
-        "souffler des bougies",
-        "faire connaissance"
-      ],
-
-      bonne:
-        "définir un budget",
-
-      explication:
-        "Définir un budget signifie déterminer combien d'argent est disponible pour l'événement."
-    },
-
-
-    {
-      question:
-        "Vous avez envoyé une invitation à Marc il y a une semaine. Il n'a toujours pas répondu. Vous allez...",
-
-      choix: [
-        "le relancer",
-        "le composter",
-        "le servir",
-        "le souffler"
-      ],
-
-      bonne:
-        "le relancer",
-
-      explication:
-        "Relancer quelqu'un signifie reprendre contact avec cette personne pour obtenir une réponse."
-    },
-
-
-    {
-      question:
-        "À une soirée, vous rencontrez plusieurs nouveaux collègues et vous discutez avec eux pour...",
-
-      choix: [
-        "faire connaissance",
-        "faire les courses",
-        "faire le ménage",
-        "faire peur"
-      ],
-
-      bonne:
-        "faire connaissance",
-
-      explication:
-        "Faire connaissance signifie commencer à connaître une personne que l'on vient de rencontrer."
-    },
-
-
-    {
-      question:
-        "Vous voulez organiser votre soirée dans un endroit au centre de la ville et facile d'accès. Vous cherchez un lieu...",
-
-      choix: [
-        "central",
-        "impatient",
-        "pressé",
-        "pimenté"
-      ],
-
-      bonne:
-        "central",
-
-      explication:
-        "Un lieu central est situé au centre ou dans une zone facilement accessible."
-    },
-
-
-    {
-      question:
-        "Un collègue vous invite samedi, mais vous serez à l'étranger. Quelle réponse est la plus appropriée ?",
-
-      choix: [
-        "Je ne pourrai malheureusement pas venir.",
-        "Merci de votre présence.",
-        "Je vous remercie d'être venu.",
-        "Vous apportez quoi ?"
-      ],
-
-      bonne:
-        "Je ne pourrai malheureusement pas venir.",
-
-      explication:
-        "Cette formule permet de refuser poliment une invitation."
-    },
-
-
-    {
-      question:
-        "Vous écrivez à une enseignante que vous connaissez peu pour la remercier de son aide. Quelle formule de fin est la plus appropriée ?",
-
-      choix: [
-        "Bisous,",
-        "Je t'embrasse,",
-        "Bien cordialement,",
-        "Coucou !"
-      ],
-
-      bonne:
-        "Bien cordialement,",
-
-      explication:
-        "« Bien cordialement » est une formule polie et professionnelle adaptée à cette situation."
+    * {
+      box-sizing: border-box;
     }
 
-  ]
 
-};
+    body {
+      margin: 0;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background: var(--fond);
+
+      color: var(--texte);
+
+      line-height: 1.6;
+    }
+
+
+    .conteneur {
+      width: min(900px, calc(100% - 32px));
+      margin: auto;
+    }
+
+
+
+    /* =========================================================
+       EN-TÊTE
+       ========================================================= */
+
+    header {
+      background: var(--bleu-fonce);
+      color: white;
+
+      padding: 42px 20px;
+
+      text-align: center;
+    }
+
+
+    header .unite-label {
+      display: inline-block;
+
+      padding: 5px 12px;
+
+      margin-bottom: 8px;
+
+      border-radius: 20px;
+
+      background: rgba(255,255,255,0.15);
+
+      font-size: 12px;
+      font-weight: bold;
+
+      letter-spacing: 1px;
+    }
+
+
+    header h1 {
+      margin: 0 0 5px;
+
+      font-size: 32px;
+    }
+
+
+    header p {
+      margin: 0;
+
+      opacity: 0.9;
+    }
+
+
+
+    /* =========================================================
+       CONTENU
+       ========================================================= */
+
+    main {
+      padding: 35px 0 60px;
+    }
+
+
+    .carte {
+      background: var(--blanc);
+
+      border-radius: 18px;
+
+      padding: 30px;
+
+      box-shadow:
+        0 4px 18px
+        rgba(29, 71, 110, 0.09);
+    }
+
+
+
+    /* =========================================================
+       INTRODUCTION
+       ========================================================= */
+
+    .quiz-intro {
+      text-align: center;
+
+      margin-bottom: 28px;
+    }
+
+
+    .quiz-intro h2 {
+      margin: 0 0 7px;
+
+      color: var(--bleu-fonce);
+    }
+
+
+    .quiz-intro p {
+      margin: 0;
+
+      color: var(--gris);
+    }
+
+
+
+    /* =========================================================
+       MENU DU QUIZ
+       ========================================================= */
+
+    #quiz-menu {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 16px;
+    }
+
+
+    .quiz-menu-btn {
+      min-height: 150px;
+
+      border: 2px solid #E1E8ED;
+
+      background: white;
+
+      border-radius: 16px;
+
+      padding: 22px 15px;
+
+      cursor: pointer;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 7px;
+
+      color: var(--texte);
+
+      font-family: inherit;
+
+      transition:
+        transform 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s;
+    }
+
+
+    .quiz-menu-btn:hover {
+      transform: translateY(-3px);
+
+      border-color: var(--bleu-clair);
+
+      box-shadow:
+        0 5px 14px
+        rgba(29,71,110,0.08);
+    }
+
+
+    .quiz-menu-btn span {
+      font-size: 32px;
+    }
+
+
+    .quiz-menu-btn strong {
+      color: var(--bleu-fonce);
+
+      font-size: 18px;
+    }
+
+
+    .quiz-menu-btn small {
+      color: var(--gris);
+
+      font-size: 13px;
+
+      text-align: center;
+    }
+
+
+    .quiz-mixte {
+      border-color: var(--rose);
+    }
+
+
+
+    /* =========================================================
+       ÉLÉMENTS CACHÉS
+       ========================================================= */
+
+    .quiz-cache {
+      display: none !important;
+    }
+
+
+
+    /* =========================================================
+       HAUT DU QUIZ
+       ========================================================= */
+
+    .quiz-haut {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 15px;
+
+      margin-bottom: 10px;
+
+      color: var(--bleu-fonce);
+
+      font-weight: bold;
+    }
+
+
+
+    /* =========================================================
+       BARRE DE PROGRESSION
+       ========================================================= */
+
+    .quiz-barre {
+      width: 100%;
+
+      height: 8px;
+
+      margin-bottom: 28px;
+
+      overflow: hidden;
+
+      background: #E5EBF0;
+
+      border-radius: 20px;
+    }
+
+
+    #quiz-barre-progression {
+      width: 0;
+
+      height: 100%;
+
+      background: var(--bleu-clair);
+
+      transition: width 0.3s ease;
+    }
+
+
+
+    /* =========================================================
+       QUESTION
+       ========================================================= */
+
+    #quiz-question {
+      margin-bottom: 22px;
+
+      color: var(--texte);
+
+      font-size: 20px;
+
+      font-weight: bold;
+
+      line-height: 1.55;
+    }
+
+
+
+    /* =========================================================
+       RÉPONSES
+       ========================================================= */
+
+    #quiz-reponses {
+      display: grid;
+
+      gap: 11px;
+    }
+
+
+    .quiz-reponse {
+      width: 100%;
+
+      padding: 14px 16px;
+
+      border: 2px solid #DDE5EB;
+
+      border-radius: 12px;
+
+      background: white;
+
+      color: var(--texte);
+
+      font-family: inherit;
+
+      font-size: 16px;
+
+      line-height: 1.4;
+
+      text-align: left;
+
+      cursor: pointer;
+
+      transition:
+        border-color 0.15s,
+        background 0.15s,
+        transform 0.15s;
+    }
+
+
+    .quiz-reponse:hover:not(:disabled) {
+      border-color: var(--bleu-clair);
+
+      background: #F8FBFD;
+
+      transform: translateX(2px);
+    }
+
+
+    .quiz-reponse:disabled {
+      cursor: default;
+
+      opacity: 1;
+    }
+
+
+
+    /* BONNE RÉPONSE */
+
+    .quiz-reponse.correct {
+      border-color: var(--vert);
+
+      background: #EAF7EF;
+    }
+
+
+
+    /* MAUVAISE RÉPONSE */
+
+    .quiz-reponse.incorrect {
+      border-color: var(--rose);
+
+      background: #FFF0F4;
+    }
+
+
+
+    /* =========================================================
+       FEEDBACK
+       ========================================================= */
+
+    #quiz-feedback {
+      min-height: 20px;
+
+      margin-top: 18px;
+    }
+
+
+    .feedback-correct {
+      padding: 14px 16px;
+
+      border-left: 4px solid var(--vert);
+
+      border-radius: 8px;
+
+      background: #EAF7EF;
+
+      color: #257447;
+
+      font-weight: bold;
+    }
+
+
+    .feedback-incorrect {
+      padding: 14px 16px;
+
+      border-left: 4px solid var(--rose);
+
+      border-radius: 8px;
+
+      background: #FFF0F4;
+
+      color: #C82856;
+
+      font-weight: bold;
+    }
+
+
+    .explication-quiz {
+      display: block;
+
+      margin-top: 6px;
+
+      color: var(--gris);
+
+      font-weight: normal;
+    }
+
+
+
+    /* =========================================================
+       BOUTON SUIVANT
+       ========================================================= */
+
+    .quiz-actions {
+      margin-top: 20px;
+
+      text-align: right;
+    }
+
+
+    .quiz-suivant {
+      padding: 12px 20px;
+
+      border: none;
+
+      border-radius: 10px;
+
+      background: var(--bleu-fonce);
+
+      color: white;
+
+      font-family: inherit;
+
+      font-size: 15px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+    }
+
+
+    .quiz-suivant:hover {
+      opacity: 0.92;
+    }
+
+
+
+    /* =========================================================
+       RÉSULTAT
+       ========================================================= */
+
+    #quiz-resultat {
+      padding: 15px 5px;
+
+      text-align: center;
+    }
+
+
+    #quiz-resultat h2 {
+      color: var(--bleu-fonce);
+
+      font-size: 26px;
+    }
+
+
+    .quiz-note {
+      margin: 15px 0 0;
+
+      color: var(--bleu-fonce);
+
+      font-size: 48px;
+
+      font-weight: bold;
+    }
+
+
+    .quiz-pourcentage {
+      margin-bottom: 18px;
+
+      color: var(--rose);
+
+      font-size: 24px;
+
+      font-weight: bold;
+    }
+
+
+    #quiz-resultat p {
+      max-width: 600px;
+
+      margin:
+        0 auto 22px;
+
+      color: var(--gris);
+    }
+
+
+    .quiz-recommencer,
+    .quiz-retour-menu {
+      margin: 5px;
+
+      padding: 12px 18px;
+
+      border: none;
+
+      border-radius: 10px;
+
+      font-family: inherit;
+
+      font-size: 14px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+    }
+
+
+    .quiz-recommencer {
+      background: var(--rose);
+
+      color: white;
+    }
+
+
+    .quiz-retour-menu {
+      background: #EAF0F4;
+
+      color: var(--bleu-fonce);
+    }
+
+
+
+    /* =========================================================
+       RETOUR AUX UNITÉS
+       ========================================================= */
+
+    .retour {
+      margin-top: 30px;
+
+      padding-top: 22px;
+
+      border-top: 1px solid #E6EBEF;
+
+      text-align: center;
+    }
+
+
+    .retour a {
+      color: var(--bleu-fonce);
+
+      font-weight: bold;
+
+      text-decoration: none;
+    }
+
+
+    .retour a:hover {
+      text-decoration: underline;
+    }
+
+
+
+    /* =========================================================
+       MOBILE / IPAD
+       ========================================================= */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 32px 16px;
+      }
+
+
+      header h1 {
+        font-size: 27px;
+      }
+
+
+      main {
+        padding-top: 22px;
+      }
+
+
+      .carte {
+        padding: 22px 16px;
+      }
+
+
+      #quiz-menu {
+        grid-template-columns: 1fr;
+      }
+
+
+      .quiz-menu-btn {
+        min-height: 115px;
+      }
+
+
+      #quiz-question {
+        font-size: 18px;
+      }
+
+
+      .quiz-haut {
+        font-size: 14px;
+      }
+
+
+      .quiz-actions {
+        text-align: center;
+      }
+
+
+      .quiz-suivant {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =========================================================
+     EN-TÊTE
+     ========================================================= -->
+
+<header>
+
+  <div class="conteneur">
+
+    <span class="unite-label">
+      UNITÉ 1
+    </span>
+
+    <h1>
+      Quiz — Unité 1
+    </h1>
+
+    <p>
+      Prochain arrêt : nouveau départ
+    </p>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     CONTENU
+     ========================================================= -->
+
+<main class="conteneur">
+
+
+  <section
+    id="quiz-section"
+    class="carte">
+
+
+    <!-- =====================================================
+         INTRODUCTION
+         ===================================================== -->
+
+    <div class="quiz-intro">
+
+      <h2>
+        Grammaire et vocabulaire
+      </h2>
+
+      <p>
+        Révise le contenu des semaines 1 à 3.
+        Niveau A2.
+      </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MENU DU QUIZ
+         ===================================================== -->
+
+    <div id="quiz-menu">
+
+
+      <!-- GRAMMAIRE -->
+
+      <button
+        type="button"
+        class="quiz-menu-btn"
+        onclick="demarrerQuiz('grammaire')">
+
+        <span>
+          📝
+        </span>
+
+        <strong>
+          Grammaire
+        </strong>
+
+        <small>
+          Réviser les points de grammaire
+        </small>
+
+      </button>
+
+
+
+      <!-- VOCABULAIRE -->
+
+      <button
+        type="button"
+        class="quiz-menu-btn"
+        onclick="demarrerQuiz('vocabulaire')">
+
+        <span>
+          💬
+        </span>
+
+        <strong>
+          Vocabulaire
+        </strong>
+
+        <small>
+          Réviser les mots et expressions
+        </small>
+
+      </button>
+
+
+
+      <!-- QUIZ MIXTE -->
+
+      <button
+        type="button"
+        class="quiz-menu-btn quiz-mixte"
+        onclick="demarrerQuiz('mixte')">
+
+        <span>
+          🎯
+        </span>
+
+        <strong>
+          Quiz mixte
+        </strong>
+
+        <small>
+          Grammaire + vocabulaire
+        </small>
+
+      </button>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         ZONE DES QUESTIONS
+         ===================================================== -->
+
+    <div
+      id="quiz-jeu"
+      class="quiz-cache">
+
+
+      <!-- PROGRESSION + SCORE -->
+
+      <div class="quiz-haut">
+
+        <span id="quiz-progression">
+          Question 1
+        </span>
+
+        <span id="quiz-score">
+          Score : 0
+        </span>
+
+      </div>
+
+
+
+      <!-- BARRE DE PROGRESSION -->
+
+      <div class="quiz-barre">
+
+        <div
+          id="quiz-barre-progression">
+        </div>
+
+      </div>
+
+
+
+      <!-- QUESTION -->
+
+      <div id="quiz-question">
+      </div>
+
+
+
+      <!-- RÉPONSES CLIQUABLES -->
+
+      <div id="quiz-reponses">
+      </div>
+
+
+
+      <!-- CORRECTION / EXPLICATION -->
+
+      <div
+        id="quiz-feedback"
+        aria-live="polite">
+      </div>
+
+
+
+      <!-- QUESTION SUIVANTE -->
+
+      <div class="quiz-actions">
+
+        <button
+          type="button"
+          id="quiz-suivant"
+          class="quiz-suivant quiz-cache"
+          onclick="questionSuivante()">
+
+          Question suivante →
+
+        </button>
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         RÉSULTAT FINAL
+         ===================================================== -->
+
+    <div
+      id="quiz-resultat"
+      class="quiz-cache">
+    </div>
+
+
+
+    <!-- =====================================================
+         RETOUR PAGE GÉNÉRALE
+         ===================================================== -->
+
+    <div class="retour">
+
+      <a href="quiz.html">
+        ← Retour à tous les quiz
+      </a>
+
+    </div>
+
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     DONNÉES DU QUIZ
+     
+     IMPORTANT :
+     quiz-unite1-data.js doit être chargé AVANT quiz.js
+     ========================================================= -->
+
+<script src="quiz-unite1-data.js"></script>
+
+<script src="quiz.js"></script>
+
+
+</body>
+
+</html>
