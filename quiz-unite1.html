@@ -5,13 +5,16 @@
 
   <meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Quiz — Unité 1</title>
+  <title>Quiz — Unité 1 | Le coin français</title>
 
 
   <style>
+
+    /* =========================================================
+       COULEURS DU SITE
+       ========================================================= */
 
     :root {
       --bleu-fonce: #1D476E;
@@ -21,6 +24,7 @@
       --blanc: #FFFFFF;
       --texte: #173047;
       --gris: #667785;
+      --vert: #36945F;
     }
 
 
@@ -46,33 +50,46 @@
 
 
     .conteneur {
-      width: min(
-        900px,
-        calc(100% - 32px)
-      );
-
+      width: min(900px, calc(100% - 32px));
       margin: auto;
     }
 
 
-    /* =================================
+
+    /* =========================================================
        EN-TÊTE
-       ================================= */
+       ========================================================= */
 
     header {
-      background:
-        var(--bleu-fonce);
-
+      background: var(--bleu-fonce);
       color: white;
 
-      padding: 40px 20px;
+      padding: 42px 20px;
 
       text-align: center;
     }
 
 
+    header .unite-label {
+      display: inline-block;
+
+      padding: 5px 12px;
+
+      margin-bottom: 8px;
+
+      border-radius: 20px;
+
+      background: rgba(255,255,255,0.15);
+
+      font-size: 12px;
+      font-weight: bold;
+
+      letter-spacing: 1px;
+    }
+
+
     header h1 {
-      margin: 0 0 7px;
+      margin: 0 0 5px;
 
       font-size: 32px;
     }
@@ -85,19 +102,18 @@
     }
 
 
-    /* =================================
+
+    /* =========================================================
        CONTENU
-       ================================= */
+       ========================================================= */
 
     main {
-      padding:
-        35px 0 60px;
+      padding: 35px 0 60px;
     }
 
 
     .carte {
-      background:
-        var(--blanc);
+      background: var(--blanc);
 
       border-radius: 18px;
 
@@ -109,6 +125,11 @@
     }
 
 
+
+    /* =========================================================
+       INTRODUCTION
+       ========================================================= */
+
     .quiz-intro {
       text-align: center;
 
@@ -117,25 +138,23 @@
 
 
     .quiz-intro h2 {
-      color:
-        var(--bleu-fonce);
+      margin: 0 0 7px;
 
-      margin:
-        0 0 8px;
+      color: var(--bleu-fonce);
     }
 
 
     .quiz-intro p {
-      color:
-        var(--gris);
-
       margin: 0;
+
+      color: var(--gris);
     }
 
 
-    /* =================================
-       3 CHOIX
-       ================================= */
+
+    /* =========================================================
+       MENU DU QUIZ
+       ========================================================= */
 
     #quiz-menu {
       display: grid;
@@ -148,141 +167,495 @@
 
 
     .quiz-menu-btn {
+      min-height: 150px;
 
-      border:
-        2px solid #E1E8ED;
+      border: 2px solid #E1E8ED;
 
-      background:
-        white;
+      background: white;
 
-      border-radius:
-        16px;
+      border-radius: 16px;
 
-      padding:
-        24px 15px;
+      padding: 22px 15px;
 
       cursor: pointer;
 
       display: flex;
 
-      flex-direction:
-        column;
+      flex-direction: column;
 
-      align-items:
-        center;
+      align-items: center;
+
+      justify-content: center;
 
       gap: 7px;
 
-      color:
-        var(--texte);
+      color: var(--texte);
 
-      font-family:
-        inherit;
+      font-family: inherit;
 
       transition:
-        0.2s;
+        transform 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s;
     }
 
 
     .quiz-menu-btn:hover {
+      transform: translateY(-3px);
 
-      transform:
-        translateY(-3px);
+      border-color: var(--bleu-clair);
 
-      border-color:
-        var(--bleu-clair);
+      box-shadow:
+        0 5px 14px
+        rgba(29,71,110,0.08);
     }
 
 
     .quiz-menu-btn span {
-
-      font-size:
-        32px;
+      font-size: 32px;
     }
 
 
     .quiz-menu-btn strong {
+      color: var(--bleu-fonce);
 
-      color:
-        var(--bleu-fonce);
-
-      font-size:
-        18px;
+      font-size: 18px;
     }
 
 
     .quiz-menu-btn small {
+      color: var(--gris);
 
-      color:
-        var(--gris);
+      font-size: 13px;
 
-      text-align:
-        center;
-
-      font-size:
-        13px;
+      text-align: center;
     }
 
 
     .quiz-mixte {
-
-      border-color:
-        var(--rose);
+      border-color: var(--rose);
     }
 
 
-    /* =================================
-       RETOUR
-       ================================= */
+
+    /* =========================================================
+       ÉLÉMENTS CACHÉS
+       ========================================================= */
+
+    .quiz-cache {
+      display: none !important;
+    }
+
+
+
+    /* =========================================================
+       HAUT DU QUIZ
+       ========================================================= */
+
+    .quiz-haut {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 15px;
+
+      margin-bottom: 10px;
+
+      color: var(--bleu-fonce);
+
+      font-weight: bold;
+    }
+
+
+
+    /* =========================================================
+       BARRE DE PROGRESSION
+       ========================================================= */
+
+    .quiz-barre {
+      width: 100%;
+
+      height: 8px;
+
+      margin-bottom: 28px;
+
+      overflow: hidden;
+
+      background: #E5EBF0;
+
+      border-radius: 20px;
+    }
+
+
+    #quiz-barre-progression {
+      width: 0;
+
+      height: 100%;
+
+      background: var(--bleu-clair);
+
+      transition: width 0.3s ease;
+    }
+
+
+
+    /* =========================================================
+       QUESTION
+       ========================================================= */
+
+    #quiz-question {
+      margin-bottom: 22px;
+
+      color: var(--texte);
+
+      font-size: 20px;
+
+      font-weight: bold;
+
+      line-height: 1.55;
+    }
+
+
+
+    /* =========================================================
+       RÉPONSES
+       ========================================================= */
+
+    #quiz-reponses {
+      display: grid;
+
+      gap: 11px;
+    }
+
+
+    .quiz-reponse {
+      width: 100%;
+
+      padding: 14px 16px;
+
+      border: 2px solid #DDE5EB;
+
+      border-radius: 12px;
+
+      background: white;
+
+      color: var(--texte);
+
+      font-family: inherit;
+
+      font-size: 16px;
+
+      line-height: 1.4;
+
+      text-align: left;
+
+      cursor: pointer;
+
+      transition:
+        border-color 0.15s,
+        background 0.15s,
+        transform 0.15s;
+    }
+
+
+    .quiz-reponse:hover:not(:disabled) {
+      border-color: var(--bleu-clair);
+
+      background: #F8FBFD;
+
+      transform: translateX(2px);
+    }
+
+
+    .quiz-reponse:disabled {
+      cursor: default;
+
+      opacity: 1;
+    }
+
+
+
+    /* BONNE RÉPONSE */
+
+    .quiz-reponse.correct {
+      border-color: var(--vert);
+
+      background: #EAF7EF;
+    }
+
+
+
+    /* MAUVAISE RÉPONSE */
+
+    .quiz-reponse.incorrect {
+      border-color: var(--rose);
+
+      background: #FFF0F4;
+    }
+
+
+
+    /* =========================================================
+       FEEDBACK
+       ========================================================= */
+
+    #quiz-feedback {
+      min-height: 20px;
+
+      margin-top: 18px;
+    }
+
+
+    .feedback-correct {
+      padding: 14px 16px;
+
+      border-left: 4px solid var(--vert);
+
+      border-radius: 8px;
+
+      background: #EAF7EF;
+
+      color: #257447;
+
+      font-weight: bold;
+    }
+
+
+    .feedback-incorrect {
+      padding: 14px 16px;
+
+      border-left: 4px solid var(--rose);
+
+      border-radius: 8px;
+
+      background: #FFF0F4;
+
+      color: #C82856;
+
+      font-weight: bold;
+    }
+
+
+    .explication-quiz {
+      display: block;
+
+      margin-top: 6px;
+
+      color: var(--gris);
+
+      font-weight: normal;
+    }
+
+
+
+    /* =========================================================
+       BOUTON SUIVANT
+       ========================================================= */
+
+    .quiz-actions {
+      margin-top: 20px;
+
+      text-align: right;
+    }
+
+
+    .quiz-suivant {
+      padding: 12px 20px;
+
+      border: none;
+
+      border-radius: 10px;
+
+      background: var(--bleu-fonce);
+
+      color: white;
+
+      font-family: inherit;
+
+      font-size: 15px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+    }
+
+
+    .quiz-suivant:hover {
+      opacity: 0.92;
+    }
+
+
+
+    /* =========================================================
+       RÉSULTAT
+       ========================================================= */
+
+    #quiz-resultat {
+      padding: 15px 5px;
+
+      text-align: center;
+    }
+
+
+    #quiz-resultat h2 {
+      color: var(--bleu-fonce);
+
+      font-size: 26px;
+    }
+
+
+    .quiz-note {
+      margin: 15px 0 0;
+
+      color: var(--bleu-fonce);
+
+      font-size: 48px;
+
+      font-weight: bold;
+    }
+
+
+    .quiz-pourcentage {
+      margin-bottom: 18px;
+
+      color: var(--rose);
+
+      font-size: 24px;
+
+      font-weight: bold;
+    }
+
+
+    #quiz-resultat p {
+      max-width: 600px;
+
+      margin:
+        0 auto 22px;
+
+      color: var(--gris);
+    }
+
+
+    .quiz-recommencer,
+    .quiz-retour-menu {
+      margin: 5px;
+
+      padding: 12px 18px;
+
+      border: none;
+
+      border-radius: 10px;
+
+      font-family: inherit;
+
+      font-size: 14px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+    }
+
+
+    .quiz-recommencer {
+      background: var(--rose);
+
+      color: white;
+    }
+
+
+    .quiz-retour-menu {
+      background: #EAF0F4;
+
+      color: var(--bleu-fonce);
+    }
+
+
+
+    /* =========================================================
+       RETOUR AUX UNITÉS
+       ========================================================= */
 
     .retour {
+      margin-top: 30px;
 
-      margin-top:
-        28px;
+      padding-top: 22px;
 
-      text-align:
-        center;
+      border-top: 1px solid #E6EBEF;
+
+      text-align: center;
     }
 
 
     .retour a {
+      color: var(--bleu-fonce);
 
-      color:
-        var(--bleu-fonce);
+      font-weight: bold;
 
-      text-decoration:
-        none;
-
-      font-weight:
-        bold;
+      text-decoration: none;
     }
 
 
-    /* =================================
-       MOBILE
-       ================================= */
-
-    @media
-    (max-width: 700px) {
-
-      #quiz-menu {
-
-        grid-template-columns:
-          1fr;
-      }
+    .retour a:hover {
+      text-decoration: underline;
+    }
 
 
-      .carte {
 
-        padding:
-          22px 16px;
+    /* =========================================================
+       MOBILE / IPAD
+       ========================================================= */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 32px 16px;
       }
 
 
       header h1 {
+        font-size: 27px;
+      }
 
-        font-size:
-          27px;
+
+      main {
+        padding-top: 22px;
+      }
+
+
+      .carte {
+        padding: 22px 16px;
+      }
+
+
+      #quiz-menu {
+        grid-template-columns: 1fr;
+      }
+
+
+      .quiz-menu-btn {
+        min-height: 115px;
+      }
+
+
+      #quiz-question {
+        font-size: 18px;
+      }
+
+
+      .quiz-haut {
+        font-size: 14px;
+      }
+
+
+      .quiz-actions {
+        text-align: center;
+      }
+
+
+      .quiz-suivant {
+        width: 100%;
       }
 
     }
@@ -296,13 +669,17 @@
 <body>
 
 
-<!-- =================================
+<!-- =========================================================
      EN-TÊTE
-     ================================= -->
+     ========================================================= -->
 
 <header>
 
   <div class="conteneur">
+
+    <span class="unite-label">
+      UNITÉ 1
+    </span>
 
     <h1>
       Quiz — Unité 1
@@ -318,17 +695,21 @@
 
 
 
+<!-- =========================================================
+     CONTENU
+     ========================================================= -->
+
 <main class="conteneur">
 
-
-  <!-- =================================
-       QUIZ
-       ================================= -->
 
   <section
     id="quiz-section"
     class="carte">
 
+
+    <!-- =====================================================
+         INTRODUCTION
+         ===================================================== -->
 
     <div class="quiz-intro">
 
@@ -337,17 +718,17 @@
       </h2>
 
       <p>
-        Révise le contenu des
-        semaines 1 à 3.
+        Révise le contenu des semaines 1 à 3.
+        Niveau A2.
       </p>
 
     </div>
 
 
 
-    <!-- =================================
+    <!-- =====================================================
          MENU DU QUIZ
-         ================================= -->
+         ===================================================== -->
 
     <div id="quiz-menu">
 
@@ -359,15 +740,16 @@
         class="quiz-menu-btn"
         onclick="demarrerQuiz('grammaire')">
 
-        <span>📝</span>
+        <span>
+          📝
+        </span>
 
         <strong>
           Grammaire
         </strong>
 
         <small>
-          Réviser les points
-          de grammaire
+          Réviser les points de grammaire
         </small>
 
       </button>
@@ -381,40 +763,39 @@
         class="quiz-menu-btn"
         onclick="demarrerQuiz('vocabulaire')">
 
-        <span>💬</span>
+        <span>
+          💬
+        </span>
 
         <strong>
           Vocabulaire
         </strong>
 
         <small>
-          Réviser les mots
-          et expressions
+          Réviser les mots et expressions
         </small>
 
       </button>
 
 
 
-      <!-- MIXTE -->
+      <!-- QUIZ MIXTE -->
 
       <button
         type="button"
-        class="
-          quiz-menu-btn
-          quiz-mixte
-        "
+        class="quiz-menu-btn quiz-mixte"
         onclick="demarrerQuiz('mixte')">
 
-        <span>🎯</span>
+        <span>
+          🎯
+        </span>
 
         <strong>
           Quiz mixte
         </strong>
 
         <small>
-          Grammaire
-          + vocabulaire
+          Grammaire + vocabulaire
         </small>
 
       </button>
@@ -424,9 +805,101 @@
 
 
 
-    <!-- =================================
-         RETOUR
-         ================================= -->
+    <!-- =====================================================
+         ZONE DES QUESTIONS
+         ===================================================== -->
+
+    <div
+      id="quiz-jeu"
+      class="quiz-cache">
+
+
+      <!-- PROGRESSION + SCORE -->
+
+      <div class="quiz-haut">
+
+        <span id="quiz-progression">
+          Question 1
+        </span>
+
+        <span id="quiz-score">
+          Score : 0
+        </span>
+
+      </div>
+
+
+
+      <!-- BARRE DE PROGRESSION -->
+
+      <div class="quiz-barre">
+
+        <div
+          id="quiz-barre-progression">
+        </div>
+
+      </div>
+
+
+
+      <!-- QUESTION -->
+
+      <div id="quiz-question">
+      </div>
+
+
+
+      <!-- RÉPONSES CLIQUABLES -->
+
+      <div id="quiz-reponses">
+      </div>
+
+
+
+      <!-- CORRECTION / EXPLICATION -->
+
+      <div
+        id="quiz-feedback"
+        aria-live="polite">
+      </div>
+
+
+
+      <!-- QUESTION SUIVANTE -->
+
+      <div class="quiz-actions">
+
+        <button
+          type="button"
+          id="quiz-suivant"
+          class="quiz-suivant quiz-cache"
+          onclick="questionSuivante()">
+
+          Question suivante →
+
+        </button>
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         RÉSULTAT FINAL
+         ===================================================== -->
+
+    <div
+      id="quiz-resultat"
+      class="quiz-cache">
+    </div>
+
+
+
+    <!-- =====================================================
+         RETOUR PAGE GÉNÉRALE
+         ===================================================== -->
 
     <div class="retour">
 
@@ -444,30 +917,18 @@
 
 
 
-<script>
+<!-- =========================================================
+     DONNÉES DU QUIZ
+     
+     IMPORTANT :
+     quiz-unite1-data.js doit être chargé AVANT quiz.js
+     ========================================================= -->
 
-/*
-=========================================================
-POUR LE MOMENT :
+<script src="quiz-unite1-data.js"></script>
 
-Les boutons fonctionnent,
-mais nous allons connecter
-les questions à l'étape suivante.
-=========================================================
-*/
-
-function demarrerQuiz(type) {
-
-  alert(
-    "Quiz " +
-    type +
-    " — bientôt prêt !"
-  );
-
-}
-
-</script>
+<script src="quiz.js"></script>
 
 
 </body>
+
 </html>
