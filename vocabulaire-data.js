@@ -2503,6 +2503,140 @@ ATELIERS — S'EXCUSER / REMERCIER PAR MAIL
 
 ] // fin situations
 
-} // fin UNITÉ 1
+}, // fin UNITÉ 1
+
+
+/*
+==========================================================
+UNITÉ 2
+==========================================================
+*/
+
+{
+  unite: "UNITÉ 2 — Vous avez deux minutes ?",
+
+  situations: [
+
+    /*
+    ======================================================
+    INTRODUCTION
+    ======================================================
+    */
+
+    {
+      titre: "Introduction — Vous avez deux minutes ?",
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    SITUATION 1
+    ======================================================
+    */
+
+    {
+      titre: "Situation 1 — Parler d'une rencontre",
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    SITUATION 2
+    ======================================================
+    */
+
+    {
+      titre: "Situation 2 — Raconter une anecdote",
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    SITUATION 3
+    ======================================================
+    */
+
+    {
+      titre: "Situation 3 — Faire un portrait",
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LAB LANGUE ET CULTURE
+    ======================================================
+    */
+
+    {
+      titre: "Lab langue et culture",
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+   /*
+======================================================
+ATELIERS
+======================================================
+*/
+
+{
+  titre: "Ateliers — Engager une conversation / Publier une annonce pour proposer un trajet",
+
+  sections: [
+
+    /*
+    ======================================================
+    ENGAGER UNE CONVERSATION
+    ======================================================
+    */
+
+    {
+      titre: "Engager une conversation",
+      type: "expressions",
+
+      mots: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    PUBLIER UNE ANNONCE POUR PROPOSER UN TRAJET
+    ======================================================
+    */
+
+    {
+      titre: "Publier une annonce pour proposer un trajet",
+      type: "expressions",
+
+      mots: [
+        // contenu à ajouter
+      ]
+    }
+
+  ]
+
+} // fin Ateliers
+
+
+] // fin situations UNITÉ 2
+
+} // fin UNITÉ 2
+
 
 ]; // fin vocabulaire
