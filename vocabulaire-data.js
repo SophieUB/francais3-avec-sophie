@@ -2531,18 +2531,542 @@ UNITÉ 2
     },
 
 
+  {
+  titre: "Situation 1 — Parler d'une rencontre",
+
+  sections: [
+
     /*
     ======================================================
-    SITUATION 1
+    LES PERSONNES ET LES RENCONTRES
     ======================================================
     */
 
     {
-      titre: "Situation 1 — Parler d'une rencontre",
-      sections: [
-        // contenu à ajouter
+      titre: "Noms — Les personnes et les rencontres",
+      type: "noms",
+
+      mots: [
+        [
+          "une personne",
+          "des personnes",
+          "person"
+        ],
+
+        [
+          "une personnalité",
+          "des personnalités",
+          "public figure / personality"
+        ],
+
+        [
+          "un voisin / une voisine",
+          "des voisins / des voisines",
+          "neighbour"
+        ],
+
+        [
+          "une rencontre",
+          "des rencontres",
+          "meeting / encounter"
+        ],
+
+        [
+          "un réalisateur / une réalisatrice",
+          "des réalisateurs / des réalisatrices",
+          "film director"
+        ]
       ]
     },
+
+
+    /*
+    ======================================================
+    LES PROFESSIONS
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Les professions",
+      type: "noms",
+
+      mots: [
+        [
+          "un ouvrier / une ouvrière",
+          "des ouvriers / des ouvrières",
+          "factory worker / manual worker"
+        ],
+
+        [
+          "un facteur / une factrice",
+          "des facteurs / des factrices",
+          "postal worker / postman / postwoman"
+        ],
+
+        [
+          "un serveur / une serveuse",
+          "des serveurs / des serveuses",
+          "waiter / waitress"
+        ],
+
+        [
+          "un garagiste / une garagiste",
+          "des garagistes",
+          "garage mechanic"
+        ],
+
+        [
+          "un agriculteur / une agricultrice",
+          "des agriculteurs / des agricultrices",
+          "farmer"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LES LIEUX
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Les lieux",
+      type: "noms",
+
+      mots: [
+        [
+          "un village",
+          "des villages",
+          "village"
+        ],
+
+        [
+          "un quartier",
+          "des quartiers",
+          "neighbourhood / district"
+        ],
+
+        [
+          "un bar",
+          "des bars",
+          "bar"
+        ],
+
+        [
+          "une usine",
+          "des usines",
+          "factory"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ADJECTIFS — DÉCRIRE UNE PERSONNE
+    ======================================================
+    */
+
+    {
+      titre: "Adjectifs — Décrire une personne",
+      type: "adjectifs",
+
+      mots: [
+        [
+          "jeune",
+          "jeune",
+          "jeunes",
+          "young"
+        ],
+
+        [
+          "âgé",
+          "âgée",
+          "âgés / âgées",
+          "elderly / older"
+        ],
+
+        [
+          "petit",
+          "petite",
+          "petits / petites",
+          "short / small"
+        ],
+
+        [
+          "grand",
+          "grande",
+          "grands / grandes",
+          "tall / big"
+        ],
+
+        [
+          "extraordinaire",
+          "extraordinaire",
+          "extraordinaires",
+          "extraordinary"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    VERBES ET ACTIONS
+    ======================================================
+    */
+
+    {
+      titre: "Verbes et actions — Rencontrer et parler des autres",
+      type: "expressions",
+
+      mots: [
+        [
+          "rencontrer quelqu'un",
+          "to meet someone"
+        ],
+
+        [
+          "souhaiter rencontrer quelqu'un",
+          "to wish / want to meet someone"
+        ],
+
+        [
+          "parler de quelqu'un",
+          "to talk about someone"
+        ],
+
+        [
+          "présenter quelqu'un",
+          "to introduce / present someone"
+        ],
+
+        [
+          "présenter une profession",
+          "to present / describe a profession"
+        ],
+
+        [
+          "faire connaissance",
+          "to get to know someone"
+        ],
+
+        [
+          "travailler",
+          "to work"
+        ],
+
+        [
+          "réparer des voitures",
+          "to repair cars"
+        ],
+
+        [
+          "distribuer le courrier",
+          "to deliver the mail"
+        ],
+
+        [
+          "élever des animaux",
+          "to raise animals"
+        ],
+
+        [
+          "cultiver des plantes",
+          "to grow plants"
+        ],
+
+        [
+          "dépanner quelqu'un",
+          "to help someone out / to do someone a favour"
+        ],
+
+        [
+          "créer du lien",
+          "to build connections / create social bonds"
+        ],
+
+        [
+          "échanger",
+          "to exchange / interact"
+        ],
+
+        [
+          "se connaître",
+          "to know each other"
+        ],
+
+        [
+          "se rapprocher",
+          "to become closer"
+        ],
+
+        [
+          "se rencontrer",
+          "to meet each other"
+        ],
+
+        [
+          "oser",
+          "to dare"
+        ],
+
+        [
+          "déménager",
+          "to move house"
+        ],
+
+        [
+          "importer un concept",
+          "to bring / introduce a concept"
+        ],
+
+        [
+          "développer l'entraide et la solidarité",
+          "to develop mutual help and solidarity"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LA VIE DE QUARTIER
+    ======================================================
+    */
+
+    {
+      titre: "Noms et expressions — La vie de quartier",
+      type: "noms",
+
+      mots: [
+        [
+          "l'entraide",
+          "—",
+          "mutual help"
+        ],
+
+        [
+          "la solidarité",
+          "—",
+          "solidarity"
+        ],
+
+        [
+          "un réseau social",
+          "des réseaux sociaux",
+          "social network"
+        ],
+
+        [
+          "un utilisateur / une utilisatrice",
+          "des utilisateurs / des utilisatrices",
+          "user"
+        ],
+
+        [
+          "un groupe",
+          "des groupes",
+          "group"
+        ],
+
+        [
+          "un habitant / une habitante",
+          "des habitants / des habitantes",
+          "resident / inhabitant"
+        ],
+
+        [
+          "une génération",
+          "des générations",
+          "generation"
+        ],
+
+        [
+          "une classe sociale",
+          "des classes sociales",
+          "social class"
+        ],
+
+        [
+          "un concept",
+          "des concepts",
+          "concept"
+        ],
+
+        [
+          "un objectif",
+          "des objectifs",
+          "goal / objective"
+        ],
+
+        [
+          "un lien",
+          "des liens",
+          "connection / bond"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS UTILES
+    ======================================================
+    */
+
+    {
+      titre: "Expressions utiles — Parler d'une rencontre",
+      type: "expressions",
+
+      mots: [
+        [
+          "rencontrer une personne extraordinaire",
+          "to meet an extraordinary person"
+        ],
+
+        [
+          "faire une liste",
+          "to make a list"
+        ],
+
+        [
+          "C'est l'histoire de...",
+          "It's the story of..."
+        ],
+
+        [
+          "Quel est son objectif ?",
+          "What is his / her goal?"
+        ],
+
+        [
+          "Quels sont les objectifs ?",
+          "What are the goals?"
+        ],
+
+        [
+          "tout le monde se connaît",
+          "everyone knows each other"
+        ],
+
+        [
+          "sonner chez ses voisins",
+          "to ring one's neighbours' doorbell"
+        ],
+
+        [
+          "rester derrière son écran",
+          "to stay behind one's screen"
+        ],
+
+        [
+          "se retrouver chaque mois",
+          "to get together every month"
+        ],
+
+        [
+          "prendre des habitudes",
+          "to develop habits"
+        ],
+
+        [
+          "jardiner ensemble",
+          "to garden together"
+        ],
+
+        [
+          "tisser des liens",
+          "to build / forge relationships"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    FAMILLE DE MOTS — RENCONTRER
+    ======================================================
+    */
+
+    {
+      titre: "Famille de mots — rencontrer",
+      type: "note",
+
+      html: `
+        <p>
+          <strong>rencontrer quelqu'un</strong>
+          = to meet someone
+        </p>
+
+        <div class="exemple">
+          J'ai rencontré une personne extraordinaire.<br>
+          <em>I met an extraordinary person.</em>
+        </div>
+
+        <p>
+          <strong>une rencontre</strong>
+          = a meeting / encounter
+        </p>
+
+        <div class="exemple">
+          Cette rencontre a changé sa vie.<br>
+          <em>This encounter changed her life.</em>
+        </div>
+
+        <p>
+          <strong>se rencontrer</strong>
+          = to meet each other
+        </p>
+
+        <div class="exemple">
+          Les habitants du quartier se rencontrent régulièrement.<br>
+          <em>The residents of the neighbourhood meet regularly.</em>
+        </div>
+      `
+    },
+
+
+    /*
+    ======================================================
+    SUFFIXES ET PROFESSIONS
+    ======================================================
+    */
+
+    {
+      titre: "Les suffixes — Les professions",
+      type: "note",
+
+      html: `
+        <p>
+          Certains noms de professions sont formés avec des suffixes.
+        </p>
+
+        <div class="exemple">
+          servir → un <strong>serveur</strong> / une <strong>serveuse</strong><br>
+          travailler → un <strong>travailleur</strong> / une <strong>travailleuse</strong><br>
+          cultiver → un <strong>agriculteur</strong> / une <strong>agricultrice</strong>
+        </div>
+
+        <p>
+          On rencontre notamment les terminaisons :
+          <strong>-eur / -euse</strong> et
+          <strong>-teur / -trice</strong>.
+        </p>
+
+        <p>
+          Certaines professions ont la même forme au masculin et au féminin.
+        </p>
+
+        <div class="exemple">
+          un garagiste / une garagiste
+        </div>
+      `
+    }
+
+  ]
+},
 
 
     /*
