@@ -3069,33 +3069,321 @@ UNITÉ 2
 },
 
 
+    {
+  titre: "Situation 2 — Raconter une anecdote",
+
+  sections: [
+
     /*
     ======================================================
-    SITUATION 2
+    NOMS — UNE ANECDOTE ET UN ÉVÉNEMENT
     ======================================================
     */
 
     {
-      titre: "Situation 2 — Raconter une anecdote",
-      sections: [
-        // contenu à ajouter
+      titre: "Noms — Une anecdote et un événement",
+      type: "noms",
+
+      mots: [
+        ["une anecdote", "des anecdotes", "an anecdote / a short story"],
+        ["une histoire", "des histoires", "a story"],
+        ["un événement", "des événements", "an event"],
+        ["une aventure", "des aventures", "an adventure"],
+        ["un souvenir", "des souvenirs", "a memory"],
+        ["une rencontre", "des rencontres", "an encounter / a meeting"],
+        ["un hasard", "—", "chance / coincidence"],
+        ["une coïncidence", "des coïncidences", "a coincidence"],
+        ["un oubli", "des oublis", "something forgotten / an oversight"],
+        ["un accident", "des accidents", "an accident"],
+        ["un problème", "des problèmes", "a problem"],
+        ["un retard", "des retards", "a delay"],
+        ["une panne", "des pannes", "a breakdown"],
+        ["un trajet", "des trajets", "a journey / trip"],
+        ["un voyage", "des voyages", "a journey / trip"]
       ]
     },
 
 
     /*
     ======================================================
-    SITUATION 3
+    NOMS — LES MOYENS DE TRANSPORT TERRESTRES
     ======================================================
     */
 
     {
-      titre: "Situation 3 — Faire un portrait",
-      sections: [
-        // contenu à ajouter
+      titre: "Noms — Les moyens de transport terrestres",
+      type: "noms",
+
+      mots: [
+
+        // Transports en commun
+        ["un bus", "des bus", "a bus"],
+        ["un autobus", "des autobus", "a bus"],
+        ["un car", "des cars", "a coach"],
+        ["un métro", "des métros", "a metro / subway"],
+        ["un tramway", "des tramways", "a tram"],
+        ["un train", "des trains", "a train"],
+        ["un RER", "des RER", "an express train connecting Paris and its suburbs"],
+        ["un taxi", "des taxis", "a taxi"],
+        ["un minibus", "des minibus", "a minibus"],
+        ["une navette", "des navettes", "a shuttle"],
+
+        // Voitures et véhicules routiers
+        ["une voiture", "des voitures", "a car"],
+        ["une voiture électrique", "des voitures électriques", "an electric car"],
+        ["une camionnette", "des camionnettes", "a van"],
+        ["un camion", "des camions", "a truck / lorry"],
+
+        // Deux-roues
+        ["un vélo", "des vélos", "a bicycle"],
+        ["un vélo électrique", "des vélos électriques", "an electric bicycle / e-bike"],
+        ["un VTT", "des VTT", "a mountain bike"],
+        ["une moto", "des motos", "a motorbike / motorcycle"],
+        ["un scooter", "des scooters", "a Vespa / motor scooter"],
+
+        // Mobilité urbaine
+        ["une trottinette", "des trottinettes", "a kick scooter"],
+        ["un skateboard", "des skateboards", "a skateboard"],
+        ["un roller", "des rollers", "a roller skate"]
       ]
     },
 
+
+    /*
+    ======================================================
+    NOMS — AUTOUR DES TRANSPORTS
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Autour des transports",
+      type: "noms",
+
+      mots: [
+        ["un moyen de transport", "des moyens de transport", "a means of transport"],
+        ["les transports en commun", "—", "public transport"],
+        ["un covoiturage", "des covoiturages", "carpooling / ridesharing"],
+
+        [
+          "un conducteur / une conductrice",
+          "des conducteurs / des conductrices",
+          "a driver"
+        ],
+
+        [
+          "un passager / une passagère",
+          "des passagers / des passagères",
+          "a passenger"
+        ],
+
+        ["une station", "des stations", "a station"],
+        ["un arrêt", "des arrêts", "a stop"],
+        ["une ligne", "des lignes", "a line / route"],
+        ["un itinéraire", "des itinéraires", "a route / itinerary"],
+        ["un trajet", "des trajets", "a journey / trip"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    VERBES — SE DÉPLACER ET SE RENCONTRER
+    ======================================================
+    */
+
+    {
+      titre: "Verbes — Se déplacer et se rencontrer",
+      type: "expressions",
+
+      mots: [
+        ["se déplacer", "to get around / travel"],
+        ["marcher", "to walk"],
+        ["prendre le métro", "to take the metro"],
+        ["prendre le bus", "to take the bus"],
+        ["prendre le train", "to take the train"],
+        ["prendre le tramway", "to take the tram"],
+        ["prendre un taxi", "to take a taxi"],
+        ["prendre les transports en commun", "to take public transport"],
+        ["faire du covoiturage", "to carpool / rideshare"],
+        ["conduire", "to drive"],
+        ["partir", "to leave"],
+        ["arriver", "to arrive"],
+
+        ["monter dans le métro / le bus / le train", "to get on the metro / bus / train"],
+        ["descendre du métro / du bus / du train", "to get off the metro / bus / train"],
+        ["changer de ligne", "to change lines"],
+        ["rater le métro / le bus / le train", "to miss the metro / bus / train"],
+
+        [
+          "faire un trajet",
+          "to make a journey / trip",
+          "Je fais le trajet entre chez moi et l'école en bus."
+        ],
+
+        ["faire un voyage", "to take a trip"],
+
+        ["rencontrer quelqu'un", "to meet someone for the first time / encounter someone"],
+        ["croiser quelqu'un", "to run into someone by chance"],
+        ["voir ses amis", "to see / meet up with one's friends"],
+        ["retrouver ses amis", "to meet up with one's friends"]
+      ],
+
+      note: "Attention : pour parler d'amis que l'on connaît déjà, on dit généralement « Je vais voir mes amis » ou « Je vais retrouver mes amis », et non « Je vais rencontrer mes amis ». « Rencontrer quelqu'un » s'emploie notamment lorsqu'on fait la connaissance de quelqu'un ou lorsqu'on croise quelqu'un."
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS — ARGENT, COVOITURAGE ET CONDUITE
+    ======================================================
+    */
+
+    {
+      titre: "Expressions — Argent, covoiturage et conduite",
+      type: "expressions",
+
+      mots: [
+        ["faire des économies", "to save money"],
+        ["gagner de l'argent", "to earn / make money"],
+        ["dépenser de l'argent", "to spend money"],
+        ["partager les frais", "to share the costs"],
+        ["payer l'essence", "to pay for petrol / gas"],
+        ["coûter cher", "to be expensive"],
+        ["mettre sa ceinture", "to fasten one's seat belt"],
+        ["éteindre son moteur", "to turn off one's engine"],
+        ["avoir un accident", "to have an accident"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS — LES IMPRÉVUS
+    ======================================================
+    */
+
+    {
+      titre: "Expressions — Les imprévus",
+      type: "expressions",
+
+      mots: [
+        ["avoir un problème", "to have a problem"],
+        ["avoir du retard", "to be delayed"],
+        ["être en retard", "to be late"],
+        ["rater son train", "to miss one's train"],
+        ["rater son bus", "to miss one's bus"],
+        ["rater son métro", "to miss one's metro"],
+        ["rater son arrêt", "to miss one's stop"],
+        ["se tromper de ligne", "to take the wrong line"],
+        ["se tromper de direction", "to go in the wrong direction"],
+        ["se perdre", "to get lost"],
+        ["tomber en panne", "to break down"],
+        ["oublier ses affaires", "to forget one's belongings"],
+        ["perdre son téléphone", "to lose one's phone"],
+        ["avoir de la chance", "to be lucky"],
+        ["ne pas avoir de chance", "to be unlucky"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS — RÉAGIR À UNE ANECDOTE
+    ======================================================
+    */
+
+    {
+      titre: "Expressions — Réagir à une anecdote",
+      type: "expressions",
+
+      mots: [
+        ["C'est drôle !", "That's funny!"],
+        ["C'est incroyable !", "That's incredible!"],
+        ["C'est bizarre !", "That's strange!"],
+        ["Quelle histoire !", "What a story!"],
+        ["Quelle aventure !", "What an adventure!"],
+        ["Quelle chance !", "How lucky!"],
+        ["Pas de chance !", "Bad luck!"],
+        ["Heureusement !", "Luckily!"],
+        ["J'étais surpris(e).", "I was surprised."],
+        ["J'étais gêné(e).", "I was embarrassed."],
+        ["J'ai eu peur.", "I was scared."],
+        ["J'ai bien rigolé.", "I had a good laugh."]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    MOTS DE LIAISON — ORGANISER SON RÉCIT
+    ======================================================
+    */
+
+    {
+      titre: "Mots de liaison — Organiser son récit",
+      type: "expressions",
+
+      mots: [
+        ["d'abord", "first"],
+        ["au début", "at first / at the beginning"],
+        ["puis", "then"],
+        ["ensuite", "then / next"],
+        ["après", "afterwards"],
+        ["un peu plus tard", "a little later"],
+        ["tout à coup", "suddenly"],
+        ["soudain", "suddenly"],
+        ["à ce moment-là", "at that moment"],
+        ["finalement", "finally / in the end"],
+        ["à la fin", "in the end"],
+        ["heureusement", "fortunately"],
+        ["malheureusement", "unfortunately"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS UTILES — RACONTER UNE ANECDOTE
+    ======================================================
+    */
+
+    {
+      titre: "Expressions utiles — Raconter une anecdote",
+      type: "expressions",
+
+      mots: [
+        ["Un jour...", "One day..."],
+        ["Un jour, j'ai...", "One day, I..."],
+        ["Ça s'est passé...", "It happened..."],
+        ["C'était quand...", "It was when..."],
+        ["J'étais dans le métro quand...", "I was on the metro when..."],
+        ["J'ai croisé quelqu'un...", "I ran into someone..."],
+        ["Tout à coup...", "Suddenly..."],
+        ["Et là...", "And then..."],
+        ["À ce moment-là...", "At that moment..."],
+        ["Je me suis rendu(e) compte que...", "I realized that..."],
+        ["Finalement...", "In the end..."],
+        ["Depuis ce jour...", "Since that day..."]
+      ]
+    }
+
+  ]
+
+}, // fin Situation 2 — Raconter une anecdote
+
+/*
+======================================================
+SITUATION 3 — FAIRE UN PORTRAIT
+======================================================
+*/
+
+{
+  titre: "Situation 3 — Faire un portrait",
+
+  sections: [
+    // contenu à ajouter
+  ]
+},
 
     /*
     ======================================================
