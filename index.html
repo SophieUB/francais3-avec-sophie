@@ -337,31 +337,6 @@
 
 <body>
 
-  <!-- =====================================================
-       À MODIFIER CHAQUE SEMAINE
-       =====================================================
-
-  Semaine : 5
-
-  Cette semaine :
-
-  - Lecture 5
-  - Unité 2 : Vous avez deux minutes ?
-  - Situation 1 : Parler d'une rencontre
-  - Pages 34-35
-
-  - Tutorat 3
-  - Unité 2 : Vous avez deux minutes ?
-  - Situation 2 : Raconter une anecdote
-  - Pages 36-37
-
-  Proverbe :
-  L'erreur est humaine.
-
-  Mot ou expression :
-  Du coup
-
-  ===================================================== -->
 
   <header>
 
@@ -418,78 +393,59 @@
 
         <div class="semaine">
 
-       <small>
-  Bienvenue
-</small>
+  <small>
+    Bienvenue
+  </small>
 
-<h2>
-  Nous sommes en semaine 6
-</h2>
+  <h2 id="accueil-semaine"></h2>
 
-<strong>
-  Cette semaine
-</strong>
-
-<p>
   <strong>
-    Lecture 6
+    Cette semaine
   </strong>
 
-  <br>
+  <p>
+    <strong id="accueil-lecture-titre"></strong>
 
-  Unité 2 :
-  « Vous avez deux minutes ? »
+    <br>
 
-  <br>
+    <span id="accueil-lecture-unite"></span>
 
-  Situation 3 :
-  « Faire un portrait »
+    <br>
 
-  <br>
+    <span id="accueil-lecture-contenu"></span>
 
-  Lab langue et culture
+    <br>
 
-  <br>
+    <span id="accueil-lecture-complement"></span>
 
-  <em>
-    Pages 38–41
-  </em>
-</p>
+    <br>
 
-<p>
-  <strong>
-    Tutorat 4
-  </strong>
+    <em id="accueil-lecture-pages"></em>
+  </p>
 
-  <br>
+  <p>
+    <strong id="accueil-tutorat-titre"></strong>
 
-  Unité 2 :
-  « Vous avez deux minutes ? »
+    <br>
 
-  <br>
+    <span id="accueil-tutorat-unite"></span>
 
-  Ateliers :
-  « Engager une conversation »
-  et
-  « Publier une annonce pour proposer un trajet »
-</p>
+    <br>
 
-<p>
-  <strong>
-    Nous sommes en semaine 6.
-    Votre présence aux lectures
-    et aux tutorats est obligatoire.
-  </strong>
-</p>
+    <span id="accueil-tutorat-contenu"></span>
+  </p>
 
-<hr>
+  <p>
+    <strong id="accueil-presence"></strong>
+  </p>
 
-<p>
-  <em>
-    Vouloir, c'est pouvoir.
-  </em>
-</p>
-        </div>
+  <hr>
+
+  <p>
+    <em id="accueil-proverbe"></em>
+  </p>
+
+</div>
 
       </div>
 
@@ -1410,11 +1366,50 @@
   </main>
 
 
-  <footer>
-    LAF3201 French 3 [2610] ·
-    AY 2026/2027 ·
-    Semestre 1
-  </footer>
+<footer>
+  LAF3201 French 3 [2610] ·
+  AY 2026/2027 ·
+  Semestre 1
+</footer>
+
+<script src="cours-data.js"></script>
+
+<script>
+  document.getElementById("accueil-semaine").textContent =
+    "Nous sommes en semaine " + coursData.semaine;
+
+  document.getElementById("accueil-lecture-titre").textContent =
+    "Lecture " + coursData.lecture.numero;
+
+  document.getElementById("accueil-lecture-unite").textContent =
+    coursData.lecture.unite;
+
+  document.getElementById("accueil-lecture-contenu").textContent =
+    coursData.lecture.contenu;
+
+  document.getElementById("accueil-lecture-complement").textContent =
+    coursData.lecture.complement;
+
+  document.getElementById("accueil-lecture-pages").textContent =
+    coursData.lecture.pages;
+
+  document.getElementById("accueil-tutorat-titre").textContent =
+    "Tutorat " + coursData.tutorat.numero;
+
+  document.getElementById("accueil-tutorat-unite").textContent =
+    coursData.tutorat.unite;
+
+  document.getElementById("accueil-tutorat-contenu").textContent =
+    coursData.tutorat.contenu;
+
+  document.getElementById("accueil-presence").textContent =
+    "Nous sommes en semaine " +
+    coursData.semaine +
+    ". Votre présence aux lectures et aux tutorats est obligatoire.";
+
+  document.getElementById("accueil-proverbe").textContent =
+    "« " + coursData.proverbe + " »";
+</script>
 
 </body>
 </html>
