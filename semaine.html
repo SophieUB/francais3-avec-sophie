@@ -348,9 +348,8 @@
 
 
   <!-- =====================================================
-       SEMAINE 5
-       ===================================================== -->
-
+     SEMAINE EN COURS
+     ===================================================== -->
   <header>
 
     <div class="conteneur">
@@ -360,19 +359,13 @@
       </a>
 
 
-      <div class="etiquette">
-        Semaine 5 sur 13
-      </div>
+      <div class="etiquette" id="semaine-etiquette"></div>
 
+<h1>
+  Cette semaine
+</h1>
 
-      <h1>
-        Cette semaine
-      </h1>
-
-
-      <p class="unite">
-        Unité 2 « Vous avez deux minutes ? »
-      </p>
+<p class="unite" id="semaine-unite"></p>
 
     </div>
 
@@ -503,72 +496,47 @@
 
 
       <!-- =====================================================
-           LECTURE + TUTORAT — SEMAINE 5
-           ===================================================== -->
+     LECTURE + TUTORAT — SEMAINE EN COURS
+     ===================================================== -->
 
-      <section class="grille-cours">
+<section class="grille-cours">
 
+  <div class="carte carte-lecture">
 
-        <!-- =========================
-             LECTURE 5
-             ========================= -->
+    <h2 id="lecture-titre"></h2>
 
-        <div class="carte carte-lecture">
+    <p id="lecture-unite"></p>
 
-          <h2>
-            Lecture 5
-          </h2>
+    <p>
+      <strong id="lecture-contenu"></strong>
+    </p>
 
-          <p>
-            Unité 2 « Vous avez deux minutes ? »
-          </p>
+    <p id="lecture-complement"></p>
 
-          <p>
-            <strong>
-              Situation 1 : Parler d'une rencontre
-            </strong>
-          </p>
+    <p>
+      <em id="lecture-pages"></em>
+    </p>
 
-          <p>
-            <em>
-              Pages 34–35
-            </em>
-          </p>
-
-        </div>
+  </div>
 
 
+  <div class="carte carte-tutorat">
 
-        <!-- =========================
-             TUTORAT 3
-             ========================= -->
+    <h2 id="tutorat-titre"></h2>
 
-        <div class="carte carte-tutorat">
+    <p id="tutorat-unite"></p>
 
-          <h2>
-            Tutorat 3
-          </h2>
+    <p>
+      <strong id="tutorat-contenu"></strong>
+    </p>
 
-          <p>
-            Unité 2 « Vous avez deux minutes ? »
-          </p>
+    <p>
+      <em id="tutorat-pages"></em>
+    </p>
 
-          <p>
-            <strong>
-              Situation 2 : Raconter une anecdote
-            </strong>
-          </p>
+  </div>
 
-          <p>
-            <em>
-              Pages 36–37
-            </em>
-          </p>
-
-        </div>
-
-      </section>
-
+</section>
 
 
       <!-- =====================================================
@@ -627,9 +595,7 @@
           Proverbe de la semaine
         </h2>
 
-        <p class="citation">
-          « L'erreur est humaine. »
-        </p>
+        <p class="citation" id="proverbe-semaine"></p>
 
       </section>
 
@@ -638,6 +604,44 @@
 
   </main>
 
+<script src="cours-data.js"></script>
 
+<script>
+  document.getElementById("semaine-etiquette").textContent =
+    "Semaine " + coursData.semaine + " sur 13";
+
+  document.getElementById("semaine-unite").textContent =
+    coursData.lecture.unite;
+
+  document.getElementById("lecture-titre").textContent =
+    "Lecture " + coursData.lecture.numero;
+
+  document.getElementById("lecture-unite").textContent =
+    coursData.lecture.unite;
+
+  document.getElementById("lecture-contenu").textContent =
+    coursData.lecture.contenu;
+
+  document.getElementById("lecture-complement").textContent =
+    coursData.lecture.complement;
+
+  document.getElementById("lecture-pages").textContent =
+    coursData.lecture.pages;
+
+  document.getElementById("tutorat-titre").textContent =
+    "Tutorat " + coursData.tutorat.numero;
+
+  document.getElementById("tutorat-unite").textContent =
+    coursData.tutorat.unite;
+
+  document.getElementById("tutorat-contenu").textContent =
+    coursData.tutorat.contenu;
+
+  document.getElementById("tutorat-pages").textContent =
+    coursData.tutorat.pages;
+
+  document.getElementById("proverbe-semaine").textContent =
+  "« " + coursData.proverbe + " »";
+</script>
 </body>
 </html>
