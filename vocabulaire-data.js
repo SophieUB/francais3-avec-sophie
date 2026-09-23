@@ -3381,25 +3381,76 @@ SITUATION 3 — FAIRE UN PORTRAIT
   titre: "Situation 3 — Faire un portrait",
 
   sections: [
-    // contenu à ajouter
-  ]
-},
-
-    /*
-    ======================================================
-    LAB LANGUE ET CULTURE
-    ======================================================
-    */
 
     {
-      titre: "Lab langue et culture",
-      sections: [
-        // contenu à ajouter
+      titre: "La personnalité",
+      type: "adjectifs",
+
+      mots: [
+        ["chaleureux / chaleureuse", "warm / friendly"],
+        ["observateur / observatrice", "observant"],
+        ["timide", "shy"],
+        ["discret / discrète", "reserved / discreet"],
+        ["bavard / bavarde", "talkative"],
+        ["excentrique", "eccentric"]
       ]
     },
 
+    {
+      titre: "Noms et expressions",
+      type: "expressions",
 
-   /*
+      mots: [
+        ["une personnalité", "personality"],
+        ["être de bonne humeur", "to be in a good mood"],
+        ["être de mauvaise humeur", "to be in a bad mood"],
+        ["avoir de l'énergie", "to have energy"]
+      ]
+    }
+
+  ]
+},
+
+
+/*
+======================================================
+LAB LANGUE ET CULTURE
+======================================================
+*/
+
+{
+  titre: "Lab langue et culture",
+
+  sections: [
+
+    {
+      titre: "Parler et raconter",
+      type: "expressions",
+
+      mots: [
+        ["parler à quelqu'un", "to talk to someone"],
+        ["parler de quelqu'un / de quelque chose", "to talk about someone / something"],
+        ["raconter une rencontre", "to talk about an encounter"],
+        ["faire palabre", "to talk / discuss for a long time"],
+        ["montrer le chemin", "to show the way"]
+      ]
+    },
+
+    {
+      titre: "Langue",
+      type: "noms",
+
+      mots: [
+        ["un verbe pronominal", "des verbes pronominaux", "reflexive / pronominal verb"],
+        ["un paronyme", "des paronymes", "word that sounds similar to another word"]
+      ]
+    }
+
+  ]
+},
+
+
+/*
 ======================================================
 ATELIERS
 ======================================================
@@ -3421,7 +3472,15 @@ ATELIERS
       type: "expressions",
 
       mots: [
-        // contenu à ajouter
+        ["engager une conversation", "to start a conversation"],
+        ["Excusez-moi.", "Excuse me."],
+        ["Je ne vous dérange pas ?", "Am I disturbing you?"],
+        ["Je peux vous demander quelque chose ?", "Can I ask you something?"],
+        ["Dites-moi, est-ce que… ?", "Tell me, is it / do you…?"],
+        ["Vous ne trouvez pas que… ?", "Don't you think that…?"],
+        ["Est-ce que vous savez que… ?", "Do you know that…?"],
+        ["être ouvert / ouverte à la conversation", "to be open to conversation"],
+        ["raconter une anecdote", "to tell an anecdote"]
       ]
     },
 
@@ -3437,7 +3496,20 @@ ATELIERS
       type: "expressions",
 
       mots: [
-        // contenu à ajouter
+        ["publier une annonce", "to post an advert"],
+        ["proposer un trajet", "to offer a journey / ride"],
+        ["un trajet", "a journey / trip"],
+        ["un conducteur / une conductrice", "a driver"],
+        ["un passager / une passagère", "a passenger"],
+        ["un bagage", "a piece of luggage"],
+        ["le coffre", "the boot / trunk"],
+        ["Nous revenons de…", "We are coming back from…"],
+        ["Nous acceptons…", "We accept…"],
+        ["Nous n'acceptons pas…", "We don't accept…"],
+        ["Nous pouvons vous déposer à…", "We can drop you off at…"],
+        ["Le coffre est plein.", "The boot / trunk is full."],
+        ["Rendez-vous à…", "Meet at…"],
+        ["déposer quelqu'un", "to drop someone off"]
       ]
     }
 
