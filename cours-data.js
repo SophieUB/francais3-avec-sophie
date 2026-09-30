@@ -12,7 +12,7 @@ const coursData = {
 
   tutorat: {
     numero: 5,
-    unite: "Unité 3 — « Ça fait le buzz »",
+    unite: "Unité 3 : « Ça fait le buzz »",
     contenu: "Situation 1 : « Comparer des médias »"
   },
 
