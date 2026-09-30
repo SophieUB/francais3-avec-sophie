@@ -3527,34 +3527,841 @@ UNITÉ 3
   situations: [
 
     /*
+======================================================
+SITUATION 1 — COMPARER DES MÉDIAS
+======================================================
+*/
+
+{
+  titre: "Situation 1 — Comparer des médias",
+
+  sections: [
+
+    /*
     ======================================================
-    SITUATION 1 — COMPARER LES MÉDIAS
+    LES MÉDIAS
     ======================================================
     */
 
     {
-      titre: "Situation 1 — Comparer les médias",
+      titre: "Noms — Les médias",
+      type: "noms",
 
-      sections: [
-        // contenu à ajouter
+      mots: [
+        [
+          "un média",
+          "des médias",
+          "media outlet / medium"
+        ],
+
+        [
+          "la presse",
+          "—",
+          "the press"
+        ],
+
+        [
+          "un journal",
+          "des journaux",
+          "newspaper"
+        ],
+
+        [
+          "un magazine",
+          "des magazines",
+          "magazine"
+        ],
+
+        [
+          "la radio",
+          "les radios",
+          "radio"
+        ],
+
+        [
+          "la télévision",
+          "les télévisions",
+          "television"
+        ],
+
+        [
+          "un site de presse",
+          "des sites de presse",
+          "news website"
+        ],
+
+        [
+          "un réseau social",
+          "des réseaux sociaux",
+          "social network / social media platform"
+        ],
+
+        [
+          "un compte Instagram",
+          "des comptes Instagram",
+          "Instagram account"
+        ]
       ]
     },
 
 
     /*
     ======================================================
-    SITUATION 2 — COMMUNIQUER EN RÉSEAUX
+    LES CONTENUS DES MÉDIAS
     ======================================================
     */
 
     {
-      titre: "Situation 2 — Communiquer en réseaux",
+      titre: "Noms — Les contenus des médias",
+      type: "noms",
 
-      sections: [
-        // contenu à ajouter
+      mots: [
+        [
+          "une information",
+          "des informations",
+          "information / piece of news"
+        ],
+
+        [
+          "une info",
+          "des infos",
+          "news / piece of information"
+        ],
+
+        [
+          "un article",
+          "des articles",
+          "article"
+        ],
+
+        [
+          "un titre",
+          "des titres",
+          "headline / title"
+        ],
+
+        [
+          "une photo",
+          "des photos",
+          "photo"
+        ],
+
+        [
+          "un mot-clé",
+          "des mots-clés",
+          "keyword"
+        ],
+
+        [
+          "une émission",
+          "des émissions",
+          "programme / broadcast"
+        ],
+
+        [
+          "une affiche",
+          "des affiches",
+          "poster"
+        ],
+
+        [
+          "un site",
+          "des sites",
+          "website"
+        ],
+
+        [
+          "une édition",
+          "des éditions",
+          "edition"
+        ]
       ]
     },
 
+
+    /*
+    ======================================================
+    LES PERSONNES ET LES MÉDIAS
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Les personnes et les médias",
+      type: "noms",
+
+      mots: [
+        [
+          "un auditeur / une auditrice",
+          "des auditeurs / des auditrices",
+          "radio listener"
+        ],
+
+        [
+          "un spectateur / une spectatrice",
+          "des spectateurs / des spectatrices",
+          "viewer / spectator"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    VERBES ET ACTIONS
+    ======================================================
+    */
+
+    {
+      titre: "Verbes et actions — Les médias",
+      type: "expressions",
+
+      mots: [
+        [
+          "charger",
+          "to load / upload"
+        ],
+
+        [
+          "télécharger",
+          "to download"
+        ],
+
+        [
+          "écouter",
+          "to listen to"
+        ],
+
+        [
+          "entendre",
+          "to hear"
+        ],
+
+        [
+          "lire",
+          "to read"
+        ],
+
+        [
+          "regarder",
+          "to watch / look at"
+        ],
+
+        [
+          "s'abonner à un compte",
+          "to follow / subscribe to an account"
+        ],
+
+        [
+          "faire circuler une information",
+          "to spread / circulate information"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    PARLER DE L'INFORMATION
+    ======================================================
+    */
+
+    {
+      titre: "Expressions — Parler de l'information",
+      type: "expressions",
+
+      mots: [
+        [
+          "l'information principale",
+          "the main information / main point"
+        ],
+
+        [
+          "les informations secondaires",
+          "secondary information / details"
+        ],
+
+        [
+          "avoir plus de compréhension",
+          "to have a better understanding"
+        ],
+
+        [
+          "avoir plus de sens",
+          "to make more sense / have more meaning"
+        ],
+
+        [
+          "faire du sensationnel",
+          "to sensationalise / produce sensational content"
+        ],
+
+        [
+          "moins de sensationnel",
+          "less sensationalism"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LA COMPARAISON
+    ======================================================
+    */
+
+    {
+      titre: "Expressions — La comparaison",
+      type: "expressions",
+
+      mots: [
+        [
+          "plus ... que",
+          "more ... than"
+        ],
+
+        [
+          "moins ... que",
+          "less ... than"
+        ],
+
+        [
+          "aussi ... que",
+          "as ... as"
+        ],
+
+        [
+          "plus de ... que",
+          "more ... than"
+        ],
+
+        [
+          "moins de ... que",
+          "less ... than"
+        ],
+
+        [
+          "autant de ... que",
+          "as much / as many ... as"
+        ],
+
+        [
+          "meilleur / meilleure que",
+          "better than"
+        ],
+
+        [
+          "mieux que",
+          "better than"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ADJECTIFS
+    ======================================================
+    */
+
+    {
+      titre: "Adjectifs utiles",
+      type: "adjectifs",
+
+      mots: [
+        [
+          "court",
+          "courte",
+          "courts / courtes",
+          "short"
+        ],
+
+        [
+          "bon",
+          "bonne",
+          "bons / bonnes",
+          "good"
+        ],
+
+        [
+          "meilleur",
+          "meilleure",
+          "meilleurs / meilleures",
+          "better"
+        ],
+
+        [
+          "extraordinaire",
+          "extraordinaire",
+          "extraordinaires",
+          "extraordinary"
+        ]
+      ]
+    }
+
+  ]
+},
+
+
+/*
+======================================================
+SITUATION 2 — COMMUNIQUER EN RÉSEAU
+======================================================
+*/
+
+{
+  titre: "Situation 2 — Communiquer en réseau",
+
+  sections: [
+
+    /*
+    ======================================================
+    LES RÉSEAUX SOCIAUX ET LES MÉDIAS
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Les réseaux sociaux et les médias",
+      type: "noms",
+
+      mots: [
+        [
+          "un réseau social",
+          "des réseaux sociaux",
+          "social network / social media platform"
+        ],
+
+        [
+          "une revue",
+          "des revues",
+          "magazine / journal"
+        ],
+
+        [
+          "un article",
+          "des articles",
+          "article"
+        ],
+
+        [
+          "un témoignage",
+          "des témoignages",
+          "testimonial / personal account"
+        ],
+
+        [
+          "un message",
+          "des messages",
+          "message"
+        ],
+
+        [
+          "une notification",
+          "des notifications",
+          "notification"
+        ],
+
+        [
+          "une actualité",
+          "des actualités",
+          "news / current event"
+        ],
+
+        [
+          "un contenu",
+          "des contenus",
+          "content"
+        ],
+
+        [
+          "un format",
+          "des formats",
+          "format"
+        ],
+
+        [
+          "un smartphone",
+          "des smartphones",
+          "smartphone"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LES FORMATS DE MÉDIAS
+    ======================================================
+    */
+
+    {
+      titre: "Noms — Les formats de médias",
+      type: "noms",
+
+      mots: [
+        [
+          "une vidéo",
+          "des vidéos",
+          "video"
+        ],
+
+        [
+          "un sondage",
+          "des sondages",
+          "poll / survey"
+        ],
+
+        [
+          "une enquête",
+          "des enquêtes",
+          "survey / investigation"
+        ],
+
+        [
+          "un live",
+          "des lives",
+          "live stream"
+        ],
+
+        [
+          "une newsletter",
+          "des newsletters",
+          "newsletter"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ACTIONS SUR LES RÉSEAUX SOCIAUX
+    ======================================================
+    */
+
+    {
+      titre: "Verbes et actions — Les réseaux sociaux",
+      type: "expressions",
+
+      mots: [
+        [
+          "suivre quelqu'un",
+          "to follow someone"
+        ],
+
+        [
+          "s'abonner",
+          "to subscribe / follow"
+        ],
+
+        [
+          "écouter quelqu'un",
+          "to listen to someone"
+        ],
+
+        [
+          "se connecter",
+          "to log in / connect"
+        ],
+
+        [
+          "cliquer",
+          "to click"
+        ],
+
+        [
+          "aimer",
+          "to like"
+        ],
+
+        [
+          "partager",
+          "to share"
+        ],
+
+        [
+          "ajouter quelqu'un",
+          "to add someone"
+        ],
+
+        [
+          "regarder",
+          "to watch / look at"
+        ],
+
+        [
+          "liker",
+          "to like"
+        ],
+
+        [
+          "s'inscrire",
+          "to sign up / register"
+        ],
+
+        [
+          "se désinscrire",
+          "to unsubscribe"
+        ],
+
+        [
+          "se déconnecter",
+          "to log out / disconnect"
+        ],
+
+        [
+          "quitter un réseau social",
+          "to leave a social network"
+        ],
+
+        [
+          "recevoir un message",
+          "to receive a message"
+        ],
+
+        [
+          "recevoir une notification",
+          "to receive a notification"
+        ],
+
+        [
+          "échanger",
+          "to discuss / exchange"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS DES RÉSEAUX SOCIAUX
+    ======================================================
+    */
+
+    {
+      titre: "Expressions — Sur les réseaux sociaux",
+      type: "expressions",
+
+      mots: [
+        [
+          "Suivez-moi !",
+          "Follow me!"
+        ],
+
+        [
+          "Abonne-toi !",
+          "Subscribe! / Follow!"
+        ],
+
+        [
+          "Écoute-moi !",
+          "Listen to me!"
+        ],
+
+        [
+          "Connecte-toi !",
+          "Log in! / Connect!"
+        ],
+
+        [
+          "Clique !",
+          "Click!"
+        ],
+
+        [
+          "Aimons-nous !",
+          "Let's like / love each other!"
+        ],
+
+        [
+          "Partagez-moi !",
+          "Share me!"
+        ],
+
+        [
+          "Inscrivez-vous !",
+          "Sign up!"
+        ],
+
+        [
+          "Ajoutez-moi !",
+          "Add me!"
+        ],
+
+        [
+          "Regarde-moi !",
+          "Look at me! / Watch me!"
+        ],
+
+        [
+          "retrouver l'essentiel des actualités",
+          "to find the essential news"
+        ],
+
+        [
+          "échanger avec la rédaction",
+          "to interact with the editorial team"
+        ],
+
+        [
+          "découvrir des contenus originaux",
+          "to discover original content"
+        ],
+
+        [
+          "recevoir une newsletter",
+          "to receive a newsletter"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ANGLICISMES / EMPRUNTS À L'ANGLAIS
+    ======================================================
+    */
+
+    {
+      titre: "Les anglicismes / emprunts à l'anglais",
+      type: "expressions",
+
+      mots: [
+        [
+          "stop",
+          "stop"
+        ],
+
+        [
+          "liker",
+          "to like"
+        ],
+
+        [
+          "une newsletter",
+          "newsletter"
+        ],
+
+        [
+          "un live",
+          "live stream"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ADJECTIFS
+    ======================================================
+    */
+
+    {
+      titre: "Adjectifs — Décrire des contenus",
+      type: "adjectifs",
+
+      mots: [
+        [
+          "nouveau",
+          "nouvelle",
+          "nouveaux / nouvelles",
+          "new"
+        ],
+
+        [
+          "africain",
+          "africaine",
+          "africains / africaines",
+          "African"
+        ],
+
+        [
+          "original",
+          "originale",
+          "originaux / originales",
+          "original"
+        ],
+
+        [
+          "francophone",
+          "francophone",
+          "francophones",
+          "French-speaking"
+        ],
+
+        [
+          "amoureux",
+          "amoureuse",
+          "amoureux / amoureuses",
+          "passionate about / fond of"
+        ]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS UTILES
+    ======================================================
+    */
+
+    {
+      titre: "Expressions utiles — Communiquer en réseau",
+      type: "expressions",
+
+      mots: [
+        [
+          "être abonné(e) à",
+          "to subscribe to / follow"
+        ],
+
+        [
+          "être inscrit(e)",
+          "to be registered / signed up"
+        ],
+
+        [
+          "être connecté(e)",
+          "to be connected / logged in"
+        ],
+
+        [
+          "avoir une nouvelle notification",
+          "to have a new notification"
+        ],
+
+        [
+          "passer du temps sur les réseaux sociaux",
+          "to spend time on social media"
+        ],
+
+        [
+          "se déconnecter de son réseau social",
+          "to disconnect / log out of one's social network"
+        ],
+
+        [
+          "quitter Facebook",
+          "to leave Facebook"
+        ],
+
+        [
+          "être sur WhatsApp",
+          "to be on WhatsApp"
+        ],
+
+        [
+          "sur son smartphone",
+          "on one's smartphone"
+        ],
+
+        [
+          "chaque jour",
+          "every day"
+        ]
+      ]
+    }
+
+  ]
+},
 
     /*
     ======================================================
