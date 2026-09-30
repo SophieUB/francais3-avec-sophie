@@ -3520,7 +3520,97 @@ ATELIERS
 
 ] // fin situations UNITÉ 2
 
-} // fin UNITÉ 2
+}, // fin UNITÉ 2
+
+
+/*
+==========================================================
+UNITÉ 3
+==========================================================
+*/
+
+{
+  unite: "UNITÉ 3 — Ça fait le buzz !",
+
+  situations: [
+
+    /*
+    ======================================================
+    SITUATION 1 — COMPARER LES MÉDIAS
+    ======================================================
+    */
+
+    {
+      titre: "Situation 1 — Comparer les médias",
+
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    SITUATION 2 — COMMUNIQUER EN RÉSEAUX
+    ======================================================
+    */
+
+    {
+      titre: "Situation 2 — Communiquer en réseaux",
+
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    SITUATION 3 — POSER DES QUESTIONS
+    ======================================================
+    */
+
+    {
+      titre: "Situation 3 — Poser des questions",
+
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LAB LANGUE ET CULTURE
+    ======================================================
+    */
+
+    {
+      titre: "Lab langue et culture",
+
+      sections: [
+        // contenu à ajouter
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ATELIERS
+    ======================================================
+    */
+
+    {
+      titre: "Ateliers — Demander des précisions / Écrire un tweet ou tweeter",
+
+      sections: [
+        // contenu à ajouter
+      ]
+    }
+
+  ] // fin situations UNITÉ 3
+
+} // fin UNITÉ 3
 
 
 ]; // fin vocabulaire
