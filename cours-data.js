@@ -1,20 +1,30 @@
 const coursData = {
-  semaine: 6,
+
+  semaine: 7,
 
   lecture: {
-    numero: 6,
-    unite: "Unité 2 « Vous avez deux minutes ? »",
-    contenu: "Situation 3 : Faire un portrait",
-    complement: "Lab langue et culture",
-    pages: "Pages 38–41"
-  },
+    numero: 7,
 
-  tutorat: {
-    numero: 4,
-    unite: "Unité 2 « Vous avez deux minutes ? »",
-    contenu: "Ateliers : Engager une conversation et Publier une annonce pour proposer un trajet",
+    unite: "Test 1",
+
+    contenu:
+      "Grammaire, conjugaison, vocabulaire, compréhension à la lecture, rédaction",
+
+    complement: "CO 1",
+
     pages: ""
   },
 
-  proverbe: "Vouloir, c'est pouvoir."
+  tutorat: {
+    numero: 5,
+
+    unite: "Unité 3 — « Ça fait le buzz »",
+
+    contenu:
+      "Situation 1 : « Comparer des médias »"
+  },
+
+  proverbe:
+    "Petit à petit, l'oiseau fait son nid."
+
 };
