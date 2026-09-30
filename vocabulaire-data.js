@@ -2523,14 +2523,6 @@ UNITÉ 2
     ======================================================
     */
 
-    {
-      titre: "Introduction — Vous avez deux minutes ?",
-      sections: [
-        // contenu à ajouter
-      ]
-    },
-
-
   {
   titre: "Situation 1 — Parler d'une rencontre",
 
