@@ -3791,11 +3791,6 @@ SITUATION 1 — COMPARER DES MÉDIAS
         ],
 
         [
-          "faire du sensationnel",
-          "to sensationalise / produce sensational content"
-        ],
-
-        [
           "moins de sensationnel",
           "less sensationalism"
         ]
