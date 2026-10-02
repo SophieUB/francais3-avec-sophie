@@ -3982,7 +3982,7 @@ UNITÉ 3
         },
 
 
-        /*
+                /*
         ======================================================
         AUTRES EXPRESSIONS UTILES
         ======================================================
@@ -3994,8 +3994,13 @@ UNITÉ 3
 
           mots: [
             [
-              "un spectacle déroutant",
-              "a confusing / unsettling show"
+              "faire le buzz",
+              "to go viral / create a buzz"
+            ],
+
+            [
+              "un spectacle décapant",
+              "a sharp / provocative show"
             ],
 
             [
@@ -4005,10 +4010,9 @@ UNITÉ 3
           ]
         }
 
-           ]
+      ]
 
     }, // fin Situation 1 — Comparer des médias
-
 
     /*
     ======================================================
