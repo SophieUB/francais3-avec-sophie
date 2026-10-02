@@ -4005,18 +4005,19 @@ UNITÉ 3
           ]
         }
 
-      ]
-    }
+           ]
 
-  ]
-},
-======================================================
-SITUATION 2 — COMMUNIQUER EN RÉSEAU
-======================================================
-*/
+    }, // fin Situation 1 — Comparer des médias
 
-{
-  titre: "Situation 2 — Communiquer en réseau",
+
+    /*
+    ======================================================
+    SITUATION 2 — COMMUNIQUER EN RÉSEAU
+    ======================================================
+    */
+
+    {
+      titre: "Situation 2 — Communiquer en réseau",
 
   sections: [
 
