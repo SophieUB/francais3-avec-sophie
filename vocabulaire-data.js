@@ -3514,7 +3514,6 @@ ATELIERS
 
 }, // fin UNITÉ 2
 
-
 /*
 ==========================================================
 UNITÉ 3
@@ -3527,377 +3526,490 @@ UNITÉ 3
   situations: [
 
     /*
-======================================================
-SITUATION 1 — COMPARER DES MÉDIAS
-======================================================
-*/
-
-{
-  titre: "Situation 1 — Comparer des médias",
-
-  sections: [
-
-    /*
     ======================================================
-    LES MÉDIAS
+    SITUATION 1 — COMPARER DES MÉDIAS
     ======================================================
     */
 
     {
-      titre: "Noms — Les médias",
-      type: "noms",
-
-      mots: [
-        [
-          "un média",
-          "des médias",
-          "media outlet / medium"
-        ],
-
-        [
-          "la presse",
-          "—",
-          "the press"
-        ],
-
-        [
-          "un journal",
-          "des journaux",
-          "newspaper"
-        ],
-
-        [
-          "un magazine",
-          "des magazines",
-          "magazine"
-        ],
-
-        [
-          "la radio",
-          "les radios",
-          "radio"
-        ],
-
-        [
-          "la télévision",
-          "les télévisions",
-          "television"
-        ],
-
-        [
-          "un site de presse",
-          "des sites de presse",
-          "news website"
-        ],
-
-        [
-          "un réseau social",
-          "des réseaux sociaux",
-          "social network / social media platform"
-        ],
-
-        [
-          "un compte Instagram",
-          "des comptes Instagram",
-          "Instagram account"
-        ]
-      ]
-    },
-
-
-    /*
-    ======================================================
-    LES CONTENUS DES MÉDIAS
-    ======================================================
-    */
-
-    {
-      titre: "Noms — Les contenus des médias",
-      type: "noms",
-
-      mots: [
-        [
-          "une information",
-          "des informations",
-          "information / piece of news"
-        ],
-
-        [
-          "une info",
-          "des infos",
-          "news / piece of information"
-        ],
-
-        [
-          "un article",
-          "des articles",
-          "article"
-        ],
-
-        [
-          "un titre",
-          "des titres",
-          "headline / title"
-        ],
-
-        [
-          "une photo",
-          "des photos",
-          "photo"
-        ],
-
-        [
-          "un mot-clé",
-          "des mots-clés",
-          "keyword"
-        ],
-
-        [
-          "une émission",
-          "des émissions",
-          "programme / broadcast"
-        ],
-
-        [
-          "une affiche",
-          "des affiches",
-          "poster"
-        ],
-
-        [
-          "un site",
-          "des sites",
-          "website"
-        ],
-
-        [
-          "une édition",
-          "des éditions",
-          "edition"
-        ]
-      ]
-    },
-
-
-    /*
-    ======================================================
-    LES PERSONNES ET LES MÉDIAS
-    ======================================================
-    */
-
-    {
-      titre: "Noms — Les personnes et les médias",
-      type: "noms",
-
-      mots: [
-        [
-          "un auditeur / une auditrice",
-          "des auditeurs / des auditrices",
-          "radio listener"
-        ],
-
-        [
-          "un spectateur / une spectatrice",
-          "des spectateurs / des spectatrices",
-          "viewer / spectator"
-        ]
-      ]
-    },
-
-
-    /*
-    ======================================================
-    VERBES ET ACTIONS
-    ======================================================
-    */
-
-    {
-      titre: "Verbes et actions — Les médias",
-      type: "expressions",
-
-      mots: [
-        [
-          "charger",
-          "to load / upload"
-        ],
-
-        [
-          "télécharger",
-          "to download"
-        ],
-
-        [
-          "écouter",
-          "to listen to"
-        ],
-
-        [
-          "entendre",
-          "to hear"
-        ],
-
-        [
-          "lire",
-          "to read"
-        ],
-
-        [
-          "regarder",
-          "to watch / look at"
-        ],
-
-        [
-          "s'abonner à un compte",
-          "to follow / subscribe to an account"
-        ],
-
-        [
-          "faire circuler une information",
-          "to spread / circulate information"
-        ]
-      ]
-    },
-
-
-    /*
-    ======================================================
-    PARLER DE L'INFORMATION
-    ======================================================
-    */
-
-    {
-      titre: "Expressions — Parler de l'information",
-      type: "expressions",
-
-      mots: [
-        [
-          "l'information principale",
-          "the main information / main point"
-        ],
-
-        [
-          "les informations secondaires",
-          "secondary information / details"
-        ],
-
-        [
-          "avoir plus de compréhension",
-          "to have a better understanding"
-        ],
-
-        [
-          "avoir plus de sens",
-          "to make more sense / have more meaning"
-        ],
-
-        [
-          "moins de sensationnel",
-          "less sensationalism"
-        ]
-      ]
-    },
-
-
-    /*
-    ======================================================
-    LA COMPARAISON
-    ======================================================
-    */
-
-    {
-      titre: "Expressions — La comparaison",
-      type: "expressions",
-
-      mots: [
-        [
-          "plus ... que",
-          "more ... than"
-        ],
-
-        [
-          "moins ... que",
-          "less ... than"
-        ],
-
-        [
-          "aussi ... que",
-          "as ... as"
-        ],
-
-        [
-          "plus de ... que",
-          "more ... than"
-        ],
-
-        [
-          "moins de ... que",
-          "less ... than"
-        ],
-
-        [
-          "autant de ... que",
-          "as much / as many ... as"
-        ],
-
-        [
-          "meilleur / meilleure que",
-          "better than"
-        ],
-
-        [
-          "mieux que",
-          "better than"
-        ]
-      ]
-    },
-
-
-    /*
-    ======================================================
-    ADJECTIFS
-    ======================================================
-    */
-
-    {
-      titre: "Adjectifs utiles",
-      type: "adjectifs",
-
-      mots: [
-        [
-          "court",
-          "courte",
-          "courts / courtes",
-          "short"
-        ],
-
-        [
-          "bon",
-          "bonne",
-          "bons / bonnes",
-          "good"
-        ],
-
-        [
-          "meilleur",
-          "meilleure",
-          "meilleurs / meilleures",
-          "better"
-        ],
-
-        [
-          "extraordinaire",
-          "extraordinaire",
-          "extraordinaires",
-          "extraordinary"
-        ]
+      titre: "Situation 1 — Comparer des médias",
+
+      sections: [
+
+        /*
+        ======================================================
+        LES MÉDIAS
+        ======================================================
+        */
+
+        {
+          titre: "Noms — Les médias",
+          type: "noms",
+
+          mots: [
+            [
+              "un média",
+              "des médias",
+              "media outlet / medium"
+            ],
+
+            [
+              "la presse",
+              "—",
+              "the press"
+            ],
+
+            [
+              "un journal",
+              "des journaux",
+              "newspaper"
+            ],
+
+            [
+              "un magazine",
+              "des magazines",
+              "magazine"
+            ],
+
+            [
+              "la radio",
+              "les radios",
+              "radio"
+            ],
+
+            [
+              "la télévision",
+              "les télévisions",
+              "television"
+            ],
+
+            [
+              "un site de presse",
+              "des sites de presse",
+              "news website"
+            ],
+
+            [
+              "un réseau social",
+              "des réseaux sociaux",
+              "social network / social media platform"
+            ],
+
+            [
+              "un compte Instagram",
+              "des comptes Instagram",
+              "Instagram account"
+            ],
+
+            [
+              "une chaîne d'infos",
+              "des chaînes d'infos",
+              "news channel"
+            ]
+          ]
+        },
+
+
+        /*
+        ======================================================
+        LES CONTENUS DES MÉDIAS
+        ======================================================
+        */
+
+        {
+          titre: "Noms — Les contenus des médias",
+          type: "noms",
+
+          mots: [
+            [
+              "une information",
+              "des informations",
+              "information / piece of news"
+            ],
+
+            [
+              "une info",
+              "des infos",
+              "news / piece of information"
+            ],
+
+            [
+              "un article",
+              "des articles",
+              "article"
+            ],
+
+            [
+              "un titre",
+              "des titres",
+              "headline / title"
+            ],
+
+            [
+              "une photo",
+              "des photos",
+              "photo"
+            ],
+
+            [
+              "un mot-clé",
+              "des mots-clés",
+              "keyword"
+            ],
+
+            [
+              "une émission",
+              "des émissions",
+              "programme / broadcast"
+            ],
+
+            [
+              "une affiche",
+              "des affiches",
+              "poster"
+            ],
+
+            [
+              "un site",
+              "des sites",
+              "website"
+            ],
+
+            [
+              "une édition",
+              "des éditions",
+              "edition"
+            ],
+
+            [
+              "des guillemets",
+              "—",
+              "quotation marks"
+            ]
+          ]
+        },
+
+
+        /*
+        ======================================================
+        LES PERSONNES ET LES MÉDIAS
+        ======================================================
+        */
+
+        {
+          titre: "Noms — Les personnes et les médias",
+          type: "noms",
+
+          mots: [
+            [
+              "un auditeur / une auditrice",
+              "des auditeurs / des auditrices",
+              "radio listener"
+            ],
+
+            [
+              "un spectateur / une spectatrice",
+              "des spectateurs / des spectatrices",
+              "viewer / spectator"
+            ]
+          ]
+        },
+
+
+        /*
+        ======================================================
+        VERBES ET ACTIONS
+        ======================================================
+        */
+
+        {
+          titre: "Verbes et actions — Les médias",
+          type: "expressions",
+
+          mots: [
+            [
+              "charger",
+              "to load / upload"
+            ],
+
+            [
+              "télécharger",
+              "to download"
+            ],
+
+            [
+              "écouter",
+              "to listen to"
+            ],
+
+            [
+              "entendre",
+              "to hear"
+            ],
+
+            [
+              "lire",
+              "to read"
+            ],
+
+            [
+              "regarder",
+              "to watch / look at"
+            ],
+
+            [
+              "s'informer",
+              "to get informed / keep informed"
+            ],
+
+            [
+              "consulter",
+              "to consult / check"
+            ],
+
+            [
+              "rechercher",
+              "to search for"
+            ],
+
+            [
+              "se connecter",
+              "to log in / connect"
+            ],
+
+            [
+              "s'inscrire",
+              "to sign up / register"
+            ],
+
+            [
+              "s'abonner",
+              "to subscribe / follow"
+            ],
+
+            [
+              "suivre",
+              "to follow"
+            ],
+
+            [
+              "aimer",
+              "to like"
+            ],
+
+            [
+              "commenter",
+              "to comment"
+            ],
+
+            [
+              "partager",
+              "to share"
+            ],
+
+            [
+              "publier",
+              "to post / publish"
+            ],
+
+            [
+              "enregistrer / sauvegarder",
+              "to save"
+            ],
+
+            [
+              "faire circuler une information",
+              "to spread / circulate information"
+            ]
+          ]
+        },
+
+
+        /*
+        ======================================================
+        PARLER DE L'INFORMATION
+        ======================================================
+        */
+
+        {
+          titre: "Expressions — Parler de l'information",
+          type: "expressions",
+
+          mots: [
+            [
+              "l'information principale",
+              "the main information / main point"
+            ],
+
+            [
+              "les informations secondaires",
+              "secondary information / details"
+            ],
+
+            [
+              "avoir plus de compréhension",
+              "to have a better understanding"
+            ],
+
+            [
+              "avoir plus de sens",
+              "to make more sense / have more meaning"
+            ],
+
+            [
+              "moins de sensationnel",
+              "less sensationalism"
+            ],
+
+            [
+              "en détail",
+              "in detail"
+            ],
+
+            [
+              "en profondeur",
+              "in depth"
+            ],
+
+            [
+              "susciter de l'indignation",
+              "to cause / provoke outrage"
+            ]
+          ]
+        },
+
+
+        /*
+        ======================================================
+        LA COMPARAISON
+        ======================================================
+        */
+
+        {
+          titre: "Expressions — La comparaison",
+          type: "expressions",
+
+          mots: [
+            [
+              "plus ... que",
+              "more ... than"
+            ],
+
+            [
+              "moins ... que",
+              "less ... than"
+            ],
+
+            [
+              "aussi ... que",
+              "as ... as"
+            ],
+
+            [
+              "plus de ... que",
+              "more ... than"
+            ],
+
+            [
+              "moins de ... que",
+              "less ... than"
+            ],
+
+            [
+              "autant de ... que",
+              "as much / as many ... as"
+            ],
+
+            [
+              "meilleur / meilleure que",
+              "better than"
+            ],
+
+            [
+              "mieux que",
+              "better than"
+            ]
+          ]
+        },
+
+
+        /*
+        ======================================================
+        ADJECTIFS
+        ======================================================
+        */
+
+        {
+          titre: "Adjectifs utiles",
+          type: "adjectifs",
+
+          mots: [
+            [
+              "court",
+              "courte",
+              "courts / courtes",
+              "short"
+            ],
+
+            [
+              "bon",
+              "bonne",
+              "bons / bonnes",
+              "good"
+            ],
+
+            [
+              "meilleur",
+              "meilleure",
+              "meilleurs / meilleures",
+              "better"
+            ],
+
+            [
+              "extraordinaire",
+              "extraordinaire",
+              "extraordinaires",
+              "extraordinary"
+            ],
+
+            [
+              "déroutant",
+              "déroutante",
+              "déroutants / déroutantes",
+              "confusing / unsettling"
+            ]
+          ]
+        },
+
+
+        /*
+        ======================================================
+        AUTRES EXPRESSIONS UTILES
+        ======================================================
+        */
+
+        {
+          titre: "Autres expressions utiles",
+          type: "expressions",
+
+          mots: [
+            [
+              "un spectacle déroutant",
+              "a confusing / unsettling show"
+            ],
+
+            [
+              "avoir lieu",
+              "to take place"
+            ]
+          ]
+        }
+
       ]
     }
 
   ]
 },
-
-
-/*
 ======================================================
 SITUATION 2 — COMMUNIQUER EN RÉSEAU
 ======================================================
