@@ -6,7 +6,7 @@ const coursData = {
     numero: 8,
     unite: "Unité 3 : « Ça fait le buzz ! »",
     contenu: "Situation 2 : « Communiquer en réseau »",
-    complement: "ATTENTION — EN DEVOIR : Situation 3 « Poser des questions », pages 54-55",
+    complement: "ATTENTION — EN DEVOIR : Situation 3 «\u00A0Poser des questions\u00A0», pages 54-55",
     pages: "Please check the PPTX slides for the answers to these questions and the mini-site for the vocabulary and revision materials on Comment poser une question. You will not be directly tested on this material in Test 2."
   },
 
