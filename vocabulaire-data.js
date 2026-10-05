@@ -4480,15 +4480,66 @@ UNITÉ 3
     SITUATION 3 — POSER DES QUESTIONS
     ======================================================
     */
+/*
+======================================================
+SITUATION 3 — POSER DES QUESTIONS
+======================================================
+*/
+
+{
+  titre: "Situation 3 — Poser des questions",
+
+  sections: [
 
     {
-      titre: "Situation 3 — Poser des questions",
+      titre: "Noms",
+      type: "noms",
 
-      sections: [
-        // contenu à ajouter
+      mots: [
+        ["un sketch", "des sketches", "comedy sketch"],
+        ["un tournage", "des tournages", "filming / shoot"],
+        ["un accent", "des accents", "accent"],
+        ["une coproduction", "des coproductions", "co-production"],
+        ["un personnage", "des personnages", "character"],
+        ["un sujet", "des sujets", "topic / subject"]
       ]
     },
 
+    {
+      titre: "Adjectifs",
+      type: "adjectifs",
+
+      mots: [
+        ["touchant / touchante", "touching / moving"],
+        ["grave", "serious"],
+        ["léger / légère", "light / light-hearted"]
+      ]
+    },
+
+    {
+      titre: "Expressions",
+      type: "expressions",
+
+      mots: [
+        ["être à l’origine de", "to be behind / to be the creator of"],
+        ["avoir peur de", "to be afraid of"],
+        ["bien sûr", "of course"],
+        ["être agréable à tous", "to be pleasant for everyone"],
+        ["tourner à Bruxelles", "to film / shoot in Brussels"],
+        ["5 jours par semaine", "5 days a week"],
+        ["pendant 7 semaines", "for 7 weeks"],
+        ["mémoriser un texte", "to memorize a text"],
+        ["le soir pour le lendemain", "in the evening for the next day"],
+        ["ne pas s’adresser qu’à…", "not to be aimed only at…"],
+        ["ne pas parler que de…", "not to talk only about…"],
+        ["avec un ton léger", "in a light-hearted tone"],
+        ["des relations humaines authentiques", "genuine human relationships"],
+        ["des personnages touchants", "touching / endearing characters"]
+      ]
+    }
+
+  ]
+},
 
     /*
     ======================================================
