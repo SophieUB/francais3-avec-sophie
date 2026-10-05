@@ -608,38 +608,37 @@
 
 <script>
   document.getElementById("semaine-etiquette").textContent =
-    "Semaine " + coursData.semaine + " sur 13";
+  "Semaine " + coursData.semaine + " sur 13";
 
-  document.getElementById("semaine-unite").textContent =
-    coursData.lecture.unite;
+document.getElementById("semaine-unite").textContent =
+  coursData.lecture.unite;
 
-  document.getElementById("lecture-titre").textContent =
-    "Lecture " + coursData.lecture.numero;
+document.getElementById("lecture-titre").textContent =
+  "Lecture " + coursData.lecture.numero;
 
-  document.getElementById("lecture-unite").textContent =
-    coursData.lecture.unite;
+document.getElementById("lecture-unite").textContent =
+  coursData.lecture.unite;
 
-  document.getElementById("lecture-contenu").textContent =
-    coursData.lecture.contenu;
+document.getElementById("lecture-contenu").textContent =
+  coursData.lecture.contenu;
 
-  document.getElementById("lecture-complement").textContent =
-    coursData.lecture.complement;
+document.getElementById("lecture-complement").innerHTML =
+  coursData.lecture.complement;
 
-  document.getElementById("lecture-pages").textContent =
-    coursData.lecture.pages;
+document.getElementById("lecture-pages").innerHTML =
+  coursData.lecture.pages;
 
-  document.getElementById("tutorat-titre").textContent =
-    "Tutorat " + coursData.tutorat.numero;
+document.getElementById("tutorat-titre").textContent =
+  "Tutorat " + coursData.tutorat.numero;
 
-  document.getElementById("tutorat-unite").textContent =
-    coursData.tutorat.unite;
+document.getElementById("tutorat-unite").textContent =
+  coursData.tutorat.unite;
 
-  document.getElementById("tutorat-contenu").textContent =
-    coursData.tutorat.contenu;
+document.getElementById("tutorat-contenu").textContent =
+  coursData.tutorat.contenu;
 
-  document.getElementById("tutorat-pages").textContent =
-    coursData.tutorat.pages;
-
+document.getElementById("tutorat-pages").textContent =
+  coursData.tutorat.pages || "";
   document.getElementById("proverbe-semaine").textContent =
   "« " + coursData.proverbe + " »";
 </script>
