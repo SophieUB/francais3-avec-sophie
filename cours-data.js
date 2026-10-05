@@ -1,21 +1,22 @@
 const coursData = {
 
-  semaine: 7,
+  semaine: 8,
 
   lecture: {
-    numero: 7,
-    unite: "Test 1",
-    contenu: "Grammaire, conjugaison, vocabulaire, compréhension à la lecture, rédaction",
-    complement: "CO 1",
-    pages: ""
+    numero: 8,
+    unite: "Unité 3 : « Ça fait le buzz ! »",
+    contenu: "Situation 2 : « Communiquer en réseau »",
+    complement: "ATTENTION — EN DEVOIR : Poser des questions, pages 54-55",
+    pages: `Please check the PPTX slides for the answers to the questions and the mini-site for the vocabulary and <strong>revision</strong> materials on “Comment poser une question”. You will not be directly tested on this material in Test 2.`
   },
 
   tutorat: {
-    numero: 5,
-    unite: "Unité 3 : « Ça fait le buzz »",
-    contenu: "Situation 1 : « Comparer des médias »"
+    numero: 6,
+    unite: "Unité 3 : « Ça fait le buzz ! »",
+    contenu: "LAB’ Langue & culture",
+    pages: "Pages 56-57"
   },
 
-  proverbe: "Petit à petit, l'oiseau fait son nid."
+  proverbe: "Jamais deux sans trois. — Things come in threes."
 
 };
