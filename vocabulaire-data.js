@@ -4477,15 +4477,9 @@ UNITÉ 3
 
     /*
     ======================================================
-    SITUATION 3 — POSER DES QUESTIONS
+    SITUATION 3 — POSER DES QUESTIONS (à faire en devoir)
     ======================================================
     */
-/*
-======================================================
-SITUATION 3 — POSER DES QUESTIONS
-======================================================
-*/
-
 {
   titre: "Situation 3 — Poser des questions",
 
