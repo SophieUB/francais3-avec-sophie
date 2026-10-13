@@ -5,7 +5,9 @@ const coursData = {
   lecture: {
     numero: 9,
     unite: "Unité 3 : « Ça fait le buzz ! »",
-    contenu: "Ateliers : « Demander des précisions » — « Écrire un tweet ou tweeter »"
+    contenu: "Ateliers : « Demander des précisions » — « Écrire un tweet ou tweeter »",
+    complement: "",
+    pages: ""
   },
 
   tutorat: {
@@ -15,6 +17,6 @@ const coursData = {
     pages: ""
   },
 
-  proverbe: "Rien ne sert de courir ; il faut partir à point. — Slow and steady wins the race. There is no point in rushing; what matters is starting at the right time."
+  proverbe: "Rien ne sert de courir ; il faut partir à point. — There is no point in rushing; what matters is starting at the right time."
 
 };
