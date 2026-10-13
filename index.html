@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Mon espace de français</title>
 
+
   <style>
+
     :root {
       --bleu-fonce: #1D476E;
       --bleu-clair: #74BACD;
@@ -17,9 +25,11 @@
       --gris: #667785;
     }
 
+
     * {
       box-sizing: border-box;
     }
+
 
     body {
       margin: 0;
@@ -29,9 +39,11 @@
       line-height: 1.6;
     }
 
+
     header {
       padding: 42px 24px 70px;
       color: var(--blanc);
+
       background:
         radial-gradient(
           circle at 85% 15%,
@@ -45,10 +57,12 @@
         );
     }
 
+
     .conteneur {
       width: min(1120px, calc(100% - 40px));
       margin: auto;
     }
+
 
     .meta {
       display: flex;
@@ -59,12 +73,14 @@
       color: #DCECF3;
     }
 
+
     .code-cours {
       font-weight: bold;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #C5EDF4;
     }
+
 
     .entete {
       display: grid;
@@ -73,15 +89,18 @@
       align-items: center;
     }
 
+
     h1 {
       margin: 0 0 16px;
       font-size: clamp(2.7rem, 6vw, 5rem);
       line-height: 1;
     }
 
+
     h1 span {
       color: var(--bleu-clair);
     }
+
 
     .introduction {
       max-width: 720px;
@@ -90,12 +109,14 @@
       font-size: 1.08rem;
     }
 
+
     .semaine {
       padding: 26px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 24px;
       background: rgba(255, 255, 255, 0.1);
     }
+
 
     .semaine small {
       font-weight: bold;
@@ -104,19 +125,23 @@
       color: #C5EDF4;
     }
 
+
     .semaine h2 {
       margin: 8px 0 6px;
       font-size: 1.8rem;
     }
+
 
     .semaine strong {
       color: #FFD5E0;
       font-size: 1.14rem;
     }
 
+
     main {
       padding: 34px 0 70px;
     }
+
 
     .bloc-blanc {
       padding: 28px;
@@ -126,16 +151,19 @@
       box-shadow: 0 12px 30px rgba(29, 71, 110, 0.12);
     }
 
+
     .bienvenue {
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
       gap: 20px;
     }
 
+
     .annonce {
       padding-left: 24px;
       border-left: 6px solid var(--rose);
     }
+
 
     .titre-section {
       margin: 42px 0 20px;
@@ -143,11 +171,13 @@
       font-size: 1.9rem;
     }
 
+
     .grille {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
+
 
     .carte {
       min-height: 190px;
@@ -159,18 +189,22 @@
       transition: transform 0.2s ease;
     }
 
+
     .carte:hover {
       transform: translateY(-4px);
     }
+
 
     .carte h3 {
       margin: 0 0 10px;
       font-size: 1.45rem;
     }
 
+
     .carte p {
       margin: 0;
     }
+
 
     .carte span {
       display: block;
@@ -181,26 +215,32 @@
       letter-spacing: 0.05em;
     }
 
+
     .bleu {
       background: var(--bleu-fonce);
     }
+
 
     .bleu-clair {
       background: #4E9EB5;
     }
 
+
     .rose {
       background: var(--rose);
     }
+
 
     .gris {
       background: #466373;
     }
 
+
     .clair {
       color: var(--texte);
       background: var(--bleu-clair);
     }
+
 
     .sophie {
       display: grid;
@@ -211,21 +251,28 @@
       padding: 32px;
       color: var(--blanc);
       border-radius: 26px;
-      background: linear-gradient(
-        135deg,
-        var(--rose),
-        #C72357
-      );
-      box-shadow: 0 12px 30px rgba(238, 49, 103, 0.22);
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--rose),
+          #C72357
+        );
+
+      box-shadow:
+        0 12px 30px rgba(238, 49, 103, 0.22);
     }
+
 
     .sophie h2 {
       margin: 0 0 8px;
     }
 
+
     .sophie p {
       margin: 0;
     }
+
 
     .bouton-sophie {
       padding: 15px 20px;
@@ -236,21 +283,25 @@
       background: var(--blanc);
     }
 
+
     .infos {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       gap: 22px;
     }
 
+
     .tableau {
       overflow-x: auto;
     }
+
 
     table {
       width: 100%;
       min-width: 650px;
       border-collapse: collapse;
     }
+
 
     th,
     td {
@@ -259,10 +310,12 @@
       border-bottom: 1px solid #E2E9ED;
     }
 
+
     th {
       color: var(--blanc);
       background: var(--bleu-fonce);
     }
+
 
     .expression {
       margin: 8px 0;
@@ -271,12 +324,14 @@
       font-weight: bold;
     }
 
+
     .hero-boutons {
       display: flex;
       gap: 18px;
       margin-top: 35px;
       margin-bottom: 20px;
     }
+
 
     .bouton-principal,
     .bouton-secondaire {
@@ -289,23 +344,29 @@
       transition: 0.2s;
     }
 
+
     .bouton-principal {
-      background: linear-gradient(
-        #DFF4FF,
-        #BFE8FF
-      );
+      background:
+        linear-gradient(
+          #DFF4FF,
+          #BFE8FF
+        );
+
       color: #173047;
     }
+
 
     .bouton-secondaire {
       background: white;
       color: #173047;
     }
 
+
     .bouton-principal:hover,
     .bouton-secondaire:hover {
       transform: translateY(-3px);
     }
+
 
     footer {
       padding: 30px 20px;
@@ -314,7 +375,9 @@
       background: #102B45;
     }
 
+
     @media (max-width: 850px) {
+
       .entete,
       .bienvenue,
       .sophie,
@@ -322,1100 +385,1373 @@
         grid-template-columns: 1fr;
       }
 
+
       .grille {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
+
     @media (max-width: 560px) {
+
       .grille {
         grid-template-columns: 1fr;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
 
-  <header>
+<!-- =====================================================
+     EN-TÊTE
+     ===================================================== -->
 
-    <div class="conteneur">
+<header>
 
-      <div class="meta">
+  <div class="conteneur">
 
-        <div class="code-cours">
-          LAF3201 French 3 [2610]
-        </div>
 
-        <div>
-          AY 2026/2027 · Semestre 1
-        </div>
+    <div class="meta">
 
+      <div class="code-cours">
+        LAF3201 French 3 [2610]
       </div>
 
-
-      <div class="entete">
-
-        <div>
-
-          <h1>
-            Mon espace de <span>français</span>
-          </h1>
-
-          <p class="introduction">
-            Votre espace pour apprendre, pratiquer, communiquer
-            et progresser en français.
-          </p>
-
-
-          <div class="hero-boutons">
-
-            <a
-              class="bouton-principal"
-              href="semaine.html"
-            >
-              Cette semaine
-            </a>
-
-            <a
-              class="bouton-secondaire"
-              href="https://canvas.nus.edu.sg/courses/94838"
-              target="_blank"
-            >
-              Canvas
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="semaine">
-
-  <small>
-    Bienvenue
-  </small>
-
-  <h2 id="accueil-semaine"></h2>
-
-  <strong>
-    Cette semaine
-  </strong>
-
-  <p>
-    <strong id="accueil-lecture-titre"></strong>
-
-    <br>
-
-    <span id="accueil-lecture-unite"></span>
-
-    <br>
-
-    <span id="accueil-lecture-contenu"></span>
-
-    <br>
-
-    <span id="accueil-lecture-complement"></span>
-
-    <br>
-
-    <em id="accueil-lecture-pages"></em>
-  </p>
-
-  <p>
-    <strong id="accueil-tutorat-titre"></strong>
-
-    <br>
-
-    <span id="accueil-tutorat-unite"></span>
-
-    <br>
-
-    <span id="accueil-tutorat-contenu"></span>
-  </p>
-
-  <p>
-    <strong id="accueil-presence"></strong>
-  </p>
-
-  <hr>
-
-  <p>
-    <em id="accueil-proverbe"></em>
-  </p>
-
-</div>
-
+      <div>
+        AY 2026/2027 · Semestre 1
       </div>
 
     </div>
 
-  </header>
 
+    <div class="entete">
 
-  <main class="conteneur">
-
-
-    <!-- =====================================================
-         BIENVENUE ET ANNONCES
-         ===================================================== -->
-
-    <section class="bloc-blanc bienvenue">
-
-
-      <!-- Colonne de gauche -->
 
       <div>
 
-        <h2>
-          Bienvenue dans LAF3201 French 3 !
-        </h2>
+        <h1>
+          Mon espace de <span>français</span>
+        </h1>
 
-
-        <p>
-          Pensez à rejoindre notre groupe Telegram :
+        <p class="introduction">
+          Votre espace pour apprendre, pratiquer, communiquer
+          et progresser en français.
         </p>
 
 
-        <p>
+        <div class="hero-boutons">
 
           <a
-            class="lien-telegram"
-            href="https://t.me/+4mZw1qw5F0RhOTk1"
-            target="_blank"
+            class="bouton-principal"
+            href="semaine.html"
           >
-            Rejoindre le groupe Telegram
+            Cette semaine
           </a>
 
-        </p>
-
-
-        <hr>
-
-
-        <h3>
-          Respect des droits d'auteur
-        </h3>
-
-
-        <p
-          style="
-            color:#C72357;
-            font-weight:bold;
-          "
-        >
-          Les manuels sont protégés
-          par les droits d'auteur.
-        </p>
-
-
-        <p>
-          La reproduction, la photocopie,
-          la numérisation et la diffusion
-          non autorisée de tout ou partie
-          de ces ouvrages sont interdites.
-        </p>
-
-
-        <p
-          style="
-            font-size:0.95em;
-            color:#667785;
-          "
-        >
-          These textbooks are protected by copyright law.
-          Copying, photocopying, scanning or distributing
-          all or part of these books without authorization
-          is illegal.
-        </p>
-
-      </div>
-
-
-      <!-- Colonne de droite -->
-<div class="annonce">
-
-  <h2>
-    Annonces importantes
-  </h2>
-
-
-  <!-- =====================================================
-       PROJET VLOG
-       ===================================================== -->
-
-  <h3>
-    Projet « Vlog »
-  </h3>
-
-  <p>
-    <strong>
-      Constituez votre groupe.
-    </strong>
-
-    Inscrivez votre nom sur le Google Doc.
-  </p>
-
-  <p>
-    <a
-      href="https://docs.google.com/document/d/1W-Xck-J3At8laKweSyb2c9h-IgEExyGKiN8P2UGHIQg/edit?usp=drivesdk"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Ouvrir le Google Doc
-    </a>
-  </p>
-
-
-  <hr>
-
-
-  <!-- =====================================================
-       DEVOIR 2
-       ===================================================== -->
-
-  <h3>
-    Devoir 2 à rendre
-  </h3>
-
-  <p>
-    <strong>
-      Si vous n'avez pas rendu votre DEVOIR 2,
-      vous pouvez encore le faire sur Canvas.
-    </strong>
-  </p>
-
-  <p>
-    <strong>
-      Vous perdrez 1 point par jour de retard.
-    </strong>
-  </p>
-
-  <p>
-    <em>
-      If you haven’t submitted your HW 2 yet,
-      you can still do so on Canvas.
-    </em>
-  </p>
-
-  <p>
-    <em>
-      Please note that 1 point will be deducted
-      for each day the assignment is late.
-    </em>
-  </p>
-
-
-  <hr>
-
-
-  <!-- =====================================================
-       WELL-BEING DAY
-       ===================================================== -->
-
-  <h3>
-    Well-Being Day — vendredi 9 octobre
-  </h3>
-
-  <p>
-    <strong>
-      Chers étudiants de T2,
-    </strong>
-  </p>
-
-  <p>
-    Vendredi 9 octobre est un jour de congé.
-    Je vous invite à rejoindre un des tutorats
-    à U-Town :
-  </p>
-
-  <ul>
-    <li>
-      jeudi 8 octobre, de 12 h à 14 h
-      <strong>(T3 @ ERC – ALR)</strong>
-    </li>
-
-    <li>
-      jeudi 8 octobre, de 16 h à 18 h
-      <strong>(T1 @ UTSRC-SR5)</strong>
-    </li>
-  </ul>
-
-  <p>
-    <em>
-      <strong>
-        Dear T2 students,
-      </strong>
-    </em>
-  </p>
-
-  <p>
-    <em>
-      Friday, October 9 is a day off.
-      I therefore suggest that you join one of
-      the following tutorial sessions at U-Town:
-    </em>
-  </p>
-
-  <ul>
-    <li>
-      <em>
-        Thursday, October 8, from 12:00 to 2:00 p.m.
-        <strong>(T3 @ ERC – ALR)</strong>
-      </em>
-    </li>
-
-    <li>
-      <em>
-        Thursday, October 8, from 4:00 to 6:00 p.m.
-        <strong>(T1 @ UTSRC-SR5)</strong>
-      </em>
-    </li>
-  </ul>
-
-</div>
-  
-</div>
-</section>
-
-    <!-- =====================================================
-         APPRENDRE ET PRATIQUER
-         ===================================================== -->
-
-    <h2 class="titre-section">
-      Apprendre et pratiquer
-    </h2>
-
-
-    <section class="grille">
-
-
-      <a
-        class="carte bleu"
-        href="./semaine.html"
-      >
-
-        <h3>
-          Cette semaine
-        </h3>
-
-        <p>
-          Objectifs, activités et échéances.
-        </p>
-
-        <span>
-          Voir le programme
-        </span>
-
-      </a>
-
-
-      <a
-        class="carte bleu-clair"
-        href="vocabulaire.html"
-      >
-
-        <h3>
-          Vocabulaire
-        </h3>
-
-        <p>
-          Les mots et expressions à connaître.
-        </p>
-
-        <span>
-          Découvrir
-        </span>
-
-      </a>
-
-
-      <a
-        class="carte gris"
-        href="grammaire.html"
-      >
-
-        <h3>
-          Grammaire
-        </h3>
-
-        <p>
-          Le point de langue de la semaine.
-        </p>
-
-        <span>
-          Comprendre
-        </span>
-
-      </a>
-
-
-      <a
-        class="carte clair"
-        href="https://canvas.nus.edu.sg/courses/94838/files"
-        target="_blank"
-      >
-
-        <h3>
-          Documents du cours
-        </h3>
-
-        <p>
-          Tous les diaporamas (PPTX)
-          et les documents du cours
-          sont disponibles sur Canvas.
-        </p>
-
-        <span>
-          Aller sur Canvas → Files
-        </span>
-
-      </a>
-
-
-      <a
-        class="carte rose"
-        href="dates-importantes.html"
-      >
-
-        <h3>
-          Dates importantes
-        </h3>
-
-        <p>
-          Échéances, évaluations
-          et événements du semestre.
-        </p>
-
-        <span>
-          Voir le calendrier
-        </span>
-
-      </a>
-
-
-      <a
-  class="carte bleu"
-  href="quiz.html"
->
-
-  <h3>
-    Quiz
-  </h3>
-
-  <p>
-    1 Quiz par unité
-  </p>
-
-  <span>
-    Tester mes connaissances
-  </span>
-
-</a>
-
-
-      <a
-        class="carte rose"
-        href="projet.html"
-      >
-
-        <h3>
-          Projet
-        </h3>
-
-        <p>
-          Consignes, calendrier
-          et ressources du Vlog.
-        </p>
-
-        <span>
-          Découvrir
-        </span>
-
-      </a>
-
-
-      <a
-        class="carte gris"
-        href="ressources.html"
-      >
-
-        <h3>
-          Ressources
-        </h3>
-
-        <p>
-          Dictionnaires, audio
-          et liens utiles.
-        </p>
-
-        <span>
-          Explorer
-        </span>
-
-      </a>
-
-
-      <a
-        class="carte bleu-clair"
-        href="coin-francais.html"
-      >
-
-        <h3>
-          Le coin français
-        </h3>
-
-        <p>
-          Culture, musique,
-          vidéos et découvertes.
-        </p>
-
-        <span>
-          Découvrir
-        </span>
-
-      </a>
-
-    </section>
-
-
-    <!-- =====================================================
-         SOPHIE
-         ===================================================== -->
-
-    <section class="sophie">
-
-      <div>
-
-        <h2>
-          Sophie, votre tutrice IA de français
-        </h2>
-
-        <p>
-          Révisez le vocabulaire,
-          pratiquez une conversation
-          ou demandez une explication grammaticale.
-        </p>
-
-      </div>
-
-
-      <a
-        class="bouton-sophie"
-        href="https://chatgpt.com/g/g-67f286c0a39c8191970bdf522bf7a80b-sophie-ta-tutrice-ia-de-francais"
-        target="_blank"
-      >
-        Parler avec Sophie
-      </a>
-
-    </section>
-
-
-    <!-- =====================================================
-         INFORMATIONS PRATIQUES
-         ===================================================== -->
-
-    <h2 class="titre-section">
-      Informations pratiques
-    </h2>
-
-
-    <section class="infos">
-
-
-      <!-- ===================================================
-           HORAIRES
-           =================================================== -->
-
-      <div class="bloc-blanc">
-
-        <h2>
-          Horaires
-        </h2>
-
-
-        <h3>
-          Lectures
-        </h3>
-
-
-        <div class="tableau">
-
-          <table>
-
-            <thead>
-
-              <tr>
-
-                <th>
-                  Groupe
-                </th>
-
-                <th>
-                  Jour et heure
-                </th>
-
-                <th>
-                  Salle
-                </th>
-
-                <th>
-                  Enseignant
-                </th>
-
-              </tr>
-
-            </thead>
-
-
-            <tbody>
-
-
-              <tr>
-
-                <td>
-                  L1
-                </td>
-
-                <td>
-                  Mercredi, 12h – 14h
-                </td>
-
-                <td>
-                  AS3-0214
-                </td>
-
-                <td>
-                  Sophie UB
-                </td>
-
-              </tr>
-
-
-              <tr>
-
-                <td>
-                  L2
-                </td>
-
-                <td>
-                  Lundi, 18h – 20h
-                </td>
-
-                <td>
-                  TP-SR9
-                </td>
-
-                <td>
-                  Noureddine
-                </td>
-
-              </tr>
-
-
-              <tr>
-
-                <td>
-                  L3
-                </td>
-
-                <td>
-                  Mardi, 16h – 18h
-                </td>
-
-                <td>
-                  AS3-0308
-                </td>
-
-                <td>
-                  Sophie UB
-                </td>
-
-              </tr>
-
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-
-        <h3>
-          Tutorats
-        </h3>
-
-
-        <div class="tableau">
-
-          <table>
-
-            <thead>
-
-              <tr>
-
-                <th>
-                  Groupe
-                </th>
-
-                <th>
-                  Jour et heure
-                </th>
-
-                <th>
-                  Salle
-                </th>
-
-                <th>
-                  Enseignant
-                </th>
-
-              </tr>
-
-            </thead>
-
-
-            <tbody>
-
-
-              <tr>
-
-                <td>
-                  T1
-                </td>
-
-                <td>
-                  Jeudi, 16h – 18h
-                </td>
-
-                <td>
-                  UTSRC-SR5
-                </td>
-
-                <td>
-                  Sophie UB
-                </td>
-
-              </tr>
-
-
-              <tr>
-
-                <td>
-                  T2
-                </td>
-
-                <td>
-                  Vendredi, 12h – 14h
-                </td>
-
-                <td>
-                  UTSRC-SR1
-                </td>
-
-                <td>
-                  Sophie UB
-                </td>
-
-              </tr>
-
-
-              <tr>
-
-                <td>
-                  T3
-                </td>
-
-                <td>
-                  Jeudi, 12h – 14h
-                </td>
-
-                <td>
-                  ERC-ALR
-                </td>
-
-                <td>
-                  Sophie UB
-                </td>
-
-              </tr>
-
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-      </div>
-
-
-      <!-- ===================================================
-           MOT OU EXPRESSION DE LA SEMAINE
-           =================================================== -->
-
-      <div class="bloc-blanc">
-
-        <h2>
-          Mot ou expression de la semaine
-        </h2>
-
-
-        <div class="expression">
-          Du coup
-        </div>
-
-
-        <p>
-
-          <strong>
-            Sens :
-          </strong>
-
-          <br>
-
-          « Du coup » est une expression
-          très fréquente en français,
-          surtout à l’oral.
-
-          Elle sert généralement
-          à introduire une
-          <strong>conséquence</strong>
-          ou le
-          <strong>résultat</strong>
-          de ce qui vient d’être dit.
-
-        </p>
-
-
-        <p>
-
-          Elle peut souvent être remplacée par
-
-          <strong>
-            « donc »
-          </strong>,
-
-          <strong>
-            « alors »
-          </strong>
-
-          ou
-
-          <strong>
-            « par conséquent »
-          </strong>,
-
-          selon le contexte.
-
-        </p>
-
-
-        <p>
-
-          <strong>
-            Exemple 1 :
-          </strong>
-
-          <br>
-
-          « J’ai raté mon réveil.
-          Du coup, je suis arrivé
-          en retard en cours. »
-
-        </p>
-
-
-        <p>
-
-          <strong>
-            Exemple 2 :
-          </strong>
-
-          <br>
-
-          « Il pleuvait beaucoup.
-          Du coup, on a décidé
-          de rester à la maison. »
-
-        </p>
-
-
-        <p>
-
-          <strong>
-            Exemple 3 :
-          </strong>
-
-          <br>
-
-          « Je n’avais plus de lait.
-          Du coup, je suis allé
-          au supermarché. »
-
-        </p>
-
-
-        <p>
-
-          <strong>
-            À l’oral :
-          </strong>
-
-          <br>
-
-          Les francophones utilisent
-          très souvent « du coup »
-          dans la conversation.
-
-          On l’entend aussi parfois
-          comme un mot de liaison
-          pour enchaîner les idées.
-
-          Attention cependant
-          à ne pas le répéter
-          à chaque phrase !
-
-        </p>
-
-
-        <p>
-
-          <strong>
-            À vous !
-          </strong>
-
-          <br>
-
-          Complétez la phrase :
-
-          <br>
-
-          « Ce matin,
-          j’ai raté le bus.
-          Du coup, … »
-
-        </p>
-
-
-        <p>
 
           <a
-            href="https://youtu.be/wZCOsPIOFKI?is=UKUmdfyJuuD3tXpl"
+            class="bouton-secondaire"
+            href="https://canvas.nus.edu.sg/courses/94838"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ▶ Regarder la vidéo : « Du coup »
+            Canvas
           </a>
 
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           SEMAINE ACTUELLE
+           ================================================= -->
+
+      <div class="semaine">
+
+        <small>
+          Bienvenue
+        </small>
+
+        <h2 id="accueil-semaine"></h2>
+
+        <strong>
+          Cette semaine
+        </strong>
+
+
+        <p>
+
+          <strong id="accueil-lecture-titre"></strong>
+
+          <br>
+
+          <span id="accueil-lecture-unite"></span>
+
+          <br>
+
+          <span id="accueil-lecture-contenu"></span>
+
+          <br>
+
+          <span id="accueil-lecture-complement"></span>
+
+          <br>
+
+          <em id="accueil-lecture-pages"></em>
+
+        </p>
+
+
+        <p>
+
+          <strong id="accueil-tutorat-titre"></strong>
+
+          <br>
+
+          <span id="accueil-tutorat-unite"></span>
+
+          <br>
+
+          <span id="accueil-tutorat-contenu"></span>
+
+        </p>
+
+
+        <p>
+          <strong id="accueil-presence"></strong>
         </p>
 
 
         <hr>
 
 
-        <!-- =================================================
-             CONTACT
-             ================================================= -->
-
-        <h2>
-          Contact
-        </h2>
-
-
         <p>
-
-          <strong>
-            Sophie Undorf-Bouvier
-          </strong>
-
-          <br><br>
-
-
-          <strong>
-            Courriel
-          </strong>
-
-          <br>
-
-          sophieu@nus.edu.sg
-
-          <br><br>
-
-
-          <strong>
-            Bureau
-          </strong>
-
-          <br>
-
-          AS4-0514, 9 Arts Link
-
-          <br><br>
-
-
-          <strong>
-            Consultations
-          </strong>
-
-          <br>
-
-          Sur rendez-vous
-
+          <em id="accueil-proverbe"></em>
         </p>
 
       </div>
 
-    </section>
 
-  </main>
+    </div>
 
+  </div>
+
+</header>
+
+
+
+<main class="conteneur">
+
+
+  <!-- =====================================================
+       BIENVENUE ET ANNONCES
+       ===================================================== -->
+
+  <section class="bloc-blanc bienvenue">
+
+
+    <!-- ===================================================
+         COLONNE DE GAUCHE
+         =================================================== -->
+
+    <div>
+
+
+      <h2>
+        Bienvenue dans LAF3201 French 3 !
+      </h2>
+
+
+      <p>
+        Pensez à rejoindre notre groupe Telegram :
+      </p>
+
+
+      <p>
+
+        <a
+          class="lien-telegram"
+          href="https://t.me/+4mZw1qw5F0RhOTk1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Rejoindre le groupe Telegram
+        </a>
+
+      </p>
+
+
+      <hr>
+
+
+      <h3>
+        Respect des droits d'auteur
+      </h3>
+
+
+      <p
+        style="
+          color:#C72357;
+          font-weight:bold;
+        "
+      >
+        Les manuels sont protégés
+        par les droits d'auteur.
+      </p>
+
+
+      <p>
+        La reproduction, la photocopie,
+        la numérisation et la diffusion
+        non autorisée de tout ou partie
+        de ces ouvrages sont interdites.
+      </p>
+
+
+      <p
+        style="
+          font-size:0.95em;
+          color:#667785;
+        "
+      >
+        These textbooks are protected by copyright law.
+        Copying, photocopying, scanning or distributing
+        all or part of these books without authorization
+        is illegal.
+      </p>
+
+
+    </div>
+
+
+
+    <!-- ===================================================
+         COLONNE DE DROITE — ANNONCES IMPORTANTES
+         =================================================== -->
+
+    <div class="annonce">
+
+
+      <h2>
+        Annonces importantes
+      </h2>
+
+
+      <!-- =================================================
+           RETURN OF TEST 1
+           ================================================= -->
+
+      <h3>
+        Return of Test 1
+      </h3>
+
+
+      <p>
+        You have received (or will soon receive) your Test 1.
+      </p>
+
+
+      <ol>
+
+        <li>
+          The answer key and corrections are available on Canvas
+          (at the very end of the test).
+        </li>
+
+        <li>
+          If you have any questions, please feel free to contact me
+          or book a consultation.
+        </li>
+
+        <li>
+          Take some time to reflect on your learning.
+          Ask yourself whether you have put in enough effort
+          and whether you have actively participated in class
+          by asking questions.
+        </li>
+
+        <li>
+          Have you been completing the exercises in your workbook regularly?
+          Have you been regularly visiting the mini-website I created for you?
+        </li>
+
+      </ol>
+
+
+      <p>
+
+        <strong>
+          As a reminder, you are expected to spend 3 hours per week
+          studying independently. :)
+        </strong>
+
+      </p>
+
+
+      <p>
+        I have opened several consultation slots for those who would
+        like to meet with me. You can find the available dates here:
+      </p>
+
+
+      <p>
+
+        <a href="dates-importantes.html">
+          📅 See the available consultation dates
+        </a>
+
+      </p>
+
+
+      <p>
+        A few other updates have also been made to the website,
+        so please take a moment to check out the
+        <strong>“Dates importantes”</strong> section!
+      </p>
+
+
+
+      <hr>
+
+
+
+      <!-- =================================================
+           CONSULTATIONS — SEMAINES 9 À 12
+           ================================================= -->
+
+      <h3>
+        Consultations — Semaines 9 à 12
+      </h3>
+
+
+      <p>
+        Plusieurs créneaux de consultation sont disponibles :
+      </p>
+
+
+      <p>
+
+        <strong>
+          Semaine 9
+        </strong>
+
+        <br>
+
+        Mercredi 14 octobre : 14h à 17h
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Semaine 10
+        </strong>
+
+        <br>
+
+        Lundi 19 octobre : 13h à 16h
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Semaine 11
+        </strong>
+
+        <br>
+
+        Mercredi 28 octobre : 14h à 17h
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Semaine 12
+        </strong>
+
+        <br>
+
+        Lundi 2 novembre : 12h à 15h30
+
+        <br>
+
+        Mardi 3 novembre : 9h à 12h
+
+        <br>
+
+        Mercredi 4 novembre : 14h à 18h
+
+        <br>
+
+        Vendredi 6 novembre : 14h à 16h30 à UTown
+
+      </p>
+
+
+      <p>
+        Merci de me contacter pour vous inscrire.
+      </p>
+
+
+      <p>
+
+        <em>
+          Please contact me to book a slot.
+        </em>
+
+      </p>
+
+
+      <p>
+
+        <a href="dates-importantes.html">
+          📅 Voir toutes les dates importantes
+        </a>
+
+      </p>
+
+
+
+      <hr>
+
+
+
+      <!-- =================================================
+           WEEK 13 — ABSENCE
+           ================================================= -->
+
+      <h3>
+        Week 13 — Important information
+      </h3>
+
+
+      <p>
+        As I informed you, I will be absent during Week 13
+        to attend a major event for the French-speaking community:
+        <strong>the 20th Francophonie Summit</strong>.
+      </p>
+
+
+      <p>
+
+        <a
+          href="https://www.francophonie2026.gov.kh/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🌐 20th Francophonie Summit
+        </a>
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Noureddine Larzhal will cover my lessons during my absence.
+        </strong>
+
+      </p>
+
+
+      <p>
+        I am very grateful for your patience and support.
+      </p>
+
+
+      <p>
+        Feel free to contact me if you have any questions or concerns!
+      </p>
+
+
+
+      <hr>
+
+
+
+      <!-- =================================================
+           PROJET VLOG
+           ================================================= -->
+
+      <h3>
+        Projet « Vlog »
+      </h3>
+
+
+      <p>
+
+        <strong>
+          Constituez votre groupe.
+        </strong>
+
+        Inscrivez votre nom sur le Google Doc.
+
+      </p>
+
+
+      <p>
+
+        <a
+          href="https://docs.google.com/document/d/1W-Xck-J3At8laKweSyb2c9h-IgEExyGKiN8P2UGHIQg/edit?usp=drivesdk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ouvrir le Google Doc
+        </a>
+
+      </p>
+
+
+
+      <hr>
+
+
+
+      <!-- =================================================
+           TEST ORAL
+           ================================================= -->
+
+      <h3>
+        Test oral
+      </h3>
+
+
+      <p>
+        Les informations et les consignes pour le test oral
+        sont disponibles ici :
+      </p>
+
+
+      <p>
+
+        <a
+          href="https://docs.google.com/document/d/1LYtfUNKlN7I2gsZDzG-GEF_EHq2BQr6D/edit?usp=drivesdk&amp;ouid=109706764853675268867&amp;rtpof=true&amp;sd=true"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📄 Informations et consignes pour le test oral
+        </a>
+
+      </p>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =====================================================
+       APPRENDRE ET PRATIQUER
+       ===================================================== -->
+
+  <h2 class="titre-section">
+    Apprendre et pratiquer
+  </h2>
+
+
+  <section class="grille">
+
+
+    <a
+      class="carte bleu"
+      href="./semaine.html"
+    >
+
+      <h3>
+        Cette semaine
+      </h3>
+
+      <p>
+        Objectifs, activités et échéances.
+      </p>
+
+      <span>
+        Voir le programme
+      </span>
+
+    </a>
+
+
+
+    <a
+      class="carte bleu-clair"
+      href="vocabulaire.html"
+    >
+
+      <h3>
+        Vocabulaire
+      </h3>
+
+      <p>
+        Les mots et expressions à connaître.
+      </p>
+
+      <span>
+        Découvrir
+      </span>
+
+    </a>
+
+
+
+    <a
+      class="carte gris"
+      href="grammaire.html"
+    >
+
+      <h3>
+        Grammaire
+      </h3>
+
+      <p>
+        Le point de langue de la semaine.
+      </p>
+
+      <span>
+        Comprendre
+      </span>
+
+    </a>
+
+
+
+    <a
+      class="carte clair"
+      href="https://canvas.nus.edu.sg/courses/94838/files"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <h3>
+        Documents du cours
+      </h3>
+
+      <p>
+        Tous les diaporamas (PPTX)
+        et les documents du cours
+        sont disponibles sur Canvas.
+      </p>
+
+      <span>
+        Aller sur Canvas → Files
+      </span>
+
+    </a>
+
+
+
+    <a
+      class="carte rose"
+      href="dates-importantes.html"
+    >
+
+      <h3>
+        Dates importantes
+      </h3>
+
+      <p>
+        Échéances, évaluations
+        et événements du semestre.
+      </p>
+
+      <span>
+        Voir le calendrier
+      </span>
+
+    </a>
+
+
+
+    <a
+      class="carte bleu"
+      href="quiz.html"
+    >
+
+      <h3>
+        Quiz
+      </h3>
+
+      <p>
+        1 Quiz par unité
+      </p>
+
+      <span>
+        Tester mes connaissances
+      </span>
+
+    </a>
+
+
+
+    <a
+      class="carte rose"
+      href="projet.html"
+    >
+
+      <h3>
+        Projet
+      </h3>
+
+      <p>
+        Consignes, calendrier
+        et ressources du Vlog.
+      </p>
+
+      <span>
+        Découvrir
+      </span>
+
+    </a>
+
+
+
+    <a
+      class="carte gris"
+      href="ressources.html"
+    >
+
+      <h3>
+        Ressources
+      </h3>
+
+      <p>
+        Dictionnaires, audio
+        et liens utiles.
+      </p>
+
+      <span>
+        Explorer
+      </span>
+
+    </a>
+
+
+
+    <a
+      class="carte bleu-clair"
+      href="coin-francais.html"
+    >
+
+      <h3>
+        Le coin français
+      </h3>
+
+      <p>
+        Culture, musique,
+        vidéos et découvertes.
+      </p>
+
+      <span>
+        Découvrir
+      </span>
+
+    </a>
+
+
+  </section>
+
+
+
+  <!-- =====================================================
+       SOPHIE
+       ===================================================== -->
+
+  <section class="sophie">
+
+
+    <div>
+
+      <h2>
+        Sophie, votre tutrice IA de français
+      </h2>
+
+      <p>
+        Révisez le vocabulaire,
+        pratiquez une conversation
+        ou demandez une explication grammaticale.
+      </p>
+
+    </div>
+
+
+    <a
+      class="bouton-sophie"
+      href="https://chatgpt.com/g/g-67f286c0a39c8191970bdf522bf7a80b-sophie-ta-tutrice-ia-de-francais"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Parler avec Sophie
+    </a>
+
+
+  </section>
+
+
+
+  <!-- =====================================================
+       INFORMATIONS PRATIQUES
+       ===================================================== -->
+
+  <h2 class="titre-section">
+    Informations pratiques
+  </h2>
+
+
+  <section class="infos">
+
+
+    <!-- ===================================================
+         HORAIRES
+         =================================================== -->
+
+    <div class="bloc-blanc">
+
+
+      <h2>
+        Horaires
+      </h2>
+
+
+      <h3>
+        Lectures
+      </h3>
+
+
+      <div class="tableau">
+
+
+        <table>
+
+
+          <thead>
+
+            <tr>
+
+              <th>
+                Groupe
+              </th>
+
+              <th>
+                Jour et heure
+              </th>
+
+              <th>
+                Salle
+              </th>
+
+              <th>
+                Enseignant
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+
+            <tr>
+
+              <td>
+                L1
+              </td>
+
+              <td>
+                Mercredi, 12h – 14h
+              </td>
+
+              <td>
+                AS3-0214
+              </td>
+
+              <td>
+                Sophie UB
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>
+                L2
+              </td>
+
+              <td>
+                Lundi, 18h – 20h
+              </td>
+
+              <td>
+                TP-SR9
+              </td>
+
+              <td>
+                Noureddine
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>
+                L3
+              </td>
+
+              <td>
+                Mardi, 16h – 18h
+              </td>
+
+              <td>
+                AS3-0308
+              </td>
+
+              <td>
+                Sophie UB
+              </td>
+
+            </tr>
+
+
+          </tbody>
+
+
+        </table>
+
+
+      </div>
+
+
+
+      <h3>
+        Tutorats
+      </h3>
+
+
+      <div class="tableau">
+
+
+        <table>
+
+
+          <thead>
+
+            <tr>
+
+              <th>
+                Groupe
+              </th>
+
+              <th>
+                Jour et heure
+              </th>
+
+              <th>
+                Salle
+              </th>
+
+              <th>
+                Enseignant
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+
+            <tr>
+
+              <td>
+                T1
+              </td>
+
+              <td>
+                Jeudi, 16h – 18h
+              </td>
+
+              <td>
+                UTSRC-SR5
+              </td>
+
+              <td>
+                Sophie UB
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>
+                T2
+              </td>
+
+              <td>
+                Vendredi, 12h – 14h
+              </td>
+
+              <td>
+                UTSRC-SR1
+              </td>
+
+              <td>
+                Sophie UB
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>
+                T3
+              </td>
+
+              <td>
+                Jeudi, 12h – 14h
+              </td>
+
+              <td>
+                ERC-ALR
+              </td>
+
+              <td>
+                Sophie UB
+              </td>
+
+            </tr>
+
+
+          </tbody>
+
+
+        </table>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- ===================================================
+         MOT OU EXPRESSION DE LA SEMAINE
+         =================================================== -->
+
+    <div class="bloc-blanc">
+
+
+      <h2>
+        Mot ou expression de la semaine
+      </h2>
+
+
+      <div class="expression">
+        Du coup
+      </div>
+
+
+      <p>
+
+        <strong>
+          Sens :
+        </strong>
+
+        <br>
+
+        « Du coup » est une expression
+        très fréquente en français,
+        surtout à l’oral.
+
+        Elle sert généralement
+        à introduire une
+        <strong>conséquence</strong>
+        ou le
+        <strong>résultat</strong>
+        de ce qui vient d’être dit.
+
+      </p>
+
+
+      <p>
+
+        Elle peut souvent être remplacée par
+
+        <strong>
+          « donc »
+        </strong>,
+
+        <strong>
+          « alors »
+        </strong>
+
+        ou
+
+        <strong>
+          « par conséquent »
+        </strong>,
+
+        selon le contexte.
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Exemple 1 :
+        </strong>
+
+        <br>
+
+        « J’ai raté mon réveil.
+        Du coup, je suis arrivé
+        en retard en cours. »
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Exemple 2 :
+        </strong>
+
+        <br>
+
+        « Il pleuvait beaucoup.
+        Du coup, on a décidé
+        de rester à la maison. »
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Exemple 3 :
+        </strong>
+
+        <br>
+
+        « Je n’avais plus de lait.
+        Du coup, je suis allé
+        au supermarché. »
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          À l’oral :
+        </strong>
+
+        <br>
+
+        Les francophones utilisent
+        très souvent « du coup »
+        dans la conversation.
+
+        On l’entend aussi parfois
+        comme un mot de liaison
+        pour enchaîner les idées.
+
+        Attention cependant
+        à ne pas le répéter
+        à chaque phrase !
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          À vous !
+        </strong>
+
+        <br>
+
+        Complétez la phrase :
+
+        <br>
+
+        « Ce matin,
+        j’ai raté le bus.
+        Du coup, … »
+
+      </p>
+
+
+      <p>
+
+        <a
+          href="https://youtu.be/wZCOsPIOFKI?is=UKUmdfyJuuD3tXpl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ▶ Regarder la vidéo : « Du coup »
+        </a>
+
+      </p>
+
+
+      <hr>
+
+
+
+      <!-- =================================================
+           CONTACT
+           ================================================= -->
+
+      <h2>
+        Contact
+      </h2>
+
+
+      <p>
+
+        <strong>
+          Sophie Undorf-Bouvier
+        </strong>
+
+        <br><br>
+
+
+        <strong>
+          Courriel
+        </strong>
+
+        <br>
+
+        sophieu@nus.edu.sg
+
+        <br><br>
+
+
+        <strong>
+          Bureau
+        </strong>
+
+        <br>
+
+        AS4-0514, 9 Arts Link
+
+        <br><br>
+
+
+        <strong>
+          Consultations
+        </strong>
+
+        <br>
+
+        Sur rendez-vous
+
+      </p>
+
+
+    </div>
+
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     PIED DE PAGE
+     ===================================================== -->
 
 <footer>
+
   LAF3201 French 3 [2610] ·
   AY 2026/2027 ·
   Semestre 1
+
 </footer>
+
+
+
+<!-- =====================================================
+     DONNÉES DU COURS
+     ===================================================== -->
 
 <script src="cours-data.js"></script>
 
+
 <script>
+
   document.getElementById("accueil-semaine").textContent =
     "Nous sommes en semaine " + coursData.semaine;
+
 
   document.getElementById("accueil-lecture-titre").textContent =
     "Lecture " + coursData.lecture.numero;
 
+
   document.getElementById("accueil-lecture-unite").textContent =
     coursData.lecture.unite;
+
 
   document.getElementById("accueil-lecture-contenu").textContent =
     coursData.lecture.contenu;
 
+
   document.getElementById("accueil-lecture-complement").textContent =
     coursData.lecture.complement;
+
 
   document.getElementById("accueil-lecture-pages").textContent =
     coursData.lecture.pages;
 
+
   document.getElementById("accueil-tutorat-titre").textContent =
     "Tutorat " + coursData.tutorat.numero;
+
 
   document.getElementById("accueil-tutorat-unite").textContent =
     coursData.tutorat.unite;
 
+
   document.getElementById("accueil-tutorat-contenu").textContent =
     coursData.tutorat.contenu;
+
 
   document.getElementById("accueil-presence").textContent =
     "Nous sommes en semaine " +
     coursData.semaine +
     ". Votre présence aux lectures et aux tutorats est obligatoire.";
 
+
   document.getElementById("accueil-proverbe").textContent =
     "« " + coursData.proverbe + " »";
+
 </script>
 
+
 </body>
+
 </html>
