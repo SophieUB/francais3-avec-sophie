@@ -1,22 +1,20 @@
 const coursData = {
 
-  semaine: 8,
+  semaine: 9,
 
   lecture: {
-    numero: 8,
+    numero: 9,
     unite: "Unité 3 : « Ça fait le buzz ! »",
-    contenu: "Situation 2 : « Communiquer en réseau »",
-    complement: "ATTENTION — EN DEVOIR : Situation 3 «\u00A0Poser des questions\u00A0», pages 54-55",
-    pages: "Please check the PPTX slides for the answers to these questions and the mini-site for the vocabulary and revision materials on Comment poser une question. You will not be directly tested on this material in Test 2."
+    contenu: "Ateliers : « Demander des précisions » — « Écrire un tweet ou tweeter »"
   },
 
   tutorat: {
-    numero: 6,
-    unite: "Unité 3 : « Ça fait le buzz ! »",
-    contenu: "LAB’ Langue & culture",
+    numero: 7,
+    unite: "Unité 3 : « Ça fait le buzz ! » — Mémo",
+    contenu: "Unité 4 : « On change tout ! » — Situation 1 : « Raconter son parcours »",
     pages: ""
   },
 
-  proverbe: "Jamais deux sans trois. — Things come in threes."
+  proverbe: "Rien ne sert de courir ; il faut partir à point. — Slow and steady wins the race. There is no point in rushing; what matters is starting at the right time."
 
 };
