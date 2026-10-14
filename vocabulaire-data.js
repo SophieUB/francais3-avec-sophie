@@ -4535,35 +4535,228 @@ UNITÉ 3
   ]
 },
 
+  /*
+======================================================
+LAB LANGUE ET CULTURE
+======================================================
+*/
+
+{
+  titre: "Lab langue et culture",
+
+  sections: [
+
     /*
     ======================================================
-    LAB LANGUE ET CULTURE
+    NOMS
     ======================================================
     */
 
     {
-      titre: "Lab langue et culture",
+      titre: "Noms",
+      type: "noms",
 
-      sections: [
-        // contenu à ajouter
+      mots: [
+        ["un slogan", "des slogans", "slogan"],
+        ["une chaîne de télévision", "des chaînes de télévision", "TV channel"],
+        ["une station de radio", "des stations de radio", "radio station"],
+        ["un réseau social", "des réseaux sociaux", "social network"],
+        ["une émission", "des émissions", "programme / show"],
+        ["une chronique", "des chroniques", "radio / TV segment"],
+        ["une rumeur", "des rumeurs", "rumour"],
+        ["un mot-valise", "des mots-valises", "portmanteau word"],
+        ["un atelier", "des ateliers", "workshop"],
+        ["une interdiction", "des interdictions", "ban / prohibition"],
+        ["un téléphone portable", "des téléphones portables", "mobile phone / cell phone"]
       ]
     },
 
 
     /*
     ======================================================
-    ATELIERS
+    VERBES
     ======================================================
     */
 
     {
-      titre: "Ateliers — Demander des précisions / Écrire un tweet ou tweeter",
+      titre: "Verbes",
+      type: "verbes",
 
-      sections: [
-        // contenu à ajouter
+      mots: [
+        ["partager", "to share"],
+        ["diffuser", "to broadcast / distribute"],
+        ["participer à", "to participate in"],
+        ["être consacré à", "to be devoted to / to focus on"],
+        ["s’inscrire à", "to register / sign up for"],
+        ["s’abonner à", "to subscribe to"],
+        ["inscrire", "to write / enter / register"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    S'INSCRIRE À
+    ======================================================
+    */
+
+    {
+      titre: "S’inscrire à",
+      type: "expressions",
+
+      mots: [
+        ["s’inscrire à un cours", "to sign up for a course"],
+        ["s’inscrire à un atelier", "to sign up for a workshop"],
+        ["s’inscrire à la bibliothèque", "to register at the library"],
+        ["s’inscrire = s’abonner", "to sign up / to subscribe"],
+        ["inscrire = écrire", "to write / enter"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    VERBES PRONOMINAUX
+    ======================================================
+    */
+
+    {
+      titre: "Verbes pronominaux",
+      type: "expressions",
+
+      mots: [
+        ["se laver", "to wash oneself"],
+        ["se brosser les dents", "to brush one's teeth"],
+        ["se doucher", "to take a shower"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRESSIONS
+    ======================================================
+    */
+
+    {
+      titre: "Expressions",
+      type: "expressions",
+
+      mots: [
+        ["via les réseaux sociaux", "via / through social media"],
+        ["participer via les réseaux sociaux", "to participate via social media"],
+        ["être consacré à l’interdiction de…", "to focus on the ban on…"],
+        ["l’interdiction des téléphones portables à l’école", "the ban on mobile phones at school"],
+        ["écouter la radio", "to listen to the radio"],
+        ["faire sécher son linge", "to dry one's laundry"]
       ]
     }
 
+  ]
+},
+
+
+/*
+======================================================
+ATELIERS
+======================================================
+*/
+
+{
+  titre: "Ateliers — Demander des précisions / Écrire un tweet ou tweeter",
+
+  sections: [
+
+    /*
+    ======================================================
+    DEMANDER DES PRÉCISIONS — VOCABULAIRE
+    ======================================================
+    */
+
+    {
+      titre: "Demander des précisions — Vocabulaire",
+      type: "verbes",
+
+      mots: [
+        ["apprivoiser", "to tame"],
+        ["signifier", "to mean"],
+        ["créer des liens", "to create / form bonds"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    DEMANDER DES PRÉCISIONS — EXPRESSIONS
+    ======================================================
+    */
+
+    {
+      titre: "Demander des précisions — Expressions",
+      type: "expressions",
+
+      mots: [
+        ["Ça s’écrit comment ?", "How do you spell that?"],
+        ["Ça se prononce comment ?", "How do you pronounce that?"],
+        ["Ça veut dire quoi ?", "What does that mean?"],
+        ["Qu’est-ce que tu veux dire ?", "What do you mean?"],
+        ["C’est-à-dire ?", "What do you mean? / That is to say?"],
+        ["Tu peux préciser ?", "Can you clarify?"],
+        ["Vous pouvez expliquer ?", "Can you explain?"],
+        ["Qu’est-ce que signifie… ?", "What does … mean?"],
+        ["Ça signifie…", "It means…"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ÉCRIRE UN TWEET OU TWEETER
+    ======================================================
+    */
+
+    {
+      titre: "Écrire un tweet ou tweeter",
+      type: "expressions",
+
+      mots: [
+        ["un tweet", "a tweet"],
+        ["tweeter", "to tweet"],
+        ["un hashtag", "a hashtag"],
+        ["un lien", "a link"],
+        ["une source", "a source"],
+        ["un auteur / une auteure", "an author"],
+        ["une information principale", "main information / key information"],
+        ["rédiger un tweet", "to write / compose a tweet"],
+        ["répondre", "to reply"],
+        ["retweeter", "to retweet"],
+        ["aimer", "to like"]
+      ]
+    },
+
+
+    /*
+    ======================================================
+    EXPRIMER UNE COMPARAISON
+    ======================================================
+    */
+
+    {
+      titre: "Exprimer une comparaison",
+      type: "expressions",
+
+      mots: [
+        ["C’est la même chose !", "It's the same thing!"],
+        ["C’est pareil !", "It's the same!"],
+        ["Ça ressemble à…", "It looks like / is similar to…"],
+        ["C’est différent !", "It's different!"],
+        ["Ce n’est pas la même chose !", "It's not the same thing!"],
+        ["Ça n’a rien à voir.", "It's completely different. / It has nothing to do with it."]
+      ]
+    }
+
+  ]
+},
   ] // fin situations UNITÉ 3
 
 } // fin UNITÉ 3
