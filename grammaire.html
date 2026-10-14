@@ -3691,6 +3691,421 @@
 <!-- fin Semaine 8 -->
 
       <!-- =====================================================
+     VERBE RECEVOIR
+     ===================================================== -->
+
+<section class="semaine">
+
+  <h2>Le verbe recevoir</h2>
+
+  <p>
+    <strong>Recevoir</strong> — to receive
+  </p>
+
+
+  <details>
+
+    <summary>Conjugaison de recevoir au présent</summary>
+
+
+    <!-- =====================================================
+         CONJUGAISON
+         ===================================================== -->
+
+    <div class="verbe-conjugaison">
+
+      <p>
+        je <strong>reçois</strong>
+      </p>
+
+      <p>
+        tu <strong>reçois</strong>
+      </p>
+
+      <p>
+        il / elle / on <strong>reçoit</strong>
+      </p>
+
+      <p>
+        nous <strong>recevons</strong>
+      </p>
+
+      <p>
+        vous <strong>recevez</strong>
+      </p>
+
+      <p>
+        ils / elles <strong>reçoivent</strong>
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         ATTENTION
+         ===================================================== -->
+
+    <h3>Attention</h3>
+
+    <div class="exemple">
+
+      <p>
+        Le radical change :
+      </p>
+
+      <p>
+        <strong>reçoi-</strong> → je, tu, il / elle / on
+      </p>
+
+      <p>
+        <strong>recev-</strong> → nous, vous
+      </p>
+
+      <p>
+        <strong>reçoiv-</strong> → ils / elles
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         EXEMPLES
+         ===================================================== -->
+
+    <h3>Exemples</h3>
+
+    <div class="exemple">
+
+      <p>
+        Je <strong>reçois</strong> beaucoup de messages.<br>
+        <em>I receive a lot of messages.</em>
+      </p>
+
+      <p>
+        Nous <strong>recevons</strong> les informations par e-mail.<br>
+        <em>We receive the information by email.</em>
+      </p>
+
+      <p>
+        Ils <strong>reçoivent</strong> une notification.<br>
+        <em>They receive a notification.</em>
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         EXERCICE 1
+         ===================================================== -->
+
+    <h3>Exercice 1 — Conjuguez « recevoir »</h3>
+
+    <p>
+      Complétez avec la bonne forme du verbe
+      <strong>recevoir</strong> au présent.
+    </p>
+
+
+    <div class="exemple">
+
+      <p>
+        1. Je
+        <input
+          type="text"
+          id="recevoir1"
+          placeholder="..."
+        >
+        beaucoup de messages.
+      </p>
+
+      <p>
+        2. Nous
+        <input
+          type="text"
+          id="recevoir2"
+          placeholder="..."
+        >
+        les résultats demain.
+      </p>
+
+      <p>
+        3. Vous
+        <input
+          type="text"
+          id="recevoir3"
+          placeholder="..."
+        >
+        les informations par e-mail.
+      </p>
+
+      <p>
+        4. Elle
+        <input
+          type="text"
+          id="recevoir4"
+          placeholder="..."
+        >
+        une notification.
+      </p>
+
+      <p>
+        5. Ils
+        <input
+          type="text"
+          id="recevoir5"
+          placeholder="..."
+        >
+        beaucoup de commentaires.
+      </p>
+
+      <p>
+        6. Tu
+        <input
+          type="text"
+          id="recevoir6"
+          placeholder="..."
+        >
+        mes messages ?
+      </p>
+
+
+      <button
+        type="button"
+        onclick="corrigerRecevoir1()"
+      >
+        Vérifier
+      </button>
+
+
+      <p id="resultat-recevoir1"></p>
+
+    </div>
+
+
+    <!-- =====================================================
+         EXERCICE 2
+         ===================================================== -->
+
+    <h3>Exercice 2 — Choisissez la bonne forme</h3>
+
+
+    <div class="exemple">
+
+      <p>
+        1. Mes amis
+        <select id="recevoir7">
+          <option value="">Choisissez</option>
+          <option value="reçoit">reçoit</option>
+          <option value="recevez">recevez</option>
+          <option value="reçoivent">reçoivent</option>
+        </select>
+        beaucoup de messages.
+      </p>
+
+
+      <p>
+        2. Nous
+        <select id="recevoir8">
+          <option value="">Choisissez</option>
+          <option value="recevons">recevons</option>
+          <option value="reçoivent">reçoivent</option>
+          <option value="recevez">recevez</option>
+        </select>
+        une confirmation.
+      </p>
+
+
+      <p>
+        3. Paul
+        <select id="recevoir9">
+          <option value="">Choisissez</option>
+          <option value="reçois">reçois</option>
+          <option value="reçoit">reçoit</option>
+          <option value="recevons">recevons</option>
+        </select>
+        une invitation.
+      </p>
+
+
+      <p>
+        4. Vous
+        <select id="recevoir10">
+          <option value="">Choisissez</option>
+          <option value="reçoit">reçoit</option>
+          <option value="recevez">recevez</option>
+          <option value="reçoivent">reçoivent</option>
+        </select>
+        les résultats aujourd'hui.
+      </p>
+
+
+      <button
+        type="button"
+        onclick="corrigerRecevoir2()"
+      >
+        Vérifier
+      </button>
+
+
+      <p id="resultat-recevoir2"></p>
+
+    </div>
+
+
+  </details>
+
+</section>
+
+<!-- fin verbe recevoir -->
+
+
+<!-- =====================================================
+     AUTOCORRECTION — RECEVOIR
+     ===================================================== -->
+
+<script>
+
+function corrigerRecevoir1() {
+
+  const reponses = [
+    ["recevoir1", "reçois"],
+    ["recevoir2", "recevons"],
+    ["recevoir3", "recevez"],
+    ["recevoir4", "reçoit"],
+    ["recevoir5", "reçoivent"],
+    ["recevoir6", "reçois"]
+  ];
+
+  let score = 0;
+
+  reponses.forEach(function(reponse) {
+
+    const champ =
+      document.getElementById(reponse[0]);
+
+    const valeur =
+      champ.value.trim().toLowerCase();
+
+    if (valeur === reponse[1]) {
+
+      score++;
+      champ.style.borderColor = "green";
+
+    } else {
+
+      champ.style.borderColor = "red";
+
+    }
+
+  });
+
+
+  const resultat =
+    document.getElementById("resultat-recevoir1");
+
+
+  if (score === 6) {
+
+    resultat.innerHTML =
+      "✅ Excellent ! 6/6";
+
+  } else {
+
+    resultat.innerHTML =
+      "Vous avez " + score +
+      "/6. Essayez encore !";
+
+  }
+
+}
+
+
+
+function corrigerRecevoir2() {
+
+  const reponses = [
+    ["recevoir7", "reçoivent"],
+    ["recevoir8", "recevons"],
+    ["recevoir9", "reçoit"],
+    ["recevoir10", "recevez"]
+  ];
+
+  let score = 0;
+
+
+  reponses.forEach(function(reponse) {
+
+    const champ =
+      document.getElementById(reponse[0]);
+
+    if (champ.value === reponse[1]) {
+
+      score++;
+      champ.style.borderColor = "green";
+
+    } else {
+
+      champ.style.borderColor = "red";
+
+    }
+
+  });
+
+
+  const resultat =
+    document.getElementById("resultat-recevoir2");
+
+
+  if (score === 4) {
+
+    resultat.innerHTML =
+      "✅ Excellent ! 4/4";
+
+  } else {
+
+    resultat.innerHTML =
+      "Vous avez " + score +
+      "/4. Essayez encore !";
+
+  }
+
+}
+
+</script>
+
+      </script>
+
+
+<!-- =====================================================
+     LAB LANGUE ET CULTURE
+     ===================================================== -->
+
+<section class="semaine">
+
+  <h2>Lab langue et culture</h2>
+
+  <details>
+
+    <summary>Le verbe « s'inscrire à »</summary>
+
+    <!-- ici : tout le contenu sur s'inscrire -->
+
+  </details>
+
+</section>
+
+<!-- fin Lab langue et culture -->
+
+
+<!-- =====================================================
+     RETOUR À L'ACCUEIL
+     ===================================================== -->
+
+<a class="retour" href="index.html">
+  ← Retour à l’accueil
+</a>
+
+      <!-- =====================================================
            RETOUR À L'ACCUEIL
            ===================================================== -->
 
