@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -8,6 +9,10 @@
   <title>Quiz — Le coin français</title>
 
   <style>
+
+    /* =====================================================
+       COULEURS DU SITE
+       ===================================================== */
 
     :root {
       --bleu-fonce: #1D476E;
@@ -35,10 +40,9 @@
       margin: auto;
     }
 
-
-    /* =========================
+    /* =====================================================
        EN-TÊTE
-       ========================= */
+       ===================================================== */
 
     header {
       background: var(--bleu-fonce);
@@ -57,10 +61,9 @@
       opacity: 0.9;
     }
 
-
-    /* =========================
+    /* =====================================================
        CONTENU
-       ========================= */
+       ===================================================== */
 
     main {
       padding: 35px 0 60px;
@@ -80,10 +83,9 @@
       color: var(--gris);
     }
 
-
-    /* =========================
-       UNITÉS
-       ========================= */
+    /* =====================================================
+       GRILLE DES UNITÉS
+       ===================================================== */
 
     .grille-unites {
       display: grid;
@@ -91,8 +93,13 @@
       gap: 20px;
     }
 
+    /* =====================================================
+       CARTES DES UNITÉS
+       ===================================================== */
+
     .unite {
-      background: white;
+      display: block;
+      background: var(--blanc);
       border-radius: 18px;
       padding: 28px;
 
@@ -104,13 +111,26 @@
       box-shadow:
         0 4px 16px rgba(29, 71, 110, 0.08);
 
-      transition: 0.2s;
+      transition:
+        transform 0.2s,
+        border-color 0.2s;
     }
 
-    .unite:hover {
+    /* Unités disponibles */
+
+    a.unite:hover {
       transform: translateY(-3px);
       border-color: var(--bleu-clair);
     }
+
+    a.unite:focus-visible {
+      outline: 3px solid var(--rose);
+      outline-offset: 3px;
+    }
+
+    /* =====================================================
+       NUMÉRO DE L'UNITÉ
+       ===================================================== */
 
     .numero {
       display: inline-block;
@@ -126,6 +146,10 @@
 
       margin-bottom: 15px;
     }
+
+    /* =====================================================
+       TITRES ET DESCRIPTIONS
+       ===================================================== */
 
     .unite h3 {
       margin: 0 0 8px;
@@ -144,23 +168,22 @@
       font-weight: bold;
     }
 
-
-    /* UNITÉS PAS ENCORE DISPONIBLES */
+    /* =====================================================
+       UNITÉS EN PRÉPARATION
+       ===================================================== */
 
     .bientot {
       opacity: 0.55;
       cursor: default;
     }
 
-    .bientot:hover {
-      transform: none;
-      border-color: transparent;
+    .bientot .commencer {
+      color: var(--rose);
     }
 
-
-    /* =========================
-       RETOUR
-       ========================= */
+    /* =====================================================
+       RETOUR À L'ACCUEIL
+       ===================================================== */
 
     .retour {
       text-align: center;
@@ -173,10 +196,13 @@
       text-decoration: none;
     }
 
+    .retour a:hover {
+      text-decoration: underline;
+    }
 
-    /* =========================
-       MOBILE
-       ========================= */
+    /* =====================================================
+       MOBILE / IPAD
+       ===================================================== */
 
     @media (max-width: 650px) {
 
@@ -188,14 +214,21 @@
         font-size: 28px;
       }
 
+      .unite {
+        padding: 24px;
+      }
+
     }
 
   </style>
 
 </head>
 
-
 <body>
+
+<!-- =====================================================
+     EN-TÊTE
+     ===================================================== -->
 
 <header>
 
@@ -203,17 +236,18 @@
 
     <h1>Quiz</h1>
 
-    <p>
-      Le coin français
-    </p>
+    <p>Le coin français</p>
 
   </div>
 
 </header>
 
 
-<main class="conteneur">
+<!-- =====================================================
+     CONTENU PRINCIPAL
+     ===================================================== -->
 
+<main class="conteneur">
 
   <div class="intro">
 
@@ -226,56 +260,79 @@
   </div>
 
 
+  <!-- ===================================================
+       GRILLE DES QUATRE UNITÉS
+       =================================================== -->
+
   <div class="grille-unites">
 
 
-    <!-- =========================
-         UNITÉ 1
-         ========================= -->
+    <!-- =================================================
+         UNITÉ 1 — DISPONIBLE
+         ================================================= -->
 
     <a
       href="quiz-unite1.html"
       class="unite">
 
-      <span class="badge">UNITÉ 1</span>
+      <span class="numero">
+        UNITÉ 1
+      </span>
 
-<strong>
-  Commencer le quiz →
-</strong>
+      <h3>
+        Unité 1
+      </h3>
+
+      <p>
+        Révisez votre grammaire et votre vocabulaire.
+        Niveau A2.
+      </p>
+
+      <span class="commencer">
+        Commencer le quiz →
+      </span>
 
     </a>
 
 
+    <!-- =================================================
+         UNITÉ 2 — DISPONIBLE
+         ================================================= -->
 
-    <!-- =========================
-         UNITÉ 2
-         ========================= -->
-
-    <div class="unite bientot">
+    <a
+      href="quiz-unite2.html"
+      class="unite">
 
       <span class="numero">
         UNITÉ 2
       </span>
 
       <h3>
-        Unité 2
+        Vous avez deux minutes ?
       </h3>
 
       <p>
-        Le quiz sera disponible prochainement.
+        Rencontres, anecdotes, portraits,
+        passé composé et imparfait.
+        Niveau A2.
       </p>
 
       <span class="commencer">
-        À venir
+        Commencer le quiz →
       </span>
 
-    </div>
+    </a>
 
 
+    <!-- =================================================
+         UNITÉ 3 — EN PRÉPARATION
 
-    <!-- =========================
-         UNITÉ 3
-         ========================= -->
+         Lorsque quiz-unite3.html sera prêt :
+         remplacer <div class="unite bientot">
+         par <a href="quiz-unite3.html" class="unite">
+
+         et remplacer </div> par </a>.
+         ================================================= -->
 
     <div class="unite bientot">
 
@@ -284,11 +341,13 @@
       </span>
 
       <h3>
-        Unité 3
+        Ça fait le buzz !
       </h3>
 
       <p>
-        Le quiz sera disponible prochainement.
+        Médias, réseaux sociaux, comparaison,
+        impératif et questions.
+        Niveau A2.
       </p>
 
       <span class="commencer">
@@ -298,10 +357,15 @@
     </div>
 
 
+    <!-- =================================================
+         UNITÉ 4 — EN PRÉPARATION
 
-    <!-- =========================
-         UNITÉ 4
-         ========================= -->
+         Lorsque quiz-unite4.html sera prêt :
+         remplacer <div class="unite bientot">
+         par <a href="quiz-unite4.html" class="unite">
+
+         et remplacer </div> par </a>.
+         ================================================= -->
 
     <div class="unite bientot">
 
@@ -314,7 +378,8 @@
       </h3>
 
       <p>
-        Le quiz sera disponible prochainement.
+        Quiz de grammaire et de vocabulaire.
+        Niveau A2.
       </p>
 
       <span class="commencer">
@@ -323,9 +388,12 @@
 
     </div>
 
-
   </div>
 
+
+  <!-- ===================================================
+       RETOUR À L'ACCUEIL
+       =================================================== -->
 
   <div class="retour">
 
@@ -334,7 +402,6 @@
     </a>
 
   </div>
-
 
 </main>
 
