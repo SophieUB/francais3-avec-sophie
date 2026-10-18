@@ -12,6 +12,27 @@ let scoreQuiz = 0;
 let quizRepondu = false;
 let typeQuizActuel = "";
 
+/* =========================================================
+   DÉTERMINER L'UNITÉ DU QUIZ
+   ========================================================= */
+
+function obtenirDonneesQuiz() {
+
+  if (typeof quizUnite1 !== "undefined") {
+    return quizUnite1;
+  }
+
+  if (typeof quizUnite2 !== "undefined") {
+    return quizUnite2;
+  }
+
+  if (typeof quizUnite3 !== "undefined") {
+    return quizUnite3;
+  }
+
+  return null;
+}
+
 
 /* =========================================================
    MÉLANGER UN TABLEAU
@@ -40,12 +61,19 @@ function demarrerQuiz(type) {
 
   typeQuizActuel = type;
 
+  const donnees = obtenirDonneesQuiz();
+
+  if (!donnees) {
+    alert("Les questions du quiz sont introuvables.");
+    return;
+  }
+
   /* GRAMMAIRE */
 
   if (type === "grammaire") {
 
     questionsQuiz = melangerQuiz(
-      quizUnite1.grammaire
+      donnees.grammaire
     );
 
   }
@@ -55,7 +83,7 @@ function demarrerQuiz(type) {
   else if (type === "vocabulaire") {
 
     questionsQuiz = melangerQuiz(
-      quizUnite1.vocabulaire
+      donnees.vocabulaire
     );
 
   }
@@ -65,8 +93,8 @@ function demarrerQuiz(type) {
   else if (type === "mixte") {
 
     const toutesLesQuestions = [
-      ...quizUnite1.grammaire,
-      ...quizUnite1.vocabulaire
+      ...donnees.grammaire,
+      ...donnees.vocabulaire
     ];
 
     questionsQuiz = melangerQuiz(
@@ -75,26 +103,30 @@ function demarrerQuiz(type) {
 
   }
 
+  else {
+    return;
+  }
+
+  if (questionsQuiz.length === 0) {
+    alert("Ce quiz ne contient pas encore de questions.");
+    return;
+  }
 
   questionActuelle = 0;
   scoreQuiz = 0;
   quizRepondu = false;
 
-
   document
     .getElementById("quiz-menu")
     .classList.add("quiz-cache");
-
 
   document
     .getElementById("quiz-resultat")
     .classList.add("quiz-cache");
 
-
   document
     .getElementById("quiz-jeu")
     .classList.remove("quiz-cache");
-
 
   afficherQuestionQuiz();
 }
@@ -449,8 +481,7 @@ function afficherResultatQuiz() {
   if (pourcentage >= 90) {
 
     message =
-      "Excellent travail ! Vous maîtrisez très bien cette partie de l'Unité 1. 🎉";
-
+  "Excellent travail ! Vous maîtrisez très bien cette partie du cours. 🎉";
   }
 
 
@@ -479,7 +510,7 @@ function afficherResultatQuiz() {
   else {
 
     message =
-      "Continuez ! Relisez vos notes de l'Unité 1 puis recommencez le quiz.";
+  "Continuez ! Relisez vos notes de cours puis recommencez le quiz.";
 
   }
 
