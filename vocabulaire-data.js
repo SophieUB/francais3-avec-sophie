@@ -4667,34 +4667,38 @@ ATELIERS
 
   sections: [
 
-    /*
-    ======================================================
-    DEMANDER DES PRÉCISIONS — VOCABULAIRE
-    ======================================================
-    */
+   /*
+======================================================
+DEMANDER DES PRÉCISIONS — VOCABULAIRE
+======================================================
+*/
 
-    {
-      titre: "Demander des précisions — Vocabulaire",
-      type: "verbes",
+{
+  titre: "Demander des précisions — Vocabulaire",
+  type: "expressions",
 
-      mots: [
-        ["apprivoiser", "to tame"],
-        ["signifier", "to mean"],
-        ["créer des liens", "to create / form bonds"]
-      ]
-    },
+  mots: [
+    ["apprivoiser", "to tame"],
+    ["signifier", "to mean"],
+    ["créer des liens", "to form bonds / connections"],
+    ["un renard", "a fox"],
+    ["une chose", "a thing"],
+    ["oublié(e)", "forgotten"],
+    ["Qu'est-ce que ça signifie, « apprivoiser » ?", "What does 'to tame' mean?"],
+    ["C'est une chose trop oubliée.", "It's something that has been forgotten."],
+    ["Ça signifie « créer des liens… »", "It means 'to form bonds…'"]
+  ]
+},
 
+/*
+======================================================
+DEMANDER DES PRÉCISIONS — EXPRESSIONS
+======================================================
+*/
 
-    /*
-    ======================================================
-    DEMANDER DES PRÉCISIONS — EXPRESSIONS
-    ======================================================
-    */
-
-    {
-      titre: "Demander des précisions — Expressions",
-      type: "expressions",
-
+{
+  titre: "Demander des précisions — Expressions",
+  type: "expressions",
       mots: [
         ["Ça s’écrit comment ?", "How do you spell that?"],
         ["Ça se prononce comment ?", "How do you pronounce that?"],
@@ -4760,6 +4764,299 @@ ATELIERS
   ] // fin situations UNITÉ 3
 
 } // fin UNITÉ 3
+
+  /*
+======================================================
+UNITÉ 4 — ON CHANGE TOUT !
+======================================================
+*/
+
+{
+  unite: "UNITÉ 4 — On change tout !",
+
+  situations: [
+
+    /*
+    ======================================================
+    SITUATION 1 — RACONTER SON PARCOURS
+    ======================================================
+    */
+
+    {
+      titre: "Situation 1 — Raconter son parcours",
+
+      sections: [
+
+        {
+          titre: "Le parcours — Études et travail",
+          type: "expressions",
+
+          mots: [
+            ["un parcours", "a journey / a career path"],
+            ["les études", "studies"],
+            ["un diplôme", "a diploma / a degree"],
+            ["obtenir un diplôme", "to obtain a degree"],
+            ["l'université", "university"],
+            ["un travail au bureau", "an office job"],
+            ["une démission", "a resignation"],
+            ["démissionner", "to resign"],
+            ["quitter son travail", "to leave one's job"],
+            ["un changement", "a change"],
+            ["une entreprise", "a company"],
+            ["un entrepreneur / une entrepreneuse", "an entrepreneur"],
+            ["un métier", "a profession / a job"],
+            ["une carrière", "a career"]
+          ]
+        },
+
+        {
+          titre: "Raconter son parcours — Verbes et expressions",
+          type: "expressions",
+
+          mots: [
+            ["raconter son parcours", "to talk about one's journey"],
+            ["être passionné(e) par", "to be passionate about"],
+            ["se lancer", "to get started / to take the plunge"],
+            ["apprendre", "to learn"],
+            ["prendre des risques", "to take risks"],
+            ["réussir", "to succeed"],
+            ["échouer", "to fail"],
+            ["structurer", "to structure"],
+            ["accompagner", "to support / to guide"],
+            ["oser", "to dare"],
+            ["être épanouissant(e)", "to be fulfilling"],
+            ["un accélérateur de parcours", "a career accelerator"],
+            ["un obstacle", "an obstacle"],
+            ["relever un défi", "to take on a challenge"]
+          ]
+        },
+
+        {
+          titre: "Les indicateurs de temps",
+          type: "expressions",
+
+          mots: [
+            ["pendant trois ans", "for three years"],
+            ["il y a deux mois", "two months ago"],
+            ["depuis deux ans", "for two years / since two years ago"],
+            ["quand j'étais à l'université", "when I was at university"]
+          ]
+        },
+
+        {
+          titre: "Quelques participes passés",
+          type: "expressions",
+
+          mots: [
+            ["devoir → dû", "to have to → past participle"],
+            ["obtenir → obtenu", "to obtain → past participle"],
+            ["apprendre → appris", "to learn → past participle"],
+            ["J'ai dû m'accorder le droit.", "I had to give myself permission."],
+            ["J'ai obtenu mon diplôme.", "I obtained my degree."],
+            ["Elle a appris à prendre des risques.", "She learned to take risks."]
+          ]
+        }
+
+      ]
+    },
+
+
+    /*
+    ======================================================
+    SITUATION 2 — DÉCOUVRIR SES QUALITÉS
+    ======================================================
+    */
+
+    {
+      titre: "Situation 2 — Découvrir ses qualités",
+
+      sections: [
+
+        {
+          titre: "Qualités personnelles et professionnelles",
+          type: "expressions",
+
+          mots: [
+            ["une qualité", "a quality / a strength"],
+            ["une compétence", "a skill"],
+            ["une personnalité", "a personality"],
+            ["créatif / créative", "creative"],
+            ["résistant(e)", "resilient / resistant"],
+            ["pessimiste", "pessimistic"],
+            ["bienveillant(e)", "kind / caring"],
+            ["convaincre", "to convince"],
+            ["être doué(e) en négociation", "to be good at negotiation"],
+            ["avoir le sens de l'organisation", "to have organisational skills"],
+            ["mettre de la bonne humeur", "to bring a positive atmosphere"],
+            ["s'occuper de la logistique", "to handle logistics"],
+            ["avoir des idées d'activités", "to have ideas for activities"],
+            ["avoir le sens de l'écoute", "to be a good listener"],
+            ["avoir le sens du relationnel", "to have good interpersonal skills"],
+            ["entretenir un réseau", "to maintain a network"]
+          ]
+        },
+
+        {
+          titre: "Le recrutement et le travail en équipe",
+          type: "expressions",
+
+          mots: [
+            ["recruter", "to recruit"],
+            ["un recruteur / une recruteuse", "a recruiter"],
+            ["un candidat / une candidate", "a candidate"],
+            ["un salarié / une salariée", "an employee"],
+            ["un entretien", "an interview"],
+            ["un entretien classique", "a traditional interview"],
+            ["un escape game", "an escape room game"],
+            ["une énigme", "a riddle / a puzzle"],
+            ["les ressources humaines", "human resources"],
+            ["travailler en équipe", "to work as a team"],
+            ["être en retrait", "to be withdrawn / to hold back"],
+            ["être timide", "to be shy"],
+            ["être réfléchi(e)", "to be thoughtful"],
+            ["être spontané(e)", "to be spontaneous"],
+            ["être un leader", "to be a leader"],
+            ["avoir l'esprit de collaboration", "to have a collaborative mindset"],
+            ["prendre des risques", "to take risks"]
+          ]
+        },
+
+        {
+          titre: "Les pronoms indirects",
+          type: "expressions",
+
+          mots: [
+            ["me / m'", "to me"],
+            ["te / t'", "to you (informal)"],
+            ["lui", "to him / to her"],
+            ["nous", "to us"],
+            ["vous", "to you (formal / plural)"],
+            ["leur", "to them"],
+            ["Cela va lui permettre de réussir.", "That will enable him / her to succeed."]
+          ]
+        }
+
+      ]
+    },
+
+
+    /*
+    ======================================================
+    SITUATION 3 — EXPRIMER UNE OBLIGATION
+    ======================================================
+    */
+
+    {
+      titre: "Situation 3 — Exprimer une obligation",
+
+      sections: [
+
+        {
+          titre: "Le travail et le bien-être",
+          type: "expressions",
+
+          mots: [
+            ["un fou de boulot", "a workaholic"],
+            ["le travail", "work"],
+            ["le bien-être", "well-being"],
+            ["une obligation", "an obligation"],
+            ["un projet", "a project"],
+            ["un délai", "a deadline"],
+            ["être efficace", "to be efficient"],
+            ["être productif / productive", "to be productive"],
+            ["déléguer", "to delegate"],
+            ["une pause", "a break"],
+            ["faire une sieste", "to take a nap"],
+            ["faire du yoga", "to do yoga"],
+            ["un horaire de travail", "a work schedule"],
+            ["une boîte professionnelle", "a work email inbox"],
+            ["un congé", "leave / time off"],
+            ["le télétravail", "remote working"],
+            ["télétravailler", "to work remotely"],
+            ["une réunion", "a meeting"],
+            ["la priorité", "the priority"],
+            ["la vie privée", "private life"]
+          ]
+        },
+
+        {
+          titre: "Exprimer une obligation — Expressions",
+          type: "expressions",
+
+          mots: [
+            ["Il faut travailler plus.", "You have to work more."],
+            ["On doit être efficace.", "We have to be efficient."],
+            ["Il faut déléguer.", "You have to delegate."],
+            ["Il est essentiel de faire des pauses.", "It is essential to take breaks."],
+            ["Il est normal de regarder sa boîte professionnelle.", "It is normal to check your work inbox."],
+            ["Il est indispensable de prendre des congés.", "It is essential to take time off."],
+            ["Il faudrait plus de réunions.", "There should be more meetings."]
+          ]
+        },
+
+        {
+          titre: "La fréquence",
+          type: "expressions",
+
+          mots: [
+            ["jamais", "never"],
+            ["parfois", "sometimes"],
+            ["souvent", "often"],
+            ["toujours", "always"],
+            ["trois fois par an", "three times a year"],
+            ["le week-end", "at the weekend"],
+            ["le soir", "in the evening"]
+          ]
+        },
+
+        {
+          titre: "Les registres de langue",
+          type: "expressions",
+
+          mots: [
+            ["le langage familier", "informal language"],
+            ["le langage courant", "everyday language"],
+            ["un copain", "a friend / a mate"],
+            ["des trucs", "things / stuff"],
+            ["une bosse", "a bump"],
+            ["une boîte", "a company (informal)"]
+          ]
+        }
+
+      ]
+    },
+
+
+    /*
+    ======================================================
+    LAB LANGUE ET CULTURE
+    ======================================================
+    */
+
+    {
+      titre: "Lab langue et culture — Réunir les métiers d'autrefois",
+      sections: [
+        // Vocabulaire à ajouter avec les pages 72-73
+      ]
+    },
+
+
+    /*
+    ======================================================
+    ATELIERS
+    ======================================================
+    */
+
+    {
+      titre: "Ateliers — Expliquer un projet / Féliciter sur LinkedIn",
+      sections: [
+        // Vocabulaire à ajouter avec les pages 74-75
+      ]
+    }
+
+  ] // fin situations UNITÉ 4
+
+} // fin UNITÉ 4
 
 
 ]; // fin vocabulaire
