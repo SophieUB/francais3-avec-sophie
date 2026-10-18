@@ -4761,11 +4761,12 @@ DEMANDER DES PRÉCISIONS — EXPRESSIONS
 
   ]
 },
-  ] // fin situations UNITÉ 3
+   ] // fin situations UNITÉ 3
 
-} // fin UNITÉ 3
+}, // fin UNITÉ 3
 
-  /*
+
+/*
 ======================================================
 UNITÉ 4 — ON CHANGE TOUT !
 ======================================================
