@@ -199,7 +199,48 @@
     .retour a:hover {
       text-decoration: underline;
     }
+/* =====================================================
+   INFORMATIONS IMPORTANTES — QUIZ
+   ===================================================== */
 
+.infos-quiz {
+  margin-top: 45px;
+}
+
+.infos-quiz h2 {
+  color: var(--bleu-fonce);
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+
+.info-quiz {
+  background: var(--blanc);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(29, 71, 110, 0.08);
+}
+
+.info-quiz h3 {
+  color: var(--bleu-fonce);
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.info-quiz p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.info-quiz p:last-child {
+  margin-bottom: 0;
+}
+
+/* Rappel concernant Sophie, la tutrice IA */
+
+.info-quiz.sophie {
+  border-left: 5px solid var(--rose);
+}
     /* =====================================================
        MOBILE / IPAD
        ===================================================== */
@@ -248,6 +289,69 @@
      ===================================================== -->
 
 <main class="conteneur">
+<section class="infos-quiz">
+
+  <h2>Avant de commencer / Before you begin</h2>
+
+  <!-- OBJECTIF DES QUIZ -->
+
+  <div class="info-quiz">
+
+    <h3>À propos des quiz / About the quizzes</h3>
+
+    <p>
+      <strong>Français :</strong><br>
+      Ces quiz sont des exercices de révision et de
+      renforcement. Les questions proposées ne reflètent
+      pas nécessairement celles des évaluations officielles
+      du programme de français.
+      Leur objectif est de vous aider à consolider
+      vos connaissances et à progresser à votre rythme.
+    </p>
+
+    <p>
+      <strong>English:</strong><br>
+      These quizzes are designed for revision and
+      additional practice. The questions do not
+      necessarily reflect those included in the
+      official assessments of the French language
+      programme. Their purpose is to help you
+      consolidate your knowledge and progress
+      at your own pace.
+    </p>
+
+  </div>
+
+
+  <!-- SOPHIE — TUTRICE IA -->
+
+  <div class="info-quiz sophie">
+
+    <h3>
+      Besoin de pratiquer davantage ?
+      / Need more practice?
+    </h3>
+
+    <p>
+      <strong>Français :</strong><br>
+      Vous pouvez également pratiquer votre grammaire,
+      réviser le vocabulaire et poser vos questions
+      grâce à l'onglet
+      <strong>« Sophie, votre tutrice IA de français »</strong>.
+    </p>
+
+    <p>
+      <strong>English:</strong><br>
+      You can also practise your grammar,
+      review vocabulary and ask questions
+      using the
+      <strong>“Sophie, votre tutrice IA de français”</strong>
+      section.
+    </p>
+
+  </div>
+
+</section>
 
   <div class="intro">
 
@@ -389,6 +493,9 @@
     </div>
 
   </div>
+<!-- =====================================================
+     INFORMATIONS IMPORTANTES — QUIZ
+     ===================================================== -->
 
 
   <!-- ===================================================
