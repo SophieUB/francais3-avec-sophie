@@ -1,19 +1,19 @@
 const coursData = {
 
-  semaine: 9,
+  semaine: 10,
 
   lecture: {
-    numero: 9,
-    unite: "Unité 3 : « Ça fait le buzz ! »",
-    contenu: "Ateliers : « Demander des précisions » — « Écrire un tweet ou tweeter »",
+    numero: 10,
+    unite: "Unité 4 : « On change tout ! »",
+    contenu: "Situation 2 : « Découvrir ses qualités »",
     complement: "",
     pages: ""
   },
 
   tutorat: {
-    numero: 7,
-    unite: "Unité 3 : « Ça fait le buzz ! » — Mémo",
-    contenu: "Unité 4 : « On change tout ! » — Situation 1 : « Raconter son parcours »",
+    numero: 8,
+    unite: "Unité 4 : « On change tout ! »",
+    contenu: "Situation 3 : « Exprimer une obligation »",
     pages: ""
   },
 
