@@ -17,6 +17,6 @@ const coursData = {
     pages: ""
   },
 
-  proverbe: "Rien ne sert de courir ; il faut partir à point. — There is no point in rushing; what matters is starting at the right time."
+  proverbe: "Mieux vaut tard que jamais. — Better late than never."
 
 };
