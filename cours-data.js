@@ -1,22 +1,24 @@
+
 const coursData = {
 
-  semaine: 10,
+  semaine: 11,
 
   lecture: {
-    numero: 10,
+    numero: 11,
     unite: "Unité 4 : « On change tout ! »",
-    contenu: "Situation 2 : « Découvrir ses qualités »",
+    contenu: "LAB’ Langue & culture",
     complement: "",
     pages: ""
   },
 
   tutorat: {
-    numero: 8,
+    numero: 9,
     unite: "Unité 4 : « On change tout ! »",
-    contenu: "Situation 3 : « Exprimer une obligation »",
+    contenu: "Ateliers : « Expliquer un projet » / « Féliciter sur LinkedIn »",
     pages: ""
   },
 
-  proverbe: "Mieux vaut tard que jamais. — Better late than never."
+  proverbe: "L’avenir appartient à ceux qui se lèvent tôt. — The early bird catches the worm."
 
 };
+
