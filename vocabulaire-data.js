@@ -5181,8 +5181,9 @@ ATELIERS — PAGES 74-75
         ["C'est un projet pour...", "It's a project to / for..."],
         ["Nous avons ce projet parce que...", "We have this project because..."],
         ["C'est comme cela que...", "That's how..."],
-        ["L'avenir ne se prévoit pas, il se prépare.", "The future is not predicted; it is prepared for."]
+       ["L'avenir ne se prévoit pas, il se prépare.", "The future is not predicted; it is prepared for. / We cannot predict the future, but we can prepare for it."]
       ]
+   
     },
 
     /*
