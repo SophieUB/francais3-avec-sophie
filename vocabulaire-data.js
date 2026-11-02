@@ -5105,29 +5105,11 @@ LAB LANGUE ET CULTURE — PAGES 72-73
         ["être concentré(e)", "to be focused"],
         ["s'occuper de", "to take care of / deal with"]
       ]
-    },
-
-    /*
-    ======================================================
-    EXPRESSION FRANCOPHONE
-    ======================================================
-    */
-
-    {
-      titre: "Expression francophone — S'caiminter",
-      type: "expressions",
-
-      mots: [
-        ["s'caiminter (Côte d'Ivoire)", "to work hard / be very busy"]
-      ]
     }
 
   ]
 },
 
-
-
-   
 /*
 ======================================================
 ATELIERS — PAGES 74-75
