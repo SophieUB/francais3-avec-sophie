@@ -5028,32 +5028,229 @@ UNITÉ 4 — ON CHANGE TOUT !
     },
 
 
+
+/*
+======================================================
+LAB LANGUE ET CULTURE — PAGES 72-73
+======================================================
+*/
+
+{
+  titre: "Lab langue et culture",
+
+  sections: [
+
     /*
     ======================================================
-    LAB LANGUE ET CULTURE
+    LES MÉTIERS D'AUTREFOIS
     ======================================================
     */
 
     {
-      titre: "Lab langue et culture — Réunir les métiers d'autrefois",
-      sections: [
-        // Vocabulaire à ajouter avec les pages 72-73
+      titre: "Les métiers d'autrefois",
+      type: "noms",
+
+      mots: [
+        ["un métier", "des métiers", "job / occupation"],
+        ["une téléphoniste", "des téléphonistes", "telephone operator"],
+        ["une centrale d'appels", "des centrales d'appels", "telephone exchange / call centre"],
+        ["une adresse", "des adresses", "address"],
+        ["un destinataire", "des destinataires", "recipient"],
+        ["une compétence", "des compétences", "skill"],
+        ["une obligation", "des obligations", "obligation / requirement"]
       ]
     },
 
-
     /*
     ======================================================
-    ATELIERS
+    LE MONDE DU TRAVAIL
     ======================================================
     */
 
     {
-      titre: "Ateliers — Expliquer un projet / Féliciter sur LinkedIn",
-      sections: [
-        // Vocabulaire à ajouter avec les pages 74-75
+      titre: "Le monde du travail",
+      type: "noms",
+
+      mots: [
+        ["un travail", "des travaux", "work"],
+        ["un chômage", "—", "unemployment"],
+        ["un congé", "des congés", "leave / time off"],
+        ["un retard", "des retards", "delay / lateness"],
+        ["une retraite", "des retraites", "retirement"]
+      ]
+    },
+
+    /*
+    ======================================================
+    VERBES ET EXPRESSIONS
+    ======================================================
+    */
+
+    {
+      titre: "Verbes et expressions liés au travail",
+      type: "expressions",
+
+      mots: [
+        ["mettre en relation", "to put in contact / connect"],
+        ["donner des informations", "to provide information"],
+        ["prendre les appels", "to answer calls"],
+        ["changer de métier", "to change jobs / careers"],
+        ["être au chômage", "to be unemployed"],
+        ["être en retard", "to be late"],
+        ["être à l'heure", "to be on time"],
+        ["être en congés", "to be on leave / on holiday"],
+        ["être à la retraite", "to be retired"],
+        ["être en télétravail", "to be working remotely"],
+        ["travailler beaucoup", "to work a lot"],
+        ["être concentré(e)", "to be focused"],
+        ["s'occuper de", "to take care of / deal with"]
+      ]
+    },
+
+    /*
+    ======================================================
+    EXPRESSION FRANCOPHONE
+    ======================================================
+    */
+
+    {
+      titre: "Expression francophone — S'caiminter",
+      type: "expressions",
+
+      mots: [
+        ["s'caiminter (Côte d'Ivoire)", "to work hard / be very busy"]
       ]
     }
+
+  ]
+},
+
+
+
+   
+/*
+======================================================
+ATELIERS — PAGES 74-75
+======================================================
+*/
+
+{
+  titre: "Ateliers — Expliquer un projet / Féliciter sur LinkedIn",
+
+  sections: [
+
+    /*
+    ======================================================
+    EXPLIQUER UN PROJET — VOCABULAIRE
+    ======================================================
+    */
+
+    {
+      titre: "Expliquer un projet — Vocabulaire",
+      type: "noms",
+
+      mots: [
+        ["un avenir", "des avenirs", "future"],
+        ["un projet", "des projets", "project / plan"],
+        ["une plante", "des plantes", "plant"],
+        ["un responsable", "des responsables", "manager / person in charge"],
+        ["une ressource humaine", "des ressources humaines", "human resource"],
+        ["un habitant / une habitante", "des habitants / des habitantes", "inhabitant / resident"]
+      ]
+    },
+
+    /*
+    ======================================================
+    EXPLIQUER UN PROJET — VERBES
+    ======================================================
+    */
+
+    {
+      titre: "Expliquer un projet — Verbes",
+      type: "verbes",
+
+      mots: [
+        ["prévoir", "to foresee / plan"],
+        ["préparer", "to prepare"],
+        ["décider de", "to decide to"],
+        ["avoir envie de", "to feel like / want to"],
+        ["souhaiter", "to wish / want"],
+        ["changer de travail", "to change jobs"],
+        ["construire", "to build"],
+        ["expliquer", "to explain"]
+      ]
+    },
+
+    /*
+    ======================================================
+    EXPLIQUER UN PROJET — EXPRESSIONS
+    ======================================================
+    */
+
+    {
+      titre: "Expliquer un projet — Expressions utiles",
+      type: "expressions",
+
+      mots: [
+        ["J'ai décidé de...", "I've decided to..."],
+        ["J'avais envie de...", "I wanted to..."],
+        ["Nous voulions...", "We wanted to..."],
+        ["Nous souhaitons...", "We would like to..."],
+        ["C'est un projet pour...", "It's a project to / for..."],
+        ["Nous avons ce projet parce que...", "We have this project because..."],
+        ["C'est comme cela que...", "That's how..."],
+        ["L'avenir ne se prévoit pas, il se prépare.", "The future is not predicted; it is prepared for."]
+      ]
+    },
+
+    /*
+    ======================================================
+    FÉLICITER SUR LINKEDIN — VOCABULAIRE
+    ======================================================
+    */
+
+    {
+      titre: "Féliciter sur LinkedIn — Vocabulaire",
+      type: "noms",
+
+      mots: [
+        ["une félicitation", "des félicitations", "congratulation"],
+        ["un réseau", "des réseaux", "network"],
+        ["un contact", "des contacts", "contact / connection"],
+        ["un événement", "des événements", "event"],
+        ["une intervention", "des interventions", "presentation / contribution"],
+        ["un commentaire", "des commentaires", "comment"],
+        ["une occasion", "des occasions", "occasion / opportunity"],
+        ["une réussite", "des réussites", "success / achievement"]
+      ]
+    },
+
+    /*
+    ======================================================
+    FÉLICITER SUR LINKEDIN — EXPRESSIONS
+    ======================================================
+    */
+
+    {
+      titre: "Féliciter sur LinkedIn — Expressions utiles",
+      type: "expressions",
+
+      mots: [
+        ["Félicitations !", "Congratulations!"],
+        ["Toutes mes félicitations !", "My congratulations!"],
+        ["Bravo !", "Well done!"],
+        ["Chapeau !", "Hats off! / Well done!"],
+        ["Je voulais te féliciter pour...", "I wanted to congratulate you on..."],
+        ["Je voulais vous féliciter pour...", "I wanted to congratulate you on..."],
+        ["Je suis content(e) pour vous.", "I'm happy for you."],
+        ["Je te souhaite beaucoup de nouveaux projets.", "I wish you many new projects."],
+        ["Continuez à envisager le monde de demain.", "Keep imagining the world of tomorrow."]
+      ]
+    }
+
+  ]
+},
+
 
   ] // fin situations UNITÉ 4
 
